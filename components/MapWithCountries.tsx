@@ -14,7 +14,8 @@ export function WorldMapDemo() {
                 key={idx}
                 className="inline-block"
                 initial={{ x: -10, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}                transition={{ duration: 0.5, delay: idx * 0.04 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: idx * 0.04 }}
               >
                 {word}
               </motion.span>
@@ -26,8 +27,7 @@ export function WorldMapDemo() {
       {/* Layout Wrapper */}
       <div className="md:flex max-w-7xl mx-auto mt-10">
         {/* Left: Country List */}
-        <div className="w-1/4 hidden md:block bg-white dark:bg-gray-800 p-4 rounded-lg">
-        
+        <div className="w-4/4 hidden md:block bg-white dark:bg-gray-800 p-4 rounded-lg">
           <ul className="space-y-2">
             {[
               "India",

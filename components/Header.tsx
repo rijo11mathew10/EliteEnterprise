@@ -15,7 +15,7 @@ function Header() {
   };
   return (
     <div>
-      <div className="hidden lg:block bg-[#023D68] text-[#D5D5D5]  pt-4">
+      <div className="hidden lg:block bg-[#023D68] text-[#D5D5D5]  pt-4 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 flex justify-end items-center space-x-8">
           <a href="#" className="hover:underline">
             CAREERS
@@ -72,7 +72,7 @@ function Header() {
                   Media
                 </Link>
                 <Link
-                  href="/"
+                  href="/contactus"
                   className="text-white hover:bg-[#E8D858] hover:text-black rounded-lg p-2"
                 >
                   Contact Us
@@ -157,7 +157,7 @@ function Header() {
                 Media
               </Link>
               <Link
-                href="/"
+                href="/contactus"
                 className="text-white block hover:bg-[#E8D858] hover:text-black rounded-lg p-2"
               >
                 Contact Us

@@ -81,9 +81,12 @@ function Contents() {
             {/* Video Section */}
             <div className="w-full max-w-lg border-t border-gray-300 mt-4">
               <video
-                controls
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="w-full h-auto rounded-md mt-4"
-                src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
+                src="/logo-anim.mp4"
               >
                 Your browser does not support the video tag.
               </video>

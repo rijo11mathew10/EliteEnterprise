@@ -3,15 +3,15 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import React from "react";
 import { motion } from "framer-motion";
-import { GlareCard } from "@/components/glare-card";
+import ContactForm from "@/components/contactus/ContactForm";
 
-function Page() {
+function page() {
   return (
     <div>
       <Header />
-      {/* Banner Section */}
+
       <div
-        className="relative bg-cover bg-center h-[450px] flex items-center justify-center mb-16 overflow-hidden"
+        className="relative bg-cover bg-center h-[450px] flex items-center justify-center overflow-hidden"
         style={{
           backgroundImage: "url('/banner.jpg')", // Replace with your image path
         }}
@@ -41,41 +41,20 @@ function Page() {
         >
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white text-4xl md:text-6xl font-bold">
-              Our Projects
+              CONTACT & ADDRESS
             </h1>
           </div>
         </motion.div>
       </div>
 
-      {/* Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px md:px-10 mb-28">
-        {Array.from({ length: 8 }).map((_, index) => (
-          <GlareCard
-            key={index}
-            className="flex flex-col items-center justify-center  rounded-lg shadow-md overflow-hidden"
-          >
-            <div className="relative w-full h-[300px] mb-4">
-              <img
-                className="absolute inset-0 h-full w-full object-cover rounded-lg"
-                src={`/project${index + 1}.jpg`} // Replace with your image URL
-                alt={`Project ${index + 1}`}
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-lg text-white font-semibold">
-                Sultan Group of Investment
-              </h3>
-              <p className="text-sm text-white mt-2">
-                Fabricator: Alfa Metal, Consultant: Port Saeed Engg.
-              </p>
-            </div>
-          </GlareCard>
-        ))}
+      <div className="bg-[#023D68]">
+        <ContactForm />
       </div>
+      <hr className=" bg-white" />
 
       <Footer />
     </div>
   );
 }
 
-export default Page;
+export default page;
