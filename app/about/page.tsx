@@ -78,8 +78,8 @@ function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 3, ease: "easeOut" }}
         >
-          <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
-            <h1 className="text-white text-4xl md:text-6xl font-bold">
+          <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded ">
+            <h1 className="text-white text-4xl md:text-6xl font-semibold opacity-75">
               About Our Company
             </h1>
           </div>
@@ -218,7 +218,8 @@ function AboutPage() {
           <img
             src="/aboutuslogo.png" // Replace with your logo path
             alt="Company Logo"
-            className="w-full h-auto"
+            className="w-full h-auto "
+             
           />
         </motion.div>
       </div>

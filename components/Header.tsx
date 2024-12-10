@@ -166,7 +166,6 @@ function Header() {
           </div>
         )}
       </nav>
-      <div className="bg-[#E8D858] h-2.5"></div>
     </div>
   );
 }
