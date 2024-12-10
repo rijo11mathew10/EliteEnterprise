@@ -92,7 +92,7 @@ function page() {
               >
                 <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
                 <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                  RELIABILITY - OUR HALLMARK
+                  RELIABILITY - OUR <br /> HALLMARK
                 </h2>
               </motion.div>
               <motion.p

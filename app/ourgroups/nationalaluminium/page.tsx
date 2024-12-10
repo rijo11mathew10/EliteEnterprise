@@ -68,20 +68,38 @@ function page() {
           </div>
         </motion.div>
       </div>
-
-      <div className="mx-auto  max-w-7xl">
+      <div className="mx-auto max-w-7xl mb-16">
         <div>
-          <div className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center">
+          {/* Top Section */}
+          <motion.div
+            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
             {/* Text Column */}
-            <div className="col-span-7">
-              <div className="flex gap-3 mb-12">
-                <hr className="w-2 h-24 bg-[#E8D858] border-none" />
+            <div className="col-span-12 md:col-span-7">
+              <motion.div
+                className="flex gap-3 mb-8"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
                 <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
                   REPUTATION - <br />
                   OUR PRIDE
                 </h2>
-              </div>
-              <p className="text-[#484848] mb-8">
+              </motion.div>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
                 We seek to provide excellent products that exceed Aluminum is a
                 widely used metal for countless applications in the nowadays
                 society. Strength, light-weight, corrosion resistance, thermal
@@ -90,48 +108,62 @@ function page() {
                 compounds are alum, such as potassium aluminum sulfate and
                 aluminum oxide. About 8% of the earth's crust is composed of
                 aluminum.
-              </p>
-              <p className="text-[#484848] mb-8">
+              </motion.p>
+              <motion.p
+                className="text-[#484848] text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
                 The facility spread across an area of 50,000 square meters in
                 which extrusion presses of 7” and 8” are assembled to extrude
                 18,000 MT per annum. Additional units include a modern die
                 correction station, ageing oven and ancillary equipment and the
                 office building for the management, sales and administration
                 staff.
-              </p>
-              <p className="text-[#484848]">
+              </motion.p>
+              <motion.p
+                className="text-[#484848] text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
                 The Company is recognized as one of the most effective partner
                 for customer service that is consistent with on-time delivery of
                 quality products. Large quantity of aluminium extruded profiles
                 can be supplied even at short notice tanks to the organized
                 workflow which is a distinctive sign.
-              </p>
+              </motion.p>
             </div>
 
             {/* Logo Column */}
-            <div
-              className="col-span-5 border-5 border-[#E8D858] relative"
-              style={{ height: "400px" }}
+            <motion.div
+              className="col-span-12 md:col-span-5 border-4 border-[#E8D858] relative h-64 md:h-96 flex justify-center items-center overflow-visible"
+              initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+              whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
             >
-              <div className="absolute top-[-50%] left-1/2 transform -translate-x-1/2 flex items-center">
-                <Image
-                  src={"/ourgroups/nationalaluminium/nationalaluminium.png"}
-                  width={300}
-                  height={300}
-                  alt=""
-                  className="shadow-lg border-8 border-[#E8D858]"
-                />
-              </div>
-            </div>
-          </div>
+              <Image
+                src={"/ourgroups/nationalaluminium/nationalaluminium.png"}
+                width={200}
+                height={200}
+                alt=""
+                className="shadow-lg border-8 border-[#E8D858] absolute lg:-top-36"
+              />
+            </motion.div>
+          </motion.div>
+
+          {/* Full-Width Section */}
         </div>
       </div>
-
       {/*banner*/}
       <div
-        className="relative bg-cover bg-center h-[500px] flex flex-col items-center justify-center text-center overflow-hidden"
+        className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center"
         style={{
-          backgroundImage: "url('/banner.jpg')", // Replace with your image
+          backgroundImage: "url('/banner.jpg')",
           backgroundBlendMode: "overlay",
           backgroundSize: "cover",
         }}
@@ -148,8 +180,9 @@ function page() {
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 2, ease: "easeOut" }}
-          className="relative text-white text-left text-4xl md:text-6xl font-bold z-10"
+          className="relative text-white text-2xl md:text-4xl lg:text-6xl font-bold z-10 px-4"
         >
           IMPRESSIVE INFRASTRUCTURE{" "}
         </motion.h1>
@@ -157,8 +190,9 @@ function page() {
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 2, ease: "easeOut", delay: 0.3 }}
-          className="relative text-white text-base md:text-lg mt-4 z-10 max-w-[800px] px-4"
+          className="relative text-white text-sm md:text-base lg:text-lg mt-4 z-10 max-w-[800px] px-4"
         >
           At National Aluminium we take pride in constantly working hard to
           optimize our manufacturing capacity which recognizes the needs of our
@@ -166,131 +200,71 @@ function page() {
           distinctive advantage.
         </motion.p>
       </div>
-
-     <div>
-        
-     </div>
-
-      <div className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center">
-        {/* Left Column */}
-        <div className="col-span-4 bg-[#023D68] p-6 text-white relative">
-          <div className="flex flex-col gap-4">
-            <Image
-              src={"/ourgroups/eliteextrusion/largescale.jpg"}
-              alt=""
-              width={350}
-              height={180}
-              className="shadow-lg border-3 border-[#E8D858] relative translate-x-14" // Overlaps to the right
-            />
-            <Image
-              src={"/ourgroups/eliteextrusion/largescale2.jpg"}
-              alt=""
-              width={350}
-              height={180}
-              className="shadow-lg border-3 border-[#E8D858] relative translate-x-14" // Overlaps to the right
-            />
-          </div>
-        </div>
-
-        {/* Right Column */}
-        <div className="col-span-8 border-[#E8D858] border-1 border-r-8 pl-20">
-          <h2 className="text-6xl text-[#023D68] font-bold mb-8">
-            LARGE SCALE OF OPERATIONS
-          </h2>
-          <p className="text-[#484848] leading-8">
-            Massive stockpiles of Aluminium alloy logs are systematically stored
-            to cater to projects of any scale. Our system is flexible enough to
-            handle demands from a small architectural challenge to a world-class
-            one.
-          </p>
-        </div>
-      </div>
-
       <div className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center">
         {/* Larger Column */}
-        <div className="col-span-8 border-[#E8D858] border-1 border-l-8 p-6">
-          <h2 className="text-6xl text-[#023D68] font-bold mb-8">
-            ADVANCED POWDER COATING MACHINES
+        <motion.div
+          className="col-span-12 md:col-span-8 border-[#E8D858] border-1 border-l-8 pl-6 pr-6 md:pr-10 py-8"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+        >
+          <h2 className="text-4xl md:text-5xl text-[#023D68] font-bold mb-8 md:mb-12">
+            WORLD-CLASS INFRASTRUCTURE
           </h2>
-          <p className="text-[#484848] leading-8">
-            A high capacity vertical powder coating machine is installed at
-            Elite Extrusion. The production capacity is 14,400 MT per annum. The
-            advanced machine swiftly coats the extrusions to perfection. Their
-            usage means few operators and more output compared to horizontal
-            plants. This is one of the highlights of the powder coating plants
-            here.
+          <p className="text-[#484848] leading-6 md:leading-8 mb-8 md:mb-16 text-justify lg:pr-6">
+            The Company operates out of a sprawling campus area of 50,000 square
+            metres with modern extrusion presses to supply bespoke aluminium
+            profiles to quality-conscious customers. This includes PLC
+            controlled extrusion presses of 7” and 8” container size, assembled
+            to extrude 18,000 MT of top quality extrusions per annum.
           </p>
-        </div>
+
+          <Image
+            src={"/ourgroups/nationalaluminium/nationalimage.jpg"}
+            alt=""
+            width={400}
+            height={80}
+            className="w-full mb-8 md:mb-16 h-40 object-cover lg:pr-6"
+          />
+
+          <h2 className="text-4xl md:text-5xl text-[#023D68] font-bold mb-8 md:mb-12">
+            VERTICAL POWDER COATING PLANTS
+          </h2>
+          <p className="text-[#484848] leading-6 md:leading-8 text-justify lg:pr-6">
+            Nalexco boasts a European state-of-the-art vertical powder coating
+            line. The customized unit has a capacity of 12,000 MT per year to
+            offer finishes in all RAL colours. Equipment includes a full-scale
+            chemical laboratory to monitor the coating process, pre-treatment,
+            chemicals and the cleansing of the aluminium profiles.
+          </p>
+        </motion.div>
 
         {/* Smaller Column */}
-        <div className="col-span-4 bg-[#023D68] p-6 text-white">
+        <div className="col-span-12 md:col-span-4 bg-[#023D68] p-6 text-white md:block hidden">
           <div className="flex flex-col gap-4">
-            <Image
-              src={"/ourgroups/eliteextrusion/advancedpowder.jpg"}
-              alt=""
-              width={350}
-              height={180}
-              className=" shadow-lg -ml-10 border-3 border-[#E8D858]"
-            />
-            <Image
-              src={"/ourgroups/eliteextrusion/advancedpowder2.jpg"}
-              alt=""
-              width={350}
-              height={100}
-              className=" shadow-lg -ml-10 border-3 border-[#E8D858]"
-            />
+            {["imagegrid1", "imagegrid2", "imagegrid3", "imagegrid4"].map(
+              (img, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ y: -10 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="shadow-lg border-3 border-[#E8D858] -ml-14"
+                >
+                  <Image
+                    src={`/ourgroups/nationalaluminium/${img}.jpg`}
+                    alt=""
+                    width={350}
+                    height={180}
+                    className="w-full"
+                  />
+                </motion.div>
+              )
+            )}
           </div>
         </div>
       </div>
-
-      <div className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center">
-        {/* Left Column */}
-        <div className="col-span-4 bg-[#023D68] p-6 text-white relative">
-          <div className="flex flex-col gap-4">
-            <Image
-              src={"/ourgroups/eliteextrusion/anodizingto.jpg"}
-              alt=""
-              width={350}
-              height={180}
-              className="shadow-lg border-3 border-[#E8D858] relative translate-x-14" // Overlaps to the right
-            />
-            <Image
-              src={"/ourgroups/eliteextrusion/anodizingto2.jpg"}
-              alt=""
-              width={350}
-              height={180}
-              className="shadow-lg border-3 border-[#E8D858] relative translate-x-14" // Overlaps to the right
-            />
-          </div>
-        </div>
-
-        {/* Right Column */}
-        <div className="col-span-8 border-[#E8D858] border-1 border-r-8 pl-20">
-          <h2 className="text-6xl text-[#023D68] font-bold mb-8">
-            ANODIZING TO PERFECTION{" "}
-          </h2>
-          <p className="text-[#484848] leading-8">
-            Aluminium oxide is hard, durable and weather resistant. Anodizing is
-            an electrochemical process that forms a protective coating of
-            Aluminium oxide on the surface of Aluminium. The coating is offered
-            in silver, gold and bronze finishes.
-          </p>
-          <p className="text-[#484848] leading-8">
-            This process is only appropriate on certain Aluminium alloys. Some
-            of the advantages of anodizing include:
-          </p>
-          <ul className="text-[#484848] leading-8">
-            <li>- Generally less expensive</li>
-            <li>- Longer life; low maintenance</li>
-            <li>- Unaffected by sunlight</li>
-          </ul>
-          <p className="text-[#484848] leading-8">
-            The unit is certified with Qualanod, and has an annual production
-            capacity of 7,200 MT.
-          </p>
-        </div>
-      </div>
-
+      ;
       <WobbleCardDemo
         heading="OUR PRODUCTS"
         description="Lending a distinct visual appeal we provide aluminium profiles for several applications such as windows & doors (casement, sliding & hinged version), curtain walls, louvers & grills, handrails & balustrades, kitchen profiles, air conditioning, sign board, scaffolding sections, furniture and partition sections among others. In addition all the most common section like squared & round bars, equal & unequal angles, rectangular & squared tubes with different design, dimensions and thicknesses."
