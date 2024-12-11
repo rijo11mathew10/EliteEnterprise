@@ -84,17 +84,26 @@ function Header() {
                         </h3>
                         <ul className="space-y-2">
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about"
+                              className="hover:text-[#023D68]"
+                            >
                               ABOUT OUR COMPANY
                             </Link>
                           </li>
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourprojects"
+                              className="hover:text-[#023D68]"
+                            >
                               OUR PROJECTS
                             </Link>
                           </li>
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourglobalmarkets"
+                              className="hover:text-[#023D68]"
+                            >
                               OUR GLOBAL MARKETS
                             </Link>
                           </li>
@@ -121,47 +130,74 @@ function Header() {
                         </h3>
                         <ul className="space-y-2">
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourgroups/eliteextrusion"
+                              className="hover:text-[#023D68]"
+                            >
                               ELITE EXTRUSION LLC
                             </Link>
                           </li>
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourgroups/nationalaluminium"
+                              className="hover:text-[#023D68]"
+                            >
                               NATIONAL ALUMINIUM EXTRUSION LLC
                             </Link>
                           </li>
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourgroups/classicextrusion"
+                              className="hover:text-[#023D68]"
+                            >
                               CLASSIC EXTRUSION LLC
                             </Link>
                           </li>
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourgroups/alumiltech"
+                              className="hover:text-[#023D68]"
+                            >
                               ALUMIL TECH GULF LLC
                             </Link>
                           </li>
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourgroups/thermoset"
+                              className="hover:text-[#023D68]"
+                            >
                               THERMOST MIDDLE EAST
                             </Link>
                           </li>
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourgroups/globalpioneer"
+                              className="hover:text-[#023D68]"
+                            >
                               GLOBAL PIONEER ALUMINIUM INDUSTRIES
                             </Link>
                           </li>
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourgroups/jordan"
+                              className="hover:text-[#023D68]"
+                            >
                               JORDAN ALUMINIUM EXTRUSION
                             </Link>
                           </li>
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourgroups/unitedpowdercoating"
+                              className="hover:text-[#023D68]"
+                            >
                               UNITED POWDER COATING FZC
                             </Link>
                           </li>
                           <li>
-                            <Link href="#" className="hover:text-[#023D68]">
+                            <Link
+                              href="/about/ourgroups/nashat"
+                              className="hover:text-[#023D68]"
+                            >
                               NASHAT METAL ENGINEERING LLC
                             </Link>
                           </li>
@@ -189,7 +225,7 @@ function Header() {
                     </Link>
                     {openDropdown === dropdown && (
                       <div
-                        className="absolute left-0 mt-2 w-[20rem] bg-white bg-opacity-80 shadow-lg p-6 grid grid-cols-1 gap-4 transition-opacity duration-300 border border-[#E8D858]"
+                        className="absolute left-0 mt-2 w-[15rem] bg-white bg-opacity-80 shadow-lg p-6 grid grid-cols-1 gap-4 transition-opacity duration-300 border border-[#E8D858]"
                         style={{ zIndex: 10, top: "100%" }}
                       >
                         {Array.from({ length: 3 }).map((_, index) => (

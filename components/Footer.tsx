@@ -14,27 +14,42 @@ const Footer = () => {
             <h3 className="text-lg font-light mb-4">GROUPS</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="/about/ourgroups/eliteextrusion"
+                  className="hover:underline"
+                >
                   Elite Extrusion LLC{" "}
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="/about/ourgroups/nationalaluminium"
+                  className="hover:underline"
+                >
                   National Aluminium Extrusion LLC{" "}
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="/about/ourgroups/classicextrusion"
+                  className="hover:underline"
+                >
                   Classic Extrusion LLC{" "}
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="/about/ourgroups/alumiltech"
+                  className="hover:underline"
+                >
                   Alumill Tech Gulf LLC{" "}
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="/about/ourgroups/thermoset"
+                  className="hover:underline"
+                >
                   Thermoset Middle East{" "}
                 </a>
               </li>
@@ -47,27 +62,39 @@ const Footer = () => {
               {/* Blank first line to align with the first column */}
               <li>&nbsp;</li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link
+                  href="/about/ourgroups/globalpioneer"
+                  className="hover:underline"
+                >
                   Global Pioneer Aluminium{" "}
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link
+                  href="/about/ourgroups/jordan"
+                  className="hover:underline"
+                >
                   Jordan Aluminium Extrusion{" "}
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link
+                  href="/about/ourgroups/unitedpowdercoating"
+                  className="hover:underline"
+                >
                   United Powder Coating FZC{" "}
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link
+                  href="/about/ourgroups/nashat"
+                  className="hover:underline"
+                >
                   Nashat Metal Engineering LLC{" "}
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/about/ourgroups/" className="hover:underline">
                   White Metal Aluminium Trading{" "}
                 </Link>
               </li>
@@ -105,12 +132,12 @@ const Footer = () => {
         <div className="border-t-2 border-[#E8D858] mt-8 pt-4 flex justify-between items-center">
           <div className="flex items-center">
             {/* Company Logo with Increased Size */}
-              <Image
-                src="/logo.png"
-                alt="Company Logo"
-                width={120}
-                height={120}
-              />
+            <Image
+              src="/logo.png"
+              alt="Company Logo"
+              width={120}
+              height={120}
+            />
           </div>
 
           <div className="flex space-x-4">
