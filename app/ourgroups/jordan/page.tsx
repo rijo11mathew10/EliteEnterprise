@@ -1,51 +1,10 @@
 "use client";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import React from "react";
 import { motion } from "framer-motion";
 
 import Image from "next/image";
 
-import { WobbleCards } from "@/components/ourgroups/globalpioneer/WobbleSection";
-
-const productData1 = [
-  {
-    imageSrc: "/ourgroups/globalpioneer/railing_one.png",
-    title: "Railing",
-  },
-  {
-    imageSrc: "/ourgroups/globalpioneer/railing_two.png",
-    title: "Railing",
-  },
-  {
-    imageSrc: "/ourgroups/globalpioneer/railing_three.png",
-    title: "Railing",
-  },
-];
-const productData2 = [
-  {
-    imageSrc: "/ourgroups/globalpioneer/systems1.jpg",
-    title: "Systems",
-  },
-  {
-    imageSrc: "/ourgroups/globalpioneer/systems2.jpg",
-    title: "Systems",
-  },
-  {
-    imageSrc: "/ourgroups/globalpioneer/systems3.jpg",
-    title: "Systems",
-  },
-];
-const productData3 = [
-  {
-    imageSrc: "/ourgroups/globalpioneer/samples1.jpg",
-    title: "Samples",
-  },
-  {
-    imageSrc: "/ourgroups/globalpioneer/samples2.jpg",
-    title: "Samples",
-  },
-];
 function page() {
   return (
     <div>
@@ -83,10 +42,10 @@ function page() {
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-8 px-16 rounded w-[600px] mx-auto text-center">
             <h1 className="text-white font-semibold">
               {/* Elite */}
-              <span className="text-5xl md:text-5xl block">GLOBAL PIONEER</span>
+              <span className="text-4xl md:text-7xl block">JORDAN</span>
               {/* Extrusion LLC */}
-              <span className="text-2xl md:text-3xl text-white text-opacity-70 block  font-medium">
-                ALUMINIUM INDUSTRIES LLC
+              <span className="text-2xl md:text-4xl text-white text-opacity-70 block  font-medium">
+                Aluminium Extrusion
               </span>
             </h1>
           </div>
@@ -113,8 +72,8 @@ function page() {
               >
                 <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
                 <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                  EXPERTISE - <br></br>
-                  OUR STRENGTH{" "}
+                  INNOVATION - OUR <br />
+                  PASSION
                 </h2>
               </motion.div>
               <motion.p
@@ -124,10 +83,8 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 2.0 }}
               >
-                Global Pioneer Aluminium Industries LLC it’s a specialized
-                company in designing, engineering, fabrication, supply and
-                installation of aluminium works and advanced curtain walling
-                systems.
+                Jordan Aluminium is located about 80 kms from Amman, the capital
+                of Jordan, and spread across an area of 15,000 square meters.
               </motion.p>
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
@@ -136,10 +93,11 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 1.4 }}
               >
-                Established since 1976 as pioneer in the aluminium industries in
-                the region, since 2004 is member of Elite Group of Companies for
-                which can be considered the in-house fabrication division of the
-                group.
+                It also houses a powder coating plant, with a production
+                capacity of 12,000 MT per annum and an anodizing plant of 4,000
+                MT per annum which is scheduled to commence soon. We are also
+                planning to set up a wood finish division too. Our plant is also
+                equipped with the latest automated packing unit.
               </motion.p>
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
@@ -148,10 +106,10 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 1.4 }}
               >
-                Based in Ajman, U.A.E., in a 26.000 square feet area we
-                guarantee clients’ assistance and undertaking of turnkey
-                projects, complying with the specifications, designs and the
-                best of quality aluminium fabrication and related metal works.
+                The plant houses the most modern state of the art extrusion
+                presses, engineered to extrude high quality aluminium profiles
+                with an annual capacity of 20,000 MT. It includes a modern die
+                correction station, ageing oven and other ancillary equipments.
               </motion.p>
             </div>
 
@@ -164,7 +122,7 @@ function page() {
               transition={{ duration: 1.2, ease: "easeOut" }}
             >
               <Image
-                src={"/ourgroups/globalpioneer/image.png"}
+                src={"/ourgroups/jordan/jordanlogo.png"}
                 width={200}
                 height={200}
                 alt=""
@@ -198,9 +156,9 @@ function page() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 2, ease: "easeOut" }}
-          className="relative text-white text-xl md:text-2xl lg:text-4xl font-bold z-10 px-2 mb-3"
+          className="relative text-white text-2xl md:text-4xl lg:text-6xl font-bold z-10 px-4"
         >
-          EXELLENCE IN OPERATION & SERVICE
+          TOP NOTCH MACHINERY
         </motion.h1>
 
         <motion.p
@@ -208,38 +166,12 @@ function page() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 2, ease: "easeOut", delay: 0.3 }}
-          className="relative text-white text-sm md:text-base lg:text-lg mt-4 z-10 max-w-[800px] px-4 mb-3"
+          className="relative text-white text-sm md:text-base lg:text-lg mt-4 z-10 max-w-[800px] px-4"
         >
-          Global Pioneer is involved in a workflow with the extrusion sister
-          companies to operate in straight-chain afterwards the aluminium and
-          rubber profiles manufacturing, and so offer the benefit of their
-          knowledge and experience in the aluminium & glass along with the
-          accessories industry. Hence the company is entitled to manage project
-          in different emirates and so offer our specialization under a single
-          license.
-        </motion.p>
-        <motion.h1
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 2, ease: "easeOut" }}
-          className="relative text-white text-xl md:text-2xl lg:text-4xl font-bold z-10 px-4 mb-3"
-        >
-          MACHINERIES & IMPECCABLE WORKMANSHIP
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 2, ease: "easeOut", delay: 0.3 }}
-          className="relative text-white text-sm md:text-base lg:text-lg mt-4 z-10 max-w-[800px] px-4 mb-3"
-        >
-          Our commitment to technical excellence has led us to invest in
-          machineries, shaping utensils, designing unit and whole
-          infrastructure, enabling us to offer comprehensive engineering
-          designs, quality craftsmanship to configure customers’ orders in
-          advance.
+          The additional facilities that Jordan Aluminium offers include modern
+          Die Correction Stations, ageing oven and ancillary equipment. It also
+          houses a powder coating plant, with a production capacity of 12,000 MT
+          per annum and an anodizing plant of 4,000 MT per annum.
         </motion.p>
       </div>
       <div className="mx-auto max-w-7xl">
@@ -253,22 +185,19 @@ function page() {
         >
           {/* Text Column */}
           <motion.div
-            className="col-span-12 md:col-span-8 border-[#E8D858] border-1 border-l-8 p-6"
+            className="col-span-12 md:col-span-8 border-[#E8D858] border-1 border-l-8 p-16"
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 2.0 }}
           >
             <h2 className="text-3xl md:text-5xl text-[#023D68] font-bold mb-8">
-              FINISHING TOUCHES
+              OUR SIGNATURE TOUCH
             </h2>
-            <p className="text-lg text-[#484848] leading-8">
-              For the manufacturing of aluminium profiles we use a number of
-              modern equipments. Quality control procedures are carried out
-              throughout the fabrication and installation processes and are as
-              per the Company’s quality plans, set by the management. A copy of
-              the quality plan shall be submitted to the client or consultant
-              upon request.
+            <p className="text-lg text-[#484848] leading-8 mb-4">
+              Every company is distinguished by its machinery. The new plant is
+              being set up and production will commence shortly to meet the
+              growing demands of the region.
             </p>
           </motion.div>
 
@@ -282,14 +211,14 @@ function page() {
           >
             <div className="flex flex-col gap-4">
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer3.png"
+                src="/ourgroups/jordan/jordan-machine2.png"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg -ml-10 border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer2.png"
+                src="/ourgroups/jordan/jordan-machine3.png"
                 alt=""
                 width={350}
                 height={180}
@@ -299,10 +228,6 @@ function page() {
           </motion.div>
         </motion.div>
       </div>
-      <WobbleCards heading="Railing" cards={productData1} />
-      <WobbleCards heading="Systems" cards={productData2} />
-
-      <WobbleCards heading="Samples" cards={productData3} />
 
       <Footer />
     </div>

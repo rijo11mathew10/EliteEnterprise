@@ -1,11 +1,9 @@
 "use client";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import React from "react";
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import { WobbleCardDemo } from "@/components/ourgroups/OurProducts";
 
 function page() {
   return (
@@ -74,7 +72,7 @@ function page() {
               >
                 <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
                 <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                 EXPERTISE - <br></br> OUR STRENGTH
+                  EXPERTISE - <br></br> OUR STRENGTH
                 </h2>
               </motion.div>
               <motion.p
@@ -84,7 +82,11 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 2.0 }}
               >
-                Thermoset Middle East LLC is an ISO 9001 certified manufacturer of premium quality EPDM Rubber gaskets for architectural, construction and industrial applications. The facility is located in Dubai Investment Park to produce an extensive range of rubber gaskets & profiles that offer long-time performance.
+                Thermoset Middle East LLC is an ISO 9001 certified manufacturer
+                of premium quality EPDM Rubber gaskets for architectural,
+                construction and industrial applications. The facility is
+                located in Dubai Investment Park to produce an extensive range
+                of rubber gaskets & profiles that offer long-time performance.
               </motion.p>
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
@@ -93,7 +95,9 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 1.4 }}
               >
-                Thermoset Middle East is part of the Elite Group of Companies to add a further functional accessory to the aluminium production and complete its vast range.
+                Thermoset Middle East is part of the Elite Group of Companies to
+                add a further functional accessory to the aluminium production
+                and complete its vast range.
               </motion.p>
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
@@ -102,7 +106,10 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 1.4 }}
               >
-We manufacture and offer a complementary product that is much more than an additional component. Our wide array of customized architectural sealing gaskets is designed to withstand the extreme climatic conditions in the Middle East.
+                We manufacture and offer a complementary product that is much
+                more than an additional component. Our wide array of customized
+                architectural sealing gaskets is designed to withstand the
+                extreme climatic conditions in the Middle East.
               </motion.p>
             </div>
 
@@ -132,8 +139,8 @@ We manufacture and offer a complementary product that is much more than an addit
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
-             <motion.h1
-               className="relative text-[#023D68] text-xl md:text-2xl lg:text-3xl font-bold z-10 mb-6"
+            <motion.h1
+              className="relative text-[#023D68] text-xl md:text-2xl lg:text-3xl font-bold z-10 mb-6"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -148,7 +155,11 @@ We manufacture and offer a complementary product that is much more than an addit
               viewport={{ once: true }}
               transition={{ duration: 1.4 }}
             >
-              The manufacturing facility at Thermoset Middle East boast a Cold Feed Extrusion with LCM Vulcanization (Liquid Cure Medium) Line from Germany. It creates Peroxide Cure EPDM profiles that offer better compression set performance at higher temperatures and provide stability for building and industrial applications.
+              The manufacturing facility at Thermoset Middle East boast a Cold
+              Feed Extrusion with LCM Vulcanization (Liquid Cure Medium) Line
+              from Germany. It creates Peroxide Cure EPDM profiles that offer
+              better compression set performance at higher temperatures and
+              provide stability for building and industrial applications.
             </motion.p>
             <motion.p
               className="text-[#484848] mb-4 text-justify"
@@ -157,7 +168,10 @@ We manufacture and offer a complementary product that is much more than an addit
               viewport={{ once: true }}
               transition={{ duration: 1.4 }}
             >
-              Quality consistency is maintained for all our rubber compound properties as we strictly comply with German Standard (DIN-7863) for the manufacture of elastomer gaskets for use in windows and facade construction.
+              Quality consistency is maintained for all our rubber compound
+              properties as we strictly comply with German Standard (DIN-7863)
+              for the manufacture of elastomer gaskets for use in windows and
+              facade construction.
             </motion.p>
             <motion.p
               className="text-[#484848] mb-4 text-justify"
@@ -166,16 +180,20 @@ We manufacture and offer a complementary product that is much more than an addit
               viewport={{ once: true }}
               transition={{ duration: 1.4 }}
             >
-            Dimensions are maintained as per BS 3734 and gaskets are compatible with silicone sealants. Our polymer compound can also be formulated to meet various other standards like ASTM C-864, BS-4255 or as per the project requirements.
-          </motion.p>
-          <motion.h4
-               className="relative text-[#023D68] text-m md:text-l lg:text-xl font-bold z-10 mb-6"
+              Dimensions are maintained as per BS 3734 and gaskets are
+              compatible with silicone sealants. Our polymer compound can also
+              be formulated to meet various other standards like ASTM
+              C-864, BS-4255 or as per the project requirements.
+            </motion.p>
+            <motion.h4
+              className="relative text-[#023D68] text-m md:text-l lg:text-xl font-bold z-10 mb-6"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1.4 }}
             >
-            Only LCM lines can make products which can comply with all needs of DIN 7863
+              Only LCM lines can make products which can comply with all needs
+              of DIN 7863
             </motion.h4>
             <motion.p
               className="text-[#484848] mb-4 text-justify"
@@ -184,7 +202,9 @@ We manufacture and offer a complementary product that is much more than an addit
               viewport={{ once: true }}
               transition={{ duration: 1.4 }}
             >
-            The line is equipped with Sprinkler Unit for curing delicate shapes as well. This line is pollution free & therefore clean & environmentally friendly.          
+              The line is equipped with Sprinkler Unit for curing delicate
+              shapes as well. This line is pollution free & therefore clean &
+              environmentally friendly.
             </motion.p>
             <motion.p
               className="text-[#484848] mb-4 text-justify"
@@ -193,10 +213,10 @@ We manufacture and offer a complementary product that is much more than an addit
               viewport={{ once: true }}
               transition={{ duration: 1.4 }}
             >
-            Thermoset’s line is equipped with sprinkler unit for curing delicate shapes as well.
+              Thermoset’s line is equipped with sprinkler unit for curing
+              delicate shapes as well.
             </motion.p>
           </motion.div>
-          
         </div>
       </div>
 
@@ -225,7 +245,7 @@ We manufacture and offer a complementary product that is much more than an addit
           transition={{ duration: 2, ease: "easeOut" }}
           className="relative text-white text-2xl md:text-4xl lg:text-6xl font-bold z-10 px-4"
         >
-SUITABLE FOR EXTREME <br></br>WEATHER CONDITIONS
+          SUITABLE FOR EXTREME <br></br>WEATHER CONDITIONS
         </motion.h1>
 
         <motion.p
@@ -235,7 +255,10 @@ SUITABLE FOR EXTREME <br></br>WEATHER CONDITIONS
           transition={{ duration: 2, ease: "easeOut", delay: 0.3 }}
           className="relative text-white text-sm md:text-base lg:text-lg mt-4 z-10 max-w-[800px] px-4"
         >
-          The unit houses an ultra-modern EPDM Rubber Extrusion Plant from Germany. It is fully automated with a modern die making & correction unit. Especially significant are its architectural sealing gaskets, which are made to withstand extreme weather conditions.
+          The unit houses an ultra-modern EPDM Rubber Extrusion Plant from
+          Germany. It is fully automated with a modern die making & correction
+          unit. Especially significant are its architectural sealing gaskets,
+          which are made to withstand extreme weather conditions.
         </motion.p>
       </div>
       <div className="mx-auto max-w-7xl">
@@ -256,21 +279,25 @@ SUITABLE FOR EXTREME <br></br>WEATHER CONDITIONS
             transition={{ duration: 2.0 }}
           >
             <h2 className="text-3xl md:text-5xl text-[#023D68] font-bold mb-8">
-            DIE <br></br>
-            FABRICATION UNIT
+              DIE <br></br>
+              FABRICATION UNIT
             </h2>
             <p className="text-lg text-[#484848] leading-8 mb-4">
-            Our full-fledged design and development facility can fabricate an assortment of dies in-house as we have installed state-of-the-art machinery. With the aid of these high-speed processing machines, our team of talented designers can effortlessly deliver cost-efficient custom seals and gaskets to meet your exact requirements at the shortest possible time.
+              Our full-fledged design and development facility can fabricate an
+              assortment of dies in-house as we have installed state-of-the-art
+              machinery. With the aid of these high-speed processing machines,
+              our team of talented designers can effortlessly deliver
+              cost-efficient custom seals and gaskets to meet your exact
+              requirements at the shortest possible time.
             </p>
             <p className="text-lg text-[#484848] leading-8 mb-2 ">
-            Die Fabrication machines installed are:
+              Die Fabrication machines installed are:
             </p>
             <ul className="text-lg text-[#484848] leading-8 list-disc pl-5">
               <li>CNC Wire Cut Machine</li>
               <li>Precision Turning & Drilling Machines</li>
               <li>Other Conventional Machines</li>
             </ul>
-            
           </motion.div>
 
           {/* Image Column */}
@@ -300,38 +327,39 @@ SUITABLE FOR EXTREME <br></br>WEATHER CONDITIONS
           </motion.div>
         </motion.div>
 
-       
-          <motion.div
-            className="col-span-12 md:col-span-8  pl-6 md:pl-20 p-6"
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2.0 }}
-          >
-            <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68]  mb-8">
-              DESIGN CENTRE AND <br></br>
-              DESIGN PROTECTION
-            </h2>
-            <p className="text-lg text-[#484848] leading-8 mb-2">
-            The hi-tech Design Centre is equipped to innovate & develop reliable and best performing gaskets. We have the required capacity and competency to manufacture polymer gaskets in any shape or form as per your varied industry-related requirements.
-            </p>
-            <p className="text-lg text-[#484848] leading-8 mb-2">
+        <motion.div
+          className="col-span-12 md:col-span-8  pl-6  p-6"
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2.0 }}
+        >
+          <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68]  mb-8">
+            DESIGN CENTRE AND <br></br>
+            DESIGN PROTECTION
+          </h2>
+          <p className="text-lg text-[#484848] leading-8 mb-2">
+            The hi-tech Design Centre is equipped to innovate & develop reliable
+            and best performing gaskets. We have the required capacity and
+            competency to manufacture polymer gaskets in any shape or form as
+            per your varied industry-related requirements.
+          </p>
+          <p className="text-lg text-[#484848] leading-8 mb-2">
             Design inputs for any enquiry include:
-            </p>
-            <ul className="text-lg text-[#484848] leading-8 list-disc pl-5 mb-2">
-              <li>Hand Sketch of gasket/profile</li>
-              <li>Auto Cad Drawing</li>
-              <li>Assembly Drawing of the Window / Door / CW / etc.</li>
-              <li>Cut pieces of the Window / Door / CW / etc.</li>
-              <li>Image of Cross Section of the Profile in any form</li>
-            </ul>
-            <p className="text-lg text-[#484848] leading-8 mb-6">
-            The custom-made profile will not be disclosed or sold to any other customers, as these are created exclusively for our clients.
-            </p>
-          </motion.div>
+          </p>
+          <ul className="text-lg text-[#484848] leading-8 list-disc pl-5 mb-2">
+            <li>Hand Sketch of gasket/profile</li>
+            <li>Auto Cad Drawing</li>
+            <li>Assembly Drawing of the Window / Door / CW / etc.</li>
+            <li>Cut pieces of the Window / Door / CW / etc.</li>
+            <li>Image of Cross Section of the Profile in any form</li>
+          </ul>
+          <p className="text-lg text-[#484848] leading-8 mb-6">
+            The custom-made profile will not be disclosed or sold to any other
+            customers, as these are created exclusively for our clients.
+          </p>
+        </motion.div>
       </div>
-
-    
 
       <Footer />
     </div>

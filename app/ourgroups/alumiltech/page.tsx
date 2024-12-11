@@ -73,7 +73,8 @@ function page() {
               >
                 <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
                 <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-EXPERTISE<br></br>OUR STRENGTH                </h2>
+                  EXPERTISE<br></br>OUR STRENGTH{" "}
+                </h2>
               </motion.div>
               <motion.p
                 className="text-[#484848] mb-6 text-justify md:pr-7"
@@ -82,7 +83,11 @@ EXPERTISE<br></br>OUR STRENGTH                </h2>
                 viewport={{ once: true }}
                 transition={{ duration: 2.0 }}
               >
-                Alumill Tech Gulf LLC is one of the foremost industrial leaders in top quality aluminum flat-rolled products, color coated coils and sheets. The manufacturing plant operates out of a wide-spread campus of over 55,000 square meters in the industrial area of Ras Al Khaimah (U.A.E.).
+                Alumill Tech Gulf LLC is one of the foremost industrial leaders
+                in top quality aluminum flat-rolled products, color coated coils
+                and sheets. The manufacturing plant operates out of a
+                wide-spread campus of over 55,000 square meters in the
+                industrial area of Ras Al Khaimah (U.A.E.).
               </motion.p>
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
@@ -91,7 +96,11 @@ EXPERTISE<br></br>OUR STRENGTH                </h2>
                 viewport={{ once: true }}
                 transition={{ duration: 1.4 }}
               >
-               The integrated Cast House provides continuous production of Cast Coils suitable for subsequent Cold Rolling Mill process, based on the advanced technology of Presezzi SpA (Italy). The state-of-the-art line is fully equipped lab for end-to-end testing solutions of materials.
+                The integrated Cast House provides continuous production of Cast
+                Coils suitable for subsequent Cold Rolling Mill process, based
+                on the advanced technology of Presezzi SpA (Italy). The
+                state-of-the-art line is fully equipped lab for end-to-end
+                testing solutions of materials.
               </motion.p>
             </div>
 
@@ -112,8 +121,130 @@ EXPERTISE<br></br>OUR STRENGTH                </h2>
               />
             </motion.div>
           </motion.div>
-
-        
+        </div>
+        <div className="flex flex-col mx-auto pl-6">
+          <motion.h2
+            className="text-3xl font-semibold text-[#023D68] mb-8"
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            ALUMILL PRODUCTION PROCESS
+          </motion.h2>
+          <motion.h3
+            className="text-2xl font-semibold text-[#023D68] mb-4"
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            - Melting and Holding Furnaces
+          </motion.h3>
+          <motion.p
+            className="text-[#484848] text-justify mb-3 leading-8 pr-5"
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            Pure aluminum ingots are melted and alloyed with other elements by
+            means of master alloy such as iron, silicon, manganese and
+            magnesium. The material is analyzed and adjusted to ensure that the
+            correct composition is achieved. This is then transferred to the
+            holding furnace for direct casting.
+          </motion.p>
+          <motion.h3
+            className="text-2xl font-bold text-[#023D68] mb-4 "
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            - Cast House
+          </motion.h3>
+          <motion.p
+            className="text-[#484848] text-justify mb-3 leading-8 pr-5"
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            In the cast house continuous casting and rolling process is adopted
+            in which hot metal, after being continuously cast as cast coil form.
+            In melting furnace alloyed preparation is taken place and there
+            after hot metal is transferred to the holding furnace, then
+            degassing and filtration is taking place.
+          </motion.p>
+          <motion.h3
+            className="text-2xl font-bold text-[#023D68] mb-4"
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            - Cold Rolling Mill
+          </motion.h3>
+          <motion.p
+            className="text-[#484848] text-justify mb-3 leading-8 pr-5"
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            Cast coils are then processed in the cold rolling mill to customer’s
+            required thickness and further treated in the annealing furnace to
+            achieve the required temper and strength. The cold rolling mill
+            machine is equipped with reversible automatic gauge control (AGC)
+            and able to produce the closest tolerance required meeting the
+            stringent worldwide standards.
+          </motion.p>
+          <motion.h3
+            className="text-2xl font-bold text-[#023D68] mb-4"
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            - Finishing lines, Tension Leveling & Cut-to-length
+          </motion.h3>
+          <motion.ul
+            className="text-[#484848] mb-3 leading-8 pr-5"
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            Cold Rolled Coils are processed in the Finishing Department for
+            further process as per customer’s requirement as:
+            <li>- Tension leveling to improve the flatness prior to coating</li>
+            <li>- Cut-to-length for final coil and sheet production</li>
+            <li>- Side trimming for coils</li>
+            <li>- Roll forming for roofing products</li>
+            <li>- Embossing line for stucco finishing</li>
+          </motion.ul>
+          <motion.h3
+            className="text-2xl font-bold text-[#023D68] mb-4 "
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            - Melting and Holding Furnaces
+          </motion.h3>
+          <motion.p
+            className="text-[#484848] text-justify mb-3 leading-8 pr-5"
+            initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            Pure aluminum ingots are melted and alloyed with other elements by
+            means of master alloy such as iron, silicon, manganese and
+            magnesium. The material is analyzed and adjusted to ensure that the
+            correct composition is achieved. This is then transferred to the
+            holding furnace for direct casting.
+          </motion.p>
         </div>
       </div>
 
@@ -142,8 +273,8 @@ EXPERTISE<br></br>OUR STRENGTH                </h2>
           transition={{ duration: 2, ease: "easeOut" }}
           className="relative text-white text-2xl md:text-4xl lg:text-6xl font-bold z-10 px-4"
         >
-IMPRESSIVE PRODUCTION FACILITY
-</motion.h1>
+          IMPRESSIVE PRODUCTION FACILITY
+        </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -152,7 +283,13 @@ IMPRESSIVE PRODUCTION FACILITY
           transition={{ duration: 2, ease: "easeOut", delay: 0.3 }}
           className="relative text-white text-sm md:text-base lg:text-lg mt-4 z-10 max-w-[800px] px-4"
         >
-          The aluminium rolling mill and coating line division is also suitably supported by in house laboratory facilities and end-to-end material tests at all levels. The plant has an ultra modern state of the art machinery meeting the requirements of industrial and aluminum architecture segments with an uncompromising quality of the products. Its high tech machinery has a production capacity of 25,000 MT per annum.
+          The aluminium rolling mill and coating line division is also suitably
+          supported by in house laboratory facilities and end-to-end material
+          tests at all levels. The plant has an ultra modern state of the art
+          machinery meeting the requirements of industrial and aluminum
+          architecture segments with an uncompromising quality of the products.
+          Its high tech machinery has a production capacity of 25,000 MT per
+          annum.
         </motion.p>
       </div>
       <div className="mx-auto max-w-7xl">
@@ -173,9 +310,8 @@ IMPRESSIVE PRODUCTION FACILITY
             transition={{ duration: 2.0 }}
           >
             <h2 className="text-3xl md:text-5xl text-[#023D68] font-bold ">
-            PERFECT <br></br>COMPOSITION
+              PERFECT <br></br>COMPOSITION
             </h2>
-            
           </motion.div>
 
           {/* Image Column */}
@@ -248,9 +384,8 @@ IMPRESSIVE PRODUCTION FACILITY
             transition={{ duration: 2.0 }}
           >
             <h2 className="text-3xl md:text-5xl text-[#023D68] font-bold ">
-            CONTINUOUS <br></br>CASTER
+              CONTINUOUS <br></br>CASTER
             </h2>
-            
           </motion.div>
         </motion.div>
 
@@ -271,8 +406,8 @@ IMPRESSIVE PRODUCTION FACILITY
             transition={{ duration: 2.0 }}
           >
             <h2 className="text-3xl md:text-5xl text-[#023D68] font-bold ">
-SURFACE COATING <br></br>LINE            </h2>
-           
+              SURFACE COATING <br></br>LINE{" "}
+            </h2>
           </motion.div>
 
           {/* Image Column */}
@@ -331,7 +466,6 @@ SURFACE COATING <br></br>LINE            </h2>
                 alt=""
                 width={350}
                 height={180}
-
                 className="shadow-lg border-3 border-[#E8D858] relative translate-x-14"
               />
             </div>
@@ -346,13 +480,11 @@ SURFACE COATING <br></br>LINE            </h2>
             transition={{ duration: 2.0 }}
           >
             <h2 className="text-3xl md:text-5xl text-[#023D68] font-bold">
-             CUSTOMISED <br></br> FINISH
+              CUSTOMISED <br></br> FINISH
             </h2>
-            
           </motion.div>
         </motion.div>
       </div>
-
 
       <Footer />
     </div>

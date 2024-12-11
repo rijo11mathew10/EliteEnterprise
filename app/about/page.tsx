@@ -49,7 +49,7 @@ function AboutPage() {
 
       {/* Banner Section */}
       <div
-        className="relative bg-cover bg-center h-[450px] flex items-center justify-center"
+        className="relative bg-cover bg-center h-[450px] flex items-center justify-center overflow-hidden"
         style={{
           backgroundImage: "url('/banner.jpg')", // Replace with your image path
         }}
@@ -163,7 +163,7 @@ function AboutPage() {
           >
             {/* Yellow Vertical Line and Heading */}
             <div className="flex items-start gap-6">
-              <hr className="w-3 h-20 bg-[#E8D858] border-none" />
+              <hr className="w-3 h-0 lg:h-20 bg-[#E8D858] border-none" />
               <h2 className="text-3xl md:text-3xl font-bold text-[#023D68] leading-tight">
                 This Whole Set Of Products And Services Make Elite Group Of
                 Companies The Only Global Aluminum Player In Our Region.
@@ -210,7 +210,7 @@ function AboutPage() {
 
         {/* Logo */}
         <motion.div
-          className="absolute -top-16 right-0 md:top-0 w-40 md:w-60"
+          className="absolute -top-16 right-0 md:-top-30 w-40 md:w-60"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2, ease: "easeOut" }}
@@ -219,7 +219,6 @@ function AboutPage() {
             src="/aboutuslogo.png" // Replace with your logo path
             alt="Company Logo"
             className="w-full h-auto "
-             
           />
         </motion.div>
       </div>
