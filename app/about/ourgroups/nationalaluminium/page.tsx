@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 import { WobbleCardDemo } from "@/components/ourgroups/OurProducts";
+import CustomSection from "@/components/CustomSection";
 
 function page() {
   const productData = [
@@ -26,6 +27,12 @@ function page() {
       title: "WOOD FINISH PROFILES",
     },
   ];
+  const sections = [
+    { title: "Extrusion", value: "18,000", unit: "Metric Tone" },
+    { title: "Powder Coating", value: "12,000", unit: "Metric Tone" },
+    { title: "Anodizing", value: "4,000", unit: "Metric Tone" },
+  ];
+
   return (
     <div>
       <Header />
@@ -50,23 +57,22 @@ function page() {
           transition={{ duration: 2.5, ease: "easeOut" }}
         ></motion.div>
         <motion.div
-  className="relative z-0 text-center px-4 flex justify-center items-center h-screen"
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 3, ease: "easeOut" }}
->
-  <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
-    <h1 className="text-white font-semibold">
-      {/* Elite */}
-      <span className="text-4xl md:text-7xl block">NATIONAL</span>
-      {/* Extrusion LLC */}
-      <span className="text-2xl md:text-4xl text-white text-opacity-70 block font-medium">
-        ALUMINIUM EXTRUSION LLC
-      </span>
-    </h1>
-  </div>
-</motion.div>
-
+          className="relative z-0 text-center px-4 flex justify-center items-center h-screen"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+        >
+          <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
+            <h1 className="text-white font-semibold">
+              {/* Elite */}
+              <span className="text-4xl md:text-7xl block">NATIONAL</span>
+              {/* Extrusion LLC */}
+              <span className="text-2xl md:text-4xl text-white text-opacity-70 block font-medium">
+                ALUMINIUM EXTRUSION LLC
+              </span>
+            </h1>
+          </div>
+        </motion.div>
       </div>
       <div className="mx-auto max-w-7xl mb-16">
         <div>
@@ -159,6 +165,7 @@ function page() {
           {/* Full-Width Section */}
         </div>
       </div>
+      <CustomSection sections={sections} />
       {/*banner*/}
       <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">
         <video

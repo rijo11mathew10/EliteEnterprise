@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 import { WobbleCardDemo } from "@/components/ourgroups/OurProducts";
+import CustomSection from "@/components/CustomSection";
 
 const productData = [
   {
@@ -22,6 +23,9 @@ const productData = [
   },
 ];
 function page() {
+  const sections = [
+    { title: "POWDER COATING", value: "4,800", unit: "Metric Tone" },
+  ];
   return (
     <div>
       <Header />
@@ -154,6 +158,7 @@ function page() {
           </motion.p>
         </div>
       </div>
+      <CustomSection sections={sections} />
       <div className="mx-auto max-w-7xl">
         {/* First Section */}
         <motion.div

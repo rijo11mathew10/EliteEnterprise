@@ -1,4 +1,5 @@
 "use client";
+import CustomSection from "@/components/CustomSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { motion } from "framer-motion";
@@ -6,6 +7,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 function page() {
+  const sections = [{ title: "Dies", value: "1,800", unit: "Metric Tone" }];
   return (
     <div>
       <Header />
@@ -136,7 +138,7 @@ function page() {
           </motion.div>
         </div>
       </div>
-
+      <CustomSection sections={sections} />
       {/* Banner Section */}
       <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">
         <video

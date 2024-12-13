@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 import { WobbleCardDemo } from "@/components/ourgroups/OurProducts";
+import CustomSection from "@/components/CustomSection";
 
 const productData = [
   {
@@ -25,6 +26,14 @@ const productData = [
     title: "WOOD FINISH PROFILES",
   },
 ];
+
+const sections = [
+  { title: "Extrusion", value: "35,000", unit: "Metric Tone" },
+  { title: "Powder Coating", value: "24,000", unit: "Metric Tone" },
+  { title: "Anodizing", value: "7,200", unit: "Metric Tone" },
+  { title: "Wooden Coating", value: "1,500", unit: "Metric Tone" },
+];
+
 function page() {
   return (
     <div>
@@ -185,7 +194,7 @@ function page() {
           </motion.div>
         </div>
       </div>
-
+<CustomSection sections={sections}/>
       {/* Banner Section */}
       <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">
         <video
