@@ -60,7 +60,7 @@ function page() {
             {/* Text Column */}
             <div className="col-span-12 md:col-span-7">
               <motion.div
-                className="flex gap-3 mb-8"
+                className="overflow-visible flex gap-3 mb-8"
                 initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
@@ -73,6 +73,7 @@ function page() {
                   SUPPORT
                 </h2>
               </motion.div>
+
               <motion.p
                 className="text-[#484848] mb-6 text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
@@ -117,13 +118,19 @@ function page() {
               whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.2, ease: "easeOut" }}
+              style={{
+                backgroundImage: "url('/ourgroups/nashat/NASHAT.jpg')", // Replace with your image path
+                backgroundSize: "cover", // Ensures the image completely fills the div
+                backgroundPosition: "center", // Centers the image in the div
+                backgroundRepeat: "no-repeat", // Prevents the image from repeating
+              }}
             >
               <Image
                 src={"/ourgroups/nashat/image.png"}
                 width={200}
                 height={200}
-                alt=""
-                className="shadow-lg border-8 border-[#E8D858] absolute lg:-top-36"
+                alt="United Logo"
+                className="shadow-lg border-8 border-[#E8D858] absolute top-0 transform -translate-y-1/2"
               />
             </motion.div>
           </motion.div>

@@ -46,17 +46,15 @@ function page() {
           transition={{ duration: 2.5, ease: "easeOut" }}
         ></motion.div>
         <motion.div
-          className="relative z-0 text-center px-4"
+          className="relative z-0 text-center px-4 pt-16 md:pt-32" // Add padding to ensure it stays within view
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 3, ease: "easeOut" }}
         >
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
-              {/* Elite */}
               <span className="text-4xl md:text-7xl block">UNITED</span>
-              {/* Extrusion LLC */}
-              <span className="text-2xl md:text-4xl text-white text-opacity-70 block  font-medium">
+              <span className="text-2xl md:text-4xl text-white text-opacity-70 block font-medium">
                 POWDER COATING FZC
               </span>
             </h1>
@@ -67,7 +65,7 @@ function page() {
         <div>
           {/* Top Section */}
           <motion.div
-            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8 min-h-screen"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -190,8 +188,8 @@ function page() {
               <Image
                 src="/ourgroups/united/gridimage.png"
                 alt="Grid Image"
-                width={600} /* Explicitly define width */
-                height={300} /* Explicitly define height */
+                width={1200} /* Increase width */
+                height={800} /* Increase height */
                 className="shadow-lg -ml-16 border-3 border-[#E8D858]"
               />
             </div>

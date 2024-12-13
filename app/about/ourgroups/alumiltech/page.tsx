@@ -31,99 +31,99 @@ function page() {
           transition={{ duration: 2.5, ease: "easeOut" }}
         ></motion.div>
         <motion.div
-          className="relative z-0 text-center px-4"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
-        >
-          <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
-            <h1 className="text-white font-semibold">
-              {/* Elite */}
-              <span className="text-4xl md:text-7xl block">ALUMIL</span>
-              {/* Extrusion LLC */}
-              <span className="text-2xl md:text-4xl text-white text-opacity-70 block  font-medium">
-                TECH GULF LLC
-              </span>
-            </h1>
-          </div>
-        </motion.div>
+  className="relative z-0 text-center px-4"
+  initial={{ opacity: 0, y: 10 }}  // Reduced y value
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 3, ease: "easeOut" }}
+>
+  <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
+    <h1 className="text-white font-semibold">
+      <span className="text-4xl md:text-7xl block">ALUMIL</span>
+      <span className="text-2xl md:text-4xl text-white text-opacity-70 block font-medium">
+        TECH GULF LLC
+      </span>
+    </h1>
+  </div>
+</motion.div>
+
       </div>
       <div className="mx-auto max-w-7xl mb-16">
-        <div>
-          {/* Top Section */}
-          <motion.div
-            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-          >
-            {/* Text Column */}
-            <div className="col-span-12 md:col-span-7">
-              <motion.div
-                className="flex gap-3 mb-8"
-                initial={{ x: -50, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 2.0 }}
-              >
-                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                  EXPERTISE<br></br>OUR STRENGTH{" "}
-                </h2>
-              </motion.div>
-              <motion.p
-                className="text-[#484848] mb-6 text-justify md:pr-7"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 2.0 }}
-              >
-                Alumill Tech Gulf LLC is one of the foremost industrial leaders
-                in top quality aluminum flat-rolled products, color coated coils
-                and sheets. The manufacturing plant operates out of a
-                wide-spread campus of over 55,000 square meters in the
-                industrial area of Ras Al Khaimah (U.A.E.).
-              </motion.p>
-              <motion.p
-                className="text-[#484848] text-justify md:pr-7"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1.4 }}
-              >
-                The integrated Cast House provides continuous production of Cast
-                Coils suitable for subsequent Cold Rolling Mill process, based
-                on the advanced technology of Presezzi SpA (Italy). The
-                state-of-the-art line is fully equipped lab for end-to-end
-                testing solutions of materials.
-              </motion.p>
-            </div>
+      <div>
+  {/* Top Section */}
+  <motion.div
+    className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.3 }}  // Adjust the amount for triggering animation earlier
+    transition={{ duration: 1.2, ease: "easeOut" }}
+  >
+    {/* Text Column */}
+    <div className="col-span-12 md:col-span-7">
+      <motion.div
+        className="flex gap-3 mb-8"
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
+        <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+          EXPERTISE<br></br>OUR STRENGTH{" "}
+        </h2>
+      </motion.div>
+      <motion.p
+        className="text-[#484848] mb-6 text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        Alumill Tech Gulf LLC is one of the foremost industrial leaders
+        in top quality aluminum flat-rolled products, color coated coils
+        and sheets. The manufacturing plant operates out of a
+        wide-spread campus of over 55,000 square meters in the
+        industrial area of Ras Al Khaimah (U.A.E.).
+      </motion.p>
+      <motion.p
+        className="text-[#484848] text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.4 }}
+      >
+        The integrated Cast House provides continuous production of Cast
+        Coils suitable for subsequent Cold Rolling Mill process, based
+        on the advanced technology of Presezzi SpA (Italy). The
+        state-of-the-art line is fully equipped lab for end-to-end
+        testing solutions of materials.
+      </motion.p>
+    </div>
 
-            {/* Logo Column */}
-            <motion.div
-              className="col-span-12 md:col-span-5 border-4 border-[#E8D858] relative h-64 md:h-96 flex justify-center items-center overflow-visible"
-              initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
-              whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              style={{
-                backgroundImage: "url('/ourgroups/alumiltech/ALUMILL.jpg')", // Replace with your image path
-                backgroundSize: "cover", // Ensures the image completely fills the div
-                backgroundPosition: "center", // Centers the image in the div
-                backgroundRepeat: "no-repeat", // Prevents the image from repeating
-              }}
-            >
-              <Image
-                src={"/ourgroups/alumiltech/image.png"}
-                width={200}
-                height={200}
-                alt="United Logo"
-                className="shadow-lg border-8 border-[#E8D858] absolute top-0 transform -translate-y-1/2"
-              />
-            </motion.div>
-          </motion.div>
-        </div>
+    {/* Logo Column */}
+    <motion.div
+      className="col-span-12 md:col-span-5 border-4 border-[#E8D858] relative h-64 md:h-96 flex justify-center items-center overflow-visible"
+      initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+      whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
+      style={{
+        backgroundImage: "url('/ourgroups/alumiltech/ALUMILL.jpg')", // Replace with your image path
+        backgroundSize: "cover", // Ensures the image completely fills the div
+        backgroundPosition: "center", // Centers the image in the div
+        backgroundRepeat: "no-repeat", // Prevents the image from repeating
+      }}
+    >
+      <Image
+        src={"/ourgroups/alumiltech/image.png"}
+        width={200}
+        height={200}
+        alt="United Logo"
+        className="shadow-lg border-8 border-[#E8D858] absolute top-0 transform -translate-y-1/2"
+      />
+    </motion.div>
+  </motion.div>
+</div>
+
         <div className="flex flex-col mx-auto pl-6">
           <motion.h2
             className="text-3xl font-semibold text-[#023D68] mb-8"
@@ -141,7 +141,7 @@ function page() {
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
-            - Melting and Holding Furnaces
+            - Colour Coating Line
           </motion.h3>
           <motion.p
             className="text-[#484848] text-justify mb-3 leading-8 pr-5"
@@ -150,11 +150,7 @@ function page() {
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
-            Pure aluminum ingots are melted and alloyed with other elements by
-            means of master alloy such as iron, silicon, manganese and
-            magnesium. The material is analyzed and adjusted to ensure that the
-            correct composition is achieved. This is then transferred to the
-            holding furnace for direct casting.
+            The coil coating process is the most efficient means of coating aluminum. It is a continuous, high-volume process that produces a consistent product. The aluminum substrate gets degreased, chemically pre-treated and coated. Typical paint system requirements are formability, scratch-resistance, appearance and weather ability.
           </motion.p>
           <motion.h3
             className="text-2xl font-bold text-[#023D68] mb-4 "

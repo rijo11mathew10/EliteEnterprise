@@ -9,7 +9,7 @@ import { WobbleCardDemo } from "@/components/ourgroups/OurProducts";
 
 const productData = [
   {
-    imageSrc: "/ourgroups/classicextrusion/anodized.png",
+    imageSrc: "/ourgroups/classicextrusion/mill-finish.png",
     title: "MILL FINISH PROFILES",
   },
   {
@@ -17,11 +17,11 @@ const productData = [
     title: "ANODIZED PROFILES",
   },
   {
-    imageSrc: "/ourgroups/classicextrusion/mill-finish.png",
+    imageSrc: "/ourgroups/classicextrusion/powder-coated.png",
     title: "POWDER COATED PROFILES",
   },
   {
-    imageSrc: "/ourgroups/classicextrusion/powder-coated.png",
+    imageSrc: "/ourgroups/classicextrusion/anodized.png",
     title: "WOOD FINISH PROFILES",
   },
 ];
