@@ -17,7 +17,7 @@ function Contents() {
   return (
     <div>
       {/* First Section */}
-      <section className="overflow-hidden bg-[#F6F6F6] sm:grid sm:grid-cols-2 sm:items-start">
+      <section className="overflow-hidden  sm:grid sm:grid-cols-2 sm:items-start">
         {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -55,7 +55,7 @@ function Contents() {
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1, ease: "easeOut" }}
           ref={ref}
-          className="p-6 md:p-8 lg:px-12 lg:py-16 bg-[#F6F6F6] flex flex-col items-center"
+          className="p-6 md:p-8 lg:px-12 lg:py-16  flex flex-col items-center"
         >
           <div className="border border-gray-300 rounded-md p-4 w-full max-w-xl">
             {/* Images Row */}
@@ -96,7 +96,7 @@ function Contents() {
         </motion.div>
       </section>
 
-      <section className="w-full bg-gray-100 overflow-hidden">
+      <section className="w-full overflow-hidden">
   <div className="mx-auto grid sm:grid-cols-[1fr_2fr] items-stretch max-w-7xl">
     {/* Left Section: Tabs */}
     <div className="flex flex-col bg-white p-6 h-full">

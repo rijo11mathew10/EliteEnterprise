@@ -93,12 +93,12 @@ const ContactFormWithCards = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 overflow-x-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center p overflow-x-hidden -top-60">
       {/* Form Section */}
       <form
         ref={count}
         onSubmit={handleSubmit}
-        className={`w-full max-w-5xl bg-white p-10 rounded-lg shadow-lg mb-10 transition-all duration-500 ${
+        className={`w-full max-w-5xl bg-white  rounded-lg shadow-lg mb-10 transition-all duration-500 ${
           isSubmitting ? "blur-sm" : ""
         }`}
       >
@@ -109,13 +109,22 @@ const ContactFormWithCards = () => {
             </span>
           </div>
         )}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Column 1 */}
-          <div>
-            <div className="mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+          {/* Left Column - Image */}
+          <div className="flex justify-center items-center">
+            <img
+              src="/contactus/923.png" // Replace with your image path
+              alt="Your image description"
+              className="w-full h-full object-cover " // Ensures the image covers the left side
+            />
+          </div>
+
+          {/* Right Column - Form */}
+          <div className="flex flex-col justify-start items-start space-y-6 p-6">
+            <div className="w-full max-w-md">
               <label
                 htmlFor="firstName"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700 text-left"
               >
                 First Name
               </label>
@@ -129,10 +138,10 @@ const ContactFormWithCards = () => {
               />
             </div>
 
-            <div className="mb-6">
+            <div className="w-full max-w-md">
               <label
                 htmlFor="lastName"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700 text-left"
               >
                 Last Name
               </label>
@@ -146,10 +155,10 @@ const ContactFormWithCards = () => {
               />
             </div>
 
-            <div className="mb-6">
+            <div className="w-full max-w-md">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700 text-left"
               >
                 Email
               </label>
@@ -163,10 +172,10 @@ const ContactFormWithCards = () => {
               />
             </div>
 
-            <div className="mb-6">
+            <div className="w-full max-w-md">
               <label
                 htmlFor="subject"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700 text-left"
               >
                 Subject
               </label>
@@ -179,14 +188,11 @@ const ContactFormWithCards = () => {
                 required
               />
             </div>
-          </div>
 
-          {/* Column 2 */}
-          <div>
-            <div className="mb-6">
+            <div className="w-full max-w-md">
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700 text-left"
               >
                 Message
               </label>
@@ -195,25 +201,25 @@ const ContactFormWithCards = () => {
                 name="message"
                 rows={5}
                 placeholder="Your message"
-                className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-4  border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
               ></textarea>
             </div>
-          </div>
-        </div>
-
-        <div className="mt-8 text-right">
+        <div className=" text-left">
           <button
             type="submit"
             className="px-8 py-3 bg-[#E8D858] text-black font-medium rounded-md shadow-sm hover:bg-[#ffe941] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-          >
+            >
             Submit
           </button>
+          </div>
+
+            </div>
         </div>
       </form>
 
       {/* Cards Section */}
-      <div className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
         {companydetails.map((details) => (
           <div
             key={details.name}

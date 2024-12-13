@@ -60,7 +60,6 @@ export default function App() {
       <Header />
       <Video />
       <CardGrid cards={cards} />
-
       <Companies />
       <Contents />
       <Testimonial />

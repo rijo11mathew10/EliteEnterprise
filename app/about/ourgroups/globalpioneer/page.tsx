@@ -347,29 +347,32 @@ function page() {
         </motion.div>
       </div>
       <div>
-        <div className="flex gap-3 mb-8">
-          <hr className="w-2 h-12 md:h-16 bg-[#E8D858] border-none" />
-          <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-            PRODUCTS RANGE
-          </h2>
-        </div>
-        <div className=" grid grid-cols-2 border-3 border-yellow-300">
-          <div>
-            {column1.map((items) => (
-              <ul>
-                <li>{items.list}</li>
-              </ul>
-            ))}
-          </div>
-          <div>
-            {column2.map((items) => (
-              <ul>
-                <li>{items.list}</li>
-              </ul>
-            ))}
-          </div>
-        </div>
-      </div>
+  <div className="flex gap-3 mb-8 mx-8 sm:mx-16 md:mx-32 mt-10 p-4 sm:p-6 md:p-8">
+    <hr className="w-2 h-12 md:h-16 bg-[#E8D858] border-none" />
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+      PRODUCTS RANGE
+    </h2>
+  </div>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-8 sm:mx-16 md:mx-36 p-4 sm:p-6 md:p-8 border-2 sm:border-3 border-yellow-300 rounded-lg">
+    <div>
+      {column1.map((items, index) => (
+        <ul key={index} className="mb-2">
+          <li className="text-sm sm:text-base">{items.list}</li>
+        </ul>
+      ))}
+    </div>
+
+    <div>
+      {column2.map((items, index) => (
+        <ul key={index} className="mb-2">
+          <li className="text-sm sm:text-base">{items.list}</li>
+        </ul>
+      ))}
+    </div>
+  </div>
+</div>
+
 
       <WobbleCards heading="Railing" cards={productData1} />
       <WobbleCards heading="Systems" cards={productData2} />
