@@ -96,68 +96,73 @@ function Contents() {
         </motion.div>
       </section>
 
-      <section className="mx-auto overflow-hidden sm:grid sm:grid-cols-2 sm:items-start">
-        <div className="flex w-full">
-          {/* Left Section: Vertical Line and Tabs */}
-          <div className="flex flex-col justify-center bg-white w-1/3 max-w-[400px]">
-            <div className="flex items-center space-x-4 h-full">
-              {/* Vertical Line */}
-              <hr className="w-2 h-full bg-[#E8D858] border-none" />
-              {/* Tabs */}
-              <div className="flex flex-col justify-center space-y-4 w-full">
-                <button
-                  className={`text-2xl font-bold py-4 px-4 ${
-                    activeTab === "mission"
-                      ? "bg-[#EDEDEC] text-[#023D68]"
-                      : "bg-white text-gray-600 hover:text-gray-800"
-                  }`}
-                  onClick={() => setActiveTab("mission")}
-                >
-                  OUR MISSION
-                </button>
-                <button
-                  className={`text-2xl font-bold py-4 px-4 ${
-                    activeTab === "vision"
-                      ? "bg-[#EDEDEC] text-[#023D68]"
-                      : "bg-white text-gray-600 hover:text-gray-800"
-                  }`}
-                  onClick={() => setActiveTab("vision")}
-                >
-                  OUR VISION
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Section: Content */}
-          <div className="w-2/3 bg-[#E8D858] p-6 md:p-8 lg:px-12 lg:py-16 flex items-center justify-center text-[#023D68]">
-            {activeTab === "mission" && (
-              <div>
-                <p>
-                  To complement and support the ever-growing demand for
-                  aluminium architecture and design internationally, with
-                  special emphasis on the national needs. To continuously invest
-                  in infrastructure and technical expertise and be a leader in
-                  the industry creating new standards of quality and service to
-                  enhance overall growth.
-                </p>
-              </div>
-            )}
-            {activeTab === "vision" && (
-              <div>
-                <p>
-                  To complement and support the ever-growing demand for
-                  aluminium architecture and design internationally, with
-                  special emphasis on the national needs. To continuously invest
-                  in infrastructure and technical expertise and be a leader in
-                  the industry creating new standards of quality and service to
-                  enhance overall growth.
-                </p>
-              </div>
-            )}
-          </div>
+      <section className="w-full bg-gray-100 overflow-hidden">
+  <div className="mx-auto grid sm:grid-cols-[1fr_2fr] items-stretch max-w-7xl">
+    {/* Left Section: Tabs */}
+    <div className="flex flex-col bg-white p-6 h-full">
+      <div className="flex items-center space-x-4 h-full">
+        {/* Vertical Line */}
+        <hr className="hidden sm:block w-2 h-full bg-[#E8D858] border-none" />
+        {/* Tabs */}
+        <div className="flex flex-col w-full space-y-6">
+          <button
+            className={`text-lg sm:text-xl lg:text-2xl font-bold py-6 px-6 ${
+              activeTab === "mission"
+                ? "bg-[#EDEDEC] text-[#023D68]"
+                : "bg-white text-gray-600 hover:text-gray-800"
+            }`}
+            onClick={() => setActiveTab("mission")}
+          >
+            OUR MISSION
+          </button>
+          <button
+            className={`text-lg sm:text-xl lg:text-2xl font-bold py-6 px-6 ${
+              activeTab === "vision"
+                ? "bg-[#EDEDEC] text-[#023D68]"
+                : "bg-white text-gray-600 hover:text-gray-800"
+            }`}
+            onClick={() => setActiveTab("vision")}
+          >
+            OUR VISION
+          </button>
         </div>
-      </section>
+      </div>
+    </div>
+
+    {/* Right Section: Content */}
+    <div className="bg-[#E8D858] p-6 md:p-8 lg:px-12 lg:py-16 flex items-center justify-center text-[#023D68] h-full">
+      {activeTab === "mission" && (
+        <div className="text-center sm:text-left">
+          <p className="text-sm md:text-base lg:text-lg leading-relaxed">
+            OUR MISSION <br></br>
+            To complement and support the ever-growing demand for aluminium
+            architecture and design internationally, with special emphasis on
+            the national needs. To continuously invest in infrastructure and
+            technical expertise and be a leader in the industry creating new
+            standards of quality and service to enhance overall growth.
+          </p>
+        </div>
+      )}
+      {activeTab === "vision" && (
+        <div className="text-center sm:text-left">
+          <p className="text-sm md:text-base lg:text-lg leading-relaxed">
+            OUR VISION <br></br>
+            To complement and support the ever-growing demand for aluminium
+            architecture and design internationally, with special emphasis on
+            the national needs. To continuously invest in infrastructure and
+            technical expertise and be a leader in the industry creating new
+            standards of quality and service to enhance overall growth.
+          </p>
+        </div>
+      )}
+    </div>
+  </div>
+</section>
+
+
+
+
+
 
       {/* Third Section */}
       <section className="px-6 md:px-16 lg:px-24 mt-12">
