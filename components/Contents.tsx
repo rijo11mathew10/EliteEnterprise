@@ -95,6 +95,8 @@ function Contents() {
         </motion.div>
       </section>
 
+   
+
       {/* Third Section */}
       <section className="px-6 md:px-16 lg:px-24 mt-12">
         <motion.div

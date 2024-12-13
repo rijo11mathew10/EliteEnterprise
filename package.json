@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.4.8",
+    "@nextui-org/react": "^2.6.8",
     "@react-three/drei": "^9.117.3",
     "@react-three/fiber": "^8.17.10",
     "@turf/turf": "^7.1.0",

@@ -27,35 +27,31 @@ function page() {
       <Header />
       {/* Banner Section */}
       <div
-        className="relative bg-cover bg-center h-[450px] flex items-center justify-center mb-16 overflow-hidden"
+        className="relative bg-cover bg-center h-[550px] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: "url('/banner.jpg')", // Replace with your image path
+          backgroundImage: "url('/banner.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-
-        {/* Banner Animated Elements */}
+        <div className="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
         <motion.div
-          className="absolute top-6 right-6 h-1 w-[45%] bg-[#E8D858]"
+          className="absolute top-[120px] right-6 h-1 w-[45%] bg-[#E8D858] z-0 pointer-events-none"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2.5, ease: "easeOut" }}
         ></motion.div>
         <motion.div
-          className="absolute bottom-6 left-6 h-1 w-[45%] bg-[#E8D858]"
+          className="absolute bottom-6 left-6 h-1 w-[45%] bg-[#E8D858] z-0 pointer-events-none"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2.5, ease: "easeOut" }}
         ></motion.div>
-
-        {/* Banner Text */}
         <motion.div
-          className="relative z-10 text-center px-4"
+          className="relative z-0 text-center px-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 3, ease: "easeOut" }}
         >
-          <div className="inline-block bg-[#023D68] bg-opacity-80 py-8 px-16 rounded w-[600px] mx-auto text-center">
+          <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
               {/* Elite */}
               <span className="text-4xl md:text-7xl block">UNITED</span>
@@ -111,18 +107,24 @@ function page() {
 
             {/* Logo Column */}
             <motion.div
-              className="col-span-12 md:col-span-5 border-4 border-[#E8D858] relative h-64 md:h-96 flex justify-center items-center overflow-visible "
+              className="col-span-12 md:col-span-5 border-4 border-[#E8D858] relative h-64 md:h-96 flex justify-center items-center overflow-visible"
               initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
               whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.2, ease: "easeOut" }}
+              style={{
+                backgroundImage: "url('/ourgroups/united/unitedbanner.jpg')", // Replace with your image path
+                backgroundSize: "cover", // Ensures the image completely fills the div
+                backgroundPosition: "center", // Centers the image in the div
+                backgroundRepeat: "no-repeat", // Prevents the image from repeating
+              }}
             >
               <Image
                 src={"/ourgroups/united/logo.png"}
                 width={200}
                 height={200}
-                alt=""
-                className="shadow-lg border-8 border-[#E8D858] absolute lg:-top-36"
+                alt="United Logo"
+                className="shadow-lg border-8 border-[#E8D858] absolute top-0 transform -translate-y-1/2"
               />
             </motion.div>
           </motion.div>
