@@ -47,6 +47,7 @@ function page() {
         <ContactForm />
       </div>
       <hr className=" bg-white" />
+
       <Footer />
     </div>
   );

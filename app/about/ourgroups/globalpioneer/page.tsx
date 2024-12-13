@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { WobbleCards } from "@/components/ourgroups/globalpioneer/WobbleSection";
+import CustomSection from "@/components/CustomSection";
 
 const productData1 = [
   {
@@ -87,6 +88,12 @@ const column2 = [
   {
     list: "- Rolling shutters",
   },
+];
+
+const sections = [
+  { title: "Extrusion", value: "18,000", unit: "Metric Tone" },
+
+  // Add more sections if needed
 ];
 
 function page() {
@@ -378,6 +385,8 @@ function page() {
       <WobbleCards heading="Systems" cards={productData2} />
 
       <WobbleCards heading="Samples" cards={productData3} />
+
+      <CustomSection sections={sections} />
 
       <Footer />
     </div>
