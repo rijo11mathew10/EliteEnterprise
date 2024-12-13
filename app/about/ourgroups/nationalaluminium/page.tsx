@@ -50,22 +50,23 @@ function page() {
           transition={{ duration: 2.5, ease: "easeOut" }}
         ></motion.div>
         <motion.div
-          className="relative z-0 text-center px-4"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
-        >
-          <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
-            <h1 className="text-white font-semibold">
-              {/* Elite */}
-              <span className="text-4xl md:text-7xl block">NATIONAL</span>
-              {/* Extrusion LLC */}
-              <span className="text-2xl md:text-4xl text-white text-opacity-70 block  font-medium">
-                ALUMINIUM EXTRUSION LLC
-              </span>
-            </h1>
-          </div>
-        </motion.div>
+  className="relative z-0 text-center px-4 flex justify-center items-center h-screen"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 3, ease: "easeOut" }}
+>
+  <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
+    <h1 className="text-white font-semibold">
+      {/* Elite */}
+      <span className="text-4xl md:text-7xl block">NATIONAL</span>
+      {/* Extrusion LLC */}
+      <span className="text-2xl md:text-4xl text-white text-opacity-70 block font-medium">
+        ALUMINIUM EXTRUSION LLC
+      </span>
+    </h1>
+  </div>
+</motion.div>
+
       </div>
       <div className="mx-auto max-w-7xl mb-16">
         <div>

@@ -57,8 +57,8 @@ function Page() {
                 alt={`Project ${index + 1}`}
               />
             </div>
-            <div className="text-center">
-              <h3 className="text-lg text-white font-semibold">
+            <div className="text-left px-2 mb-4">
+              <h3 className="text-lg text-white font-semibold ">
                 Sultan Group of Investment
               </h3>
               <p className="text-sm text-white mt-2">

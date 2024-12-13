@@ -105,8 +105,8 @@ function AboutPage() {
           >
             <hr className="w-2 h-20 bg-[#E8D858] border-none" />
 
-            <h2 className="text-3xl md:text-4xl font-bold text-[#023D68] leading-tight">
-              WHAT WE ARE AND
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#023D68] leading-tight">
+              WHO WE ARE AND
               <br />
               WHAT WE DO
             </h2>
@@ -216,14 +216,23 @@ function AboutPage() {
           />
         </motion.div>
       </div>
-      <div
-        className="relative bg-cover bg-center h-[500px] flex flex-col items-center justify-center text-center"
-        style={{
-          backgroundImage: "url('/banner.jpg')", // Replace with your image
-          backgroundBlendMode: "overlay",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className="relative h-[500px] flex flex-col items-center justify-center text-center">
+  <video
+    className="absolute top-0 left-0 w-full h-full object-cover"
+    autoPlay
+    loop
+    muted
+    playsInline
+  >
+    <source src="/about/About_company.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div className="relative z-10 text-white">
+    {/* Your content (text, buttons, etc.) */}
+    <h1 className="text-3xl font-bold">Your Banner Title</h1>
+    <p className="text-lg">Your banner description here</p>
+  </div>
         {/* Color Grading Overlay */}
         <div
           className="absolute inset-0"
@@ -257,7 +266,7 @@ function AboutPage() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, ease: "easeOut", delay: 0.6 }}
-          className="relative text-white text-3xl md:text-4xl font-bold mt-6 z-10"
+          className="relative text-white text-3xl md:text-4xl font-bold mt-12 z-10"
         >
           CONGLOMERATE
         </motion.h2>
