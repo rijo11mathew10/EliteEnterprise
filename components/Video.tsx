@@ -2,9 +2,9 @@ import React from "react";
 
 function Video() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden ">
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-full object-cover border-b-8 border-b-[#E8D858]"
         autoPlay
         loop
         muted
@@ -13,8 +13,7 @@ function Video() {
         Your browser does not support the video tag.
       </video>
       {/* Optionally, add content over the video */}
-      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white">
-      </div>
+      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white"></div>
     </div>
   );
 }

@@ -46,6 +46,49 @@ const productData3 = [
     title: "Samples",
   },
 ];
+
+const column1 = [
+  {
+    list: "- Curtain Wall systems",
+  },
+  {
+    list: "- Unitised Curtain Wall Systems",
+  },
+  {
+    list: "- Frameless facades / spider systems",
+  },
+  {
+    list: "- Aluminium doors/ windows / fronts",
+  },
+  {
+    list: "- Security and decorative claustras",
+  },
+  {
+    list: "- 2 & 4 sides structural glazing",
+  },
+];
+
+const column2 = [
+  {
+    list: "- Metal claddings and composite panels",
+  },
+  {
+    list: "- Aluminium Pergolas",
+  },
+  {
+    list: "- Aluminium and stainless steel handrails and balustrades",
+  },
+  {
+    list: "- Roof domes and sky lights",
+  },
+  {
+    list: "- Thermal & non-thermal break systems",
+  },
+  {
+    list: "- Rolling shutters",
+  },
+];
+
 function page() {
   return (
     <div>
@@ -303,6 +346,31 @@ function page() {
           </motion.div>
         </motion.div>
       </div>
+      <div>
+        <div className="flex gap-3 mb-8">
+          <hr className="w-2 h-12 md:h-16 bg-[#E8D858] border-none" />
+          <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+            PRODUCTS RANGE
+          </h2>
+        </div>
+        <div className=" grid grid-cols-2 border-3 border-yellow-300">
+          <div>
+            {column1.map((items) => (
+              <ul>
+                <li>{items.list}</li>
+              </ul>
+            ))}
+          </div>
+          <div>
+            {column2.map((items) => (
+              <ul>
+                <li>{items.list}</li>
+              </ul>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <WobbleCards heading="Railing" cards={productData1} />
       <WobbleCards heading="Systems" cards={productData2} />
 
