@@ -7,6 +7,7 @@ import CountUp from "react-countup";
 function Contents() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
   const [hasStarted, setHasStarted] = useState(false);
+  const [activeTab, setActiveTab] = useState("mission");
 
   // Start count when in view
   if (inView && !hasStarted) {
@@ -95,7 +96,68 @@ function Contents() {
         </motion.div>
       </section>
 
-   
+      <section className="mx-auto overflow-hidden sm:grid sm:grid-cols-2 sm:items-start">
+        <div className="flex w-full">
+          {/* Left Section: Vertical Line and Tabs */}
+          <div className="flex flex-col justify-center bg-white w-1/3 max-w-[400px]">
+            <div className="flex items-center space-x-4 h-full">
+              {/* Vertical Line */}
+              <hr className="w-2 h-full bg-[#E8D858] border-none" />
+              {/* Tabs */}
+              <div className="flex flex-col justify-center space-y-4 w-full">
+                <button
+                  className={`text-2xl font-bold py-4 px-4 ${
+                    activeTab === "mission"
+                      ? "bg-[#EDEDEC] text-[#023D68]"
+                      : "bg-white text-gray-600 hover:text-gray-800"
+                  }`}
+                  onClick={() => setActiveTab("mission")}
+                >
+                  OUR MISSION
+                </button>
+                <button
+                  className={`text-2xl font-bold py-4 px-4 ${
+                    activeTab === "vision"
+                      ? "bg-[#EDEDEC] text-[#023D68]"
+                      : "bg-white text-gray-600 hover:text-gray-800"
+                  }`}
+                  onClick={() => setActiveTab("vision")}
+                >
+                  OUR VISION
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Section: Content */}
+          <div className="w-2/3 bg-[#E8D858] p-6 md:p-8 lg:px-12 lg:py-16 flex items-center justify-center text-[#023D68]">
+            {activeTab === "mission" && (
+              <div>
+                <p>
+                  To complement and support the ever-growing demand for
+                  aluminium architecture and design internationally, with
+                  special emphasis on the national needs. To continuously invest
+                  in infrastructure and technical expertise and be a leader in
+                  the industry creating new standards of quality and service to
+                  enhance overall growth.
+                </p>
+              </div>
+            )}
+            {activeTab === "vision" && (
+              <div>
+                <p>
+                  To complement and support the ever-growing demand for
+                  aluminium architecture and design internationally, with
+                  special emphasis on the national needs. To continuously invest
+                  in infrastructure and technical expertise and be a leader in
+                  the industry creating new standards of quality and service to
+                  enhance overall growth.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
 
       {/* Third Section */}
       <section className="px-6 md:px-16 lg:px-24 mt-12">
