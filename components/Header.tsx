@@ -188,7 +188,15 @@ function Header() {
   ];
 
   return (
-    <nav className="pb-4 bg-transparent z-10 w-full absolute pt-9">
+    <nav
+      className="pb-4 bg-transparent z-10 w-full absolute pt-9"
+      style={{
+        backgroundImage: `url('/frame.png')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {" "}
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
