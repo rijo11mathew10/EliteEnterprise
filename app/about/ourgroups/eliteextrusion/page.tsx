@@ -31,7 +31,6 @@ const sections = [
   { title: "Extrusion", value: "35,000", unit: "Metric Tone" },
   { title: "Powder Coating", value: "24,000", unit: "Metric Tone" },
   { title: "Anodizing", value: "7,200", unit: "Metric Tone" },
-  { title: "Wooden Coating", value: "1,500", unit: "Metric Tone" },
 ];
 
 function page() {
@@ -115,7 +114,7 @@ function page() {
                 conductive, durability, no-toxic, recycling are just a few of
                 the several advantages of this metal. Two of the most common
                 compounds are alum, such as potassium aluminum sulfate and
-                aluminum oxide. About 8% of the earth's crust is composed of
+                aluminum oxide. About 8% of the earth&#39;s crust is composed of
                 aluminum.
               </motion.p>
 
@@ -194,7 +193,7 @@ function page() {
           </motion.div>
         </div>
       </div>
-<CustomSection sections={sections}/>
+      <CustomSection sections={sections} />
       {/* Banner Section */}
       <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">
         <video

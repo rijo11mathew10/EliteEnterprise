@@ -28,7 +28,7 @@ const CustomSection: React.FC<CustomSectionProps> = ({ sections }) => {
       {" "}
       {/* Add padding to the sides */}
       {/* Outer grid with border */}
-      <div className="grid grid-cols-4 gap-4 border-2 border-[#E8D858]">
+      <div className={`grid grid-cols-4 gap-4 border-2 border-[#E8D858]`}>
         {/* First element with a relative parent */}
         <div className="relative flex items-center justify-center">
           <div
@@ -43,16 +43,8 @@ const CustomSection: React.FC<CustomSectionProps> = ({ sections }) => {
           </div>
         </div>
 
-        {/* Content section container, using flexbox to display items in a row */}
-        <div
-          className={`col-span-3 flex ${
-            sectionsCount === 1
-              ? "justify-center"
-              : sectionsCount === 2
-              ? "justify-between"
-              : "justify-between"
-          } gap-4`}
-        >
+        {/* Content section container, applying gridCols dynamically */}
+        <div className={`col-span-3 grid ${gridCols} gap-4`}>
           {sections.map((section, index) => (
             <ContentSection
               key={index}

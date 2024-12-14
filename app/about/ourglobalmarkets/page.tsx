@@ -55,7 +55,7 @@ function page() {
           durability, no-toxic, recycling are just a few of the several
           advantages of this metal. Two of the most common compounds are alum,
           such as potassium aluminum sulfate and aluminum oxide. About 8% of the
-          earth's crust is composed of aluminum.
+          earth#39;s crust is composed of aluminum.
         </motion.p>
         <motion.p
           className="mb-6 leading-6 text-justify"
@@ -85,8 +85,8 @@ function page() {
           Coimbatore (India). Based in the area of 59,800 sq. ft. the production
           unit is equipped with latest machines and has team of experienced
           professionals. The manufacturing unit consists of three presses (two
-          4” presses with the production capacity of 300 kg’s per hour and one
-          5” press with the production capacity of 550 kg’s per hour).
+          4” presses with the production capacity of 300 kg&#39;s per hour and
+          one 5” press with the production capacity of 550 kg&#39;s per hour).
         </motion.p>
         <motion.p
           className="mb-6 leading-6 text-justify"

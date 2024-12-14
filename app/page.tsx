@@ -1,6 +1,5 @@
 import Companies from "@/components/Companies";
 import Contents from "@/components/Contents";
-import CustomCarousel from "@/components/CustomCarousel";
 import Footer from "@/components/Footer";
 import { WorldMapDemo } from "@/components/MapWithCountries";
 import Header from "@/components/Header";

@@ -18,8 +18,7 @@ type WobbleCardDemoProps = {
 
 export function WobbleCardSmall({
   heading,
-  description,
-  listItems,
+
   cards,
 }: WobbleCardDemoProps) {
   return (

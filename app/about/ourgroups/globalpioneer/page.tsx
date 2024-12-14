@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { WobbleCards } from "@/components/ourgroups/globalpioneer/WobbleSection";
-import CustomSection from "@/components/CustomSection";
 
 const productData1 = [
   {

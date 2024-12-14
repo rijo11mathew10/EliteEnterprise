@@ -85,7 +85,7 @@ const ContactFormWithCards = () => {
       } else {
         console.log("Error submitting form");
       }
-    } catch (error) {
+    } catch {
       console.log("Failed to submit form");
     } finally {
       setIsSubmitting(false); // Reset the submitting state once the submission is complete
@@ -205,16 +205,15 @@ const ContactFormWithCards = () => {
                 required
               ></textarea>
             </div>
-        <div className=" text-left">
-          <button
-            type="submit"
-            className="px-8 py-3 bg-[#E8D858] text-black font-medium rounded-md shadow-sm hover:bg-[#ffe941] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-            >
-            Submit
-          </button>
-          </div>
-
+            <div className=" text-left">
+              <button
+                type="submit"
+                className="px-8 py-3 bg-[#E8D858] text-black font-medium rounded-md shadow-sm hover:bg-[#ffe941] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              >
+                Submit
+              </button>
             </div>
+          </div>
         </div>
       </form>
 

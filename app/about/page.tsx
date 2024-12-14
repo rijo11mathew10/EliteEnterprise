@@ -2,7 +2,6 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FocusCards } from "@/components/FocusCards";
 
@@ -41,7 +40,6 @@ function AboutPage() {
       src: "/project8.jpg",
     },
   ];
-  const [hoveredIndex, setHoveredIndex] = useState(null); // Manage hover state
 
   return (
     <div>

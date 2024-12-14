@@ -112,7 +112,7 @@ function page() {
                 conductive, durability, no-toxic, recycling are just a few of
                 the several advantages of this metal. Two of the most common
                 compounds are alum, such as potassium aluminum sulfate and
-                aluminum oxide. About 8% of the earth's crust is composed of
+                aluminum oxide. About 8% of the earth&#39;s crust is composed of
                 aluminum.
               </motion.p>
               <motion.p

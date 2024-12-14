@@ -1,11 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { FaPhoneAlt } from "react-icons/fa"; // Import the phone icon
 import {
   Drawer,
   DrawerContent,
-  DrawerHeader,
   DrawerBody,
   DrawerFooter,
   Button,
@@ -15,9 +13,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 function Header() {
-  const [isClick, setisClick] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [isClick] = useState(false);
 
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
@@ -29,17 +25,6 @@ function Header() {
 
   const handleMouseLeave = () => {
     setHoveredIndex(null);
-  };
-
-  const toggleNavbar = (): void => {
-    setisClick(!isClick);
-  };
-
-  const toggleDropdown = (
-    state: boolean,
-    dropdownName: string | null
-  ): void => {
-    setOpenDropdown(state ? dropdownName : null);
   };
 
   const navitems = [
