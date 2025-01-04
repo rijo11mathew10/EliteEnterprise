@@ -58,9 +58,9 @@ export default function App() {
     <div>
       <Header />
       <Video />
-      <CardGrid cards={cards} />
-      <Companies />
       <Contents />
+      <Companies />
+      <CardGrid cards={cards} />
       <Testimonial />
       <IndustrySection />
       <WorldMapDemo />
