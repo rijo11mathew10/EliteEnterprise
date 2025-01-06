@@ -132,31 +132,56 @@ function page() {
         </motion.div>
       </div>
 
+      {/* Mapping over data with staggered animations */}
       {data.map((item, index) => (
         <motion.div
           key={index}
           className="relative z-0 px-4 grid grid-cols-[30%70%] mx-32 mt-10 mb-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeOut", delay: index * 0.2 }}
         >
-          <div className="bg-[linear-gradient(113.64deg,_#E8D858_-35.03%,_#FFF8BF_100%)] p-4 border-r-8 border-r-[#E8D858] items-center">
-            <h1 className="text-[#023D68] text-2xl text-center">
-              {item.title}
-            </h1>
-          </div>
-          <div className="border-2 border-[#E8D858] p-4">
-            {item.content.map((contentItem, index) => (
+          {/* Left Section (Title Bar) */}
+          <motion.div
+            className="bg-[linear-gradient(113.64deg,_#E8D858_-35.03%,_#FFF8BF_100%)] p-4 border-r-8 border-r-[#E8D858] items-center"
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 25,
+              duration: 1.5,
+              delay: index * 0.3,
+            }}
+          >
+            <h1 className="text-[#023D68] text-2xl text-center">{item.title}</h1>
+          </motion.div>
+
+          {/* Right Section (Company List) */}
+          <motion.div
+            className="border-2 border-[#E8D858] p-4"
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 25,
+              duration: 1.5,
+              delay: index * 0.3 + 0.3,
+            }}
+          >
+            {item.content.map((contentItem, idx) => (
               <p
-                key={index}
+                key={idx}
                 className="text-[#023D68] text-2xl font-bold justify-center"
               >
                 {contentItem.company}
               </p>
             ))}
-          </div>
+          </motion.div>
         </motion.div>
       ))}
+
       <Footer />
     </div>
   );
