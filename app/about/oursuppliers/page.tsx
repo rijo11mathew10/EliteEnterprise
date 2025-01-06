@@ -1,0 +1,165 @@
+"use client";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import { motion } from "framer-motion";
+
+const data = [
+  {
+    title: "ALUMINUM BILLETS / LOGS",
+    content: [
+      {
+        company: "DUBAI ALUMINIUM",
+      },
+    ],
+  },
+  {
+    title: "POWDER",
+    content: [
+      {
+        company: "JOTUN POWDER COATING",
+      },
+    ],
+  },
+  {
+    title: "LPG GAS",
+    content: [
+      {
+        company: "INTEGRATED GAS SUPPLIES",
+      },
+    ],
+  },
+  {
+    title: "DIES & TOOLS",
+    content: [
+      {
+        company: "EROGA - UK",
+      },
+      {
+        company: "SERVICE ALUMINIUM - UK",
+      },
+      {
+        company: "ALUTOOL - UK",
+      },
+      {
+        company: "ADEX - NETHERLANDS",
+      },
+      {
+        company: "COMPESS - ITALY",
+      },
+      {
+        company: "ALMAX MORIE - ITALY",
+      },
+    ],
+  },
+  {
+    title: "CHEMICALS",
+    content: [
+      {
+        company: "SURTEC MIDDLE EAST LLC",
+      },
+      {
+        company: "BDH MIDDLE EAST LLC",
+      },
+      {
+        company: "NEILCHEM TRADING  LLC",
+      },
+      {
+        company: "FALCON CHEMICALS  LLC",
+      },
+    ],
+  },
+  {
+    title: "PACKING MATERAIL",
+    content: [
+      {
+        company: "EASY PACK CONVERTING INDUSTRIES",
+      },
+    ],
+  },
+  {
+    title: "POLYMIDE INSULATING STRIP",
+    content: [
+      {
+        company: "TECHNOFORM BAUTEX - ITALY",
+      },
+    ],
+  },
+  {
+    title: "EPDM CASKET",
+    content: [
+      {
+        company: "TECHNO SEAL - KSA",
+      },
+    ],
+  },
+];
+
+function page() {
+  return (
+    <div>
+      <Header />
+      {/* Banner Section */}
+      <div
+        className="relative bg-cover bg-center h-[550px] flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: "url('/banner.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
+        <motion.div
+          className="absolute top-[120px] right-6 h-1 w-[45%] bg-[#E8D858] z-0 pointer-events-none"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2.5, ease: "easeOut" }}
+        ></motion.div>
+        <motion.div
+          className="absolute bottom-6 left-6 h-1 w-[45%] bg-[#E8D858] z-0 pointer-events-none"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2.5, ease: "easeOut" }}
+        ></motion.div>
+        <motion.div
+          className="relative z-0 text-center px-4"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+        >
+          <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
+            <h1 className="text-white font-semibold">
+              <span className="text-4xl md:text-7xl block">OUR SUPPLIERS</span>
+            </h1>
+          </div>
+        </motion.div>
+      </div>
+
+      {data.map((item, index) => (
+        <motion.div
+          key={index}
+          className="relative z-0 px-4 grid grid-cols-[30%70%] mx-32 mt-10 mb-4"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+        >
+          <div className="bg-[linear-gradient(113.64deg,_#E8D858_-35.03%,_#FFF8BF_100%)] p-4 border-r-8 border-r-[#E8D858] items-center">
+            <h1 className="text-[#023D68] text-2xl text-center">
+              {item.title}
+            </h1>
+          </div>
+          <div className="border-2 border-[#E8D858] p-4">
+            {item.content.map((contentItem, index) => (
+              <p
+                key={index}
+                className="text-[#023D68] text-2xl font-bold justify-center"
+              >
+                {contentItem.company}
+              </p>
+            ))}
+          </div>
+        </motion.div>
+      ))}
+      <Footer />
+    </div>
+  );
+}
+
+export default page;

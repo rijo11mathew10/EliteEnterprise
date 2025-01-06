@@ -55,7 +55,7 @@ function Header() {
             },
             {
               text: "OUR SUPPLIERS",
-              link: "/about",
+              link: "/about/oursuppliers",
             },
             {
               text: "OUR CERTIFICATIONS",
@@ -118,16 +118,20 @@ function Header() {
           heading: null,
           items: [
             {
-              text: "Product 1",
-              link: "/about",
+              text: "EXTRUDED PROFILES",
+              link: "/about/extrudedprofiles",
             },
             {
-              text: "Product 2",
-              link: "/about/ourprojects",
+              text: "COILS AND SHEETS",
+              link: "/about/coilandsheets",
             },
             {
-              text: "Product 3",
-              link: "/about/ourglobalmarkets",
+              text: "EXTRUSION DIES",
+              link: "/about/extrusiodies",
+            },
+            {
+              text: "EPDM RUBBER PRODUCTS",
+              link: "/about/epdmrubber",
             },
           ],
         },
@@ -141,16 +145,16 @@ function Header() {
           heading: null,
           items: [
             {
-              text: "Services 1",
+              text: "FABRICATIONS",
               link: "/about",
             },
             {
-              text: "Services 2",
-              link: "/about/ourprojects",
+              text: "COLOR COATING",
+              link: "/about/",
             },
             {
-              text: "Services 3",
-              link: "/about/ourglobalmarkets",
+              text: "SURFACE COATING",
+              link: "/about/",
             },
           ],
         },
@@ -164,16 +168,20 @@ function Header() {
           heading: null,
           items: [
             {
-              text: "Media 1",
-              link: "/about",
+              text: "NEWS",
+              link: "/about/news",
             },
             {
-              text: "Media 2",
-              link: "/about/ourprojects",
+              text: "IMAGE GALLERY",
+              link: "/about/images",
             },
             {
-              text: "Media 3",
-              link: "/about/ourglobalmarkets",
+              text: "VIDEO GALLERY",
+              link: "/about/",
+            },
+            {
+              text: "DOWNLOAD",
+              link: "/about/",
             },
           ],
         },
