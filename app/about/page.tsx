@@ -226,11 +226,7 @@ function AboutPage() {
     Your browser does not support the video tag.
   </video>
 
-  <div className="relative z-10 text-white">
-    {/* Your content (text, buttons, etc.) */}
-    <h1 className="text-3xl font-bold">Your Banner Title</h1>
-    <p className="text-lg">Your banner description here</p>
-  </div>
+  
         {/* Color Grading Overlay */}
         <div
           className="absolute inset-0"
