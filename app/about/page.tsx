@@ -202,17 +202,18 @@ function AboutPage() {
 
         {/* Logo */}
         <motion.div
-          className="absolute -top-16 right-0 md:-top-30 w-40 md:w-60"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 2, ease: "easeOut" }}
-        >
-          <img
-            src="/aboutuslogo.png" // Replace with your logo path
-            alt="Company Logo"
-            className="w-full h-auto "
-          />
-        </motion.div>
+  className="absolute -top-16 right-0 md:-top-30 w-80 md:w-[300px]" // Increase width for larger size
+  initial={{ opacity: 0, scale: 0.9 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 2, ease: "easeOut" }}
+>
+  <img
+    src="/aboutuslogo.png" // Replace with your logo path
+    alt="Company Logo"
+    className="w-full h-auto" // This ensures the aspect ratio remains correct while scaling
+  />
+</motion.div>
+
       </div>
       <div className="relative h-[500px] flex flex-col items-center justify-center text-center">
   <video
