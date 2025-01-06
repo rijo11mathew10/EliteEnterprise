@@ -39,7 +39,7 @@ function page() {
             <h1 className="text-white font-semibold">
               {/* Elite */}
               <span className="text-4xl md:text-7xl block">
-                CONTACT & ADDRESS
+                CAREERS
               </span>
             </h1>
           </div>
