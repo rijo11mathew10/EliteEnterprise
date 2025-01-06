@@ -59,8 +59,8 @@ export default function App() {
       <Header />
       <Video />
       <Contents />
-      <Companies />
       <CardGrid cards={cards} />
+      <Companies />
       <Testimonial />
       <IndustrySection />
       <WorldMapDemo />
