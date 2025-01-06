@@ -42,7 +42,7 @@ function Header() {
             { text: "ABOUT OUR COMPANY", link: "/about" },
             { text: "OUR PROJECTS", link: "/about/ourprojects" },
             { text: "OUR GLOBAL MARKETS", link: "/about/ourglobalmarkets" },
-            { text: "OUR SUPPLIERS", link: "/about" },
+            { text: "OUR SUPPLIERS", link: "/about/oursuppliers" },
             { text: "OUR CERTIFICATIONS", link: "/about" },
             { text: "OUR POLICIES AND ASSURANCE", link: "/about" },
           ],
