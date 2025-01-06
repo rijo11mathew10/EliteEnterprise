@@ -7,7 +7,6 @@ function page() {
   return (
     <div>
       <Header />
-
       <div
         className="relative bg-cover bg-center h-[550px] flex items-center justify-center mb-16 overflow-hidden"
         style={{
@@ -41,13 +40,13 @@ function page() {
         </motion.div>
       </div>
 
+      {/* Adjusted Description Section */}
       <div className="p-24 text-[#484848]">
         <motion.p
-          className="mb-6 leading-6 text-justify"
-          initial={{ opacity: 0, y: 30 }}
-          viewport={{ once: true }}
+          className="mb-6 leading-6 text-justify mt-[-100px]" // Negative margin to move text up
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeOut" }} // More professional transition
         >
           We seek to provide excellent products that exceed Aluminum is a widely
           used metal for countless applications in the nowadays society.
@@ -58,11 +57,10 @@ function page() {
           earth#39;s crust is composed of aluminum.
         </motion.p>
         <motion.p
-          className="mb-6 leading-6 text-justify"
-          initial={{ opacity: 0, y: 30 }}
-          viewport={{ once: true }}
+          className="mb-6 leading-6 text-justify mt-[20px]" // Negative margin to move text up
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeOut" }}
         >
           Elite Group of Companies is one of the leading names in the aluminum
           industry in our region. Due to the overall production and the global
@@ -74,11 +72,10 @@ function page() {
           aluminum in the world.
         </motion.p>
         <motion.p
-          className="mb-6 leading-6 text-justify"
-          initial={{ opacity: 0, y: 30 }}
-          viewport={{ once: true }}
+          className="mb-6 leading-6 text-justify mt-[20px]" // Negative margin to move text up
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeOut" }}
         >
           In order to reach the Asiatic South-East market, Elex Aluminum
           Products Pvt. Ltd. was established and situated in the city of
@@ -89,22 +86,20 @@ function page() {
           one 5” press with the production capacity of 550 kg&#39;s per hour).
         </motion.p>
         <motion.p
-          className="mb-6 leading-6 text-justify"
-          initial={{ opacity: 0, y: 30 }}
-          viewport={{ once: true }}
+          className="mb-6 leading-6 text-justify mt-[20px]" // Negative margin to move text up
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeOut" }}
         >
           With the addition of Elex Aluminum, Elite Group reached an overall
           production which is one of the highest in all the MENA region and
           South-Asia, and ready to serve the overseas markets.
         </motion.p>
         <motion.p
-          className="mb-6 leading-6 text-justify"
-          initial={{ opacity: 0, y: 30 }}
-          viewport={{ once: true }}
+          className="mb-6 leading-6 text-justify mt-[20px]" // Negative margin to move text up
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeOut" }}
         >
           We seek to provide excellent products that exceed customer
           expectations. We aim to achieve our goals through the dedication of
