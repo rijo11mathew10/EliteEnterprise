@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
@@ -9,20 +9,31 @@ function Contents() {
   const [hasStarted, setHasStarted] = useState(false);
   const [activeTab, setActiveTab] = useState("mission");
 
+  // Automatically switch between mission and vision tabs every 5 seconds
+  useEffect(() => {
+    const tabSwitcher = setInterval(() => {
+      setActiveTab((prevTab) => (prevTab === "mission" ? "vision" : "mission"));
+    }, 5000); // Switch tab every 5 seconds
+
+    return () => clearInterval(tabSwitcher); // Cleanup interval when component unmounts
+  }, []);
+
   // Start count when in view
-  if (inView && !hasStarted) {
-    setHasStarted(true);
-  }
+  useEffect(() => {
+    if (inView && !hasStarted) {
+      setHasStarted(true);
+    }
+  }, [inView, hasStarted]);
 
   return (
     <div>
       {/* First Section */}
-      <section className="overflow-hidden  sm:grid sm:grid-cols-2 sm:items-start">
+      <section className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-start">
         {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           className="p-6 md:p-8 lg:px-12 lg:py-16 flex flex-col justify-start"
         >
           <div className="mx-auto max-w-lg">
@@ -53,9 +64,9 @@ function Contents() {
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           ref={ref}
-          className="p-6 md:p-8 lg:px-12 lg:py-16  flex flex-col items-center"
+          className="p-6 md:p-8 lg:px-12 lg:py-16 flex flex-col items-center"
         >
           <div className="border border-gray-300 rounded-md p-4 w-full max-w-xl">
             {/* Images Row */}
@@ -105,59 +116,77 @@ function Contents() {
               <hr className="hidden sm:block w-2 h-full bg-[#E8D858] border-none" />
               {/* Tabs */}
               <div className="flex flex-col w-full space-y-6">
-                <button
+                <motion.button
                   className={`text-lg sm:text-xl lg:text-2xl font-bold py-6 px-6 ${
                     activeTab === "mission"
                       ? "bg-[#EDEDEC] text-[#023D68]"
                       : "bg-white text-gray-600 hover:text-gray-800"
                   }`}
                   onClick={() => setActiveTab("mission")}
+                  whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
                 >
                   OUR MISSION
-                </button>
-                <button
+                </motion.button>
+                <motion.button
                   className={`text-lg sm:text-xl lg:text-2xl font-bold py-6 px-6 ${
                     activeTab === "vision"
                       ? "bg-[#EDEDEC] text-[#023D68]"
                       : "bg-white text-gray-600 hover:text-gray-800"
                   }`}
                   onClick={() => setActiveTab("vision")}
+                  whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
                 >
                   OUR VISION
-                </button>
+                </motion.button>
               </div>
             </div>
           </div>
 
           {/* Right Section: Content */}
-          <div className="bg-[#E8D858] p-6 md:p-8 lg:px-12 lg:py-16 flex items-center justify-center text-[#023D68] h-full">
+          <motion.div
+            className="bg-[#E8D858] p-6 md:p-8 lg:px-12 lg:py-16 flex items-center justify-center text-[#023D68] h-full"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            {/* Mission or Vision Content */}
             {activeTab === "mission" && (
-              <div className="text-center sm:text-left">
+              <motion.div
+                key="mission"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                className="text-center sm:text-left"
+              >
                 <p className="text-sm md:text-base lg:text-lg leading-relaxed">
-                  OUR MISSION <br></br>
-                  To complement and support the ever-growing demand for
-                  aluminium architecture and design internationally, with
-                  special emphasis on the national needs. To continuously invest
-                  in infrastructure and technical expertise and be a leader in
-                  the industry creating new standards of quality and service to
-                  enhance overall growth.
+                  OUR MISSION <br />
+                  To complement and support the ever-growing demand for aluminium
+                  architecture and design internationally, with special emphasis on the
+                  national needs. To continuously invest in infrastructure and technical
+                  expertise and be a leader in the industry creating new standards of
+                  quality and service to enhance overall growth.
                 </p>
-              </div>
+              </motion.div>
             )}
             {activeTab === "vision" && (
-              <div className="text-center sm:text-left">
+              <motion.div
+                key="vision"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                className="text-center sm:text-left"
+              >
                 <p className="text-sm md:text-base lg:text-lg leading-relaxed">
-                  OUR VISION <br></br>
-                  To complement and support the ever-growing demand for
-                  aluminium architecture and design internationally, with
-                  special emphasis on the national needs. To continuously invest
-                  in infrastructure and technical expertise and be a leader in
-                  the industry creating new standards of quality and service to
-                  enhance overall growth.
+                  OUR VISION <br />
+                  To complement and support the ever-growing demand for aluminium
+                  architecture and design internationally, with special emphasis on the
+                  national needs. To continuously invest in infrastructure and technical
+                  expertise and be a leader in the industry creating new standards of
+                  quality and service to enhance overall growth.
                 </p>
-              </div>
+              </motion.div>
             )}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -165,9 +194,8 @@ function Contents() {
       <section className="px-6 md:px-16 lg:px-24 mt-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
-          viewport={{ once: true }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           className="relative bg-cover bg-center h-96"
           style={{ backgroundImage: 'url("/backgroundbanner.jpg")' }}
         >
@@ -195,7 +223,7 @@ function Contents() {
                       <CountUp
                         start={0}
                         end={item.value}
-                        duration={3}
+                        duration={5}
                         separator=","
                       />
                     )}
