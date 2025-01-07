@@ -9,15 +9,14 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 function Header() {
   const [isClick] = useState(false);
-
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [scrolling, setScrolling] = useState(false); // State to detect scrolling
 
   const handleMouseEnter = (index: number) => {
     setHoveredIndex(index);
@@ -33,7 +32,6 @@ function Header() {
       link: "/",
       sections: null,
     },
-
     {
       topic: "About Us",
       link: null,
@@ -41,71 +39,26 @@ function Header() {
         {
           heading: "WHO WE ARE",
           items: [
-            {
-              text: "ABOUT OUR COMPANY",
-              link: "/about",
-            },
-            {
-              text: "OUR PROJECTS",
-              link: "/about/ourprojects",
-            },
-            {
-              text: "OUR GLOBAL MARKETS",
-              link: "/about/ourglobalmarkets",
-            },
-            {
-              text: "OUR SUPPLIERS",
-              link: "/about/oursuppliers",
-            },
-            {
-              text: "OUR CERTIFICATIONS",
-              link: "/about",
-            },
-            {
-              text: "OUR POLICIES AND ASSURANCE",
-              link: "/about",
-            },
+            { text: "ABOUT OUR COMPANY", link: "/about" },
+            { text: "OUR PROJECTS", link: "/about/ourprojects" },
+            { text: "OUR GLOBAL MARKETS", link: "/about/ourglobalmarkets" },
+            { text: "OUR SUPPLIERS", link: "/about/oursuppliers" },
+            { text: "OUR CERTIFICATIONS", link: "/about" },
+            { text: "OUR POLICIES AND ASSURANCE", link: "/about" },
           ],
         },
         {
           heading: "OUR GROUPS",
           items: [
-            {
-              text: "ELITE EXTRUSION LLC",
-              link: "/about/ourgroups/eliteextrusion",
-            },
-            {
-              text: "NATIONAL ALUMINIUM EXTRUSION LLC",
-              link: "/about/ourgroups/nationalaluminium",
-            },
-            {
-              text: "CLASSIC EXTRUSION LLC",
-              link: "/about/ourgroups/classicextrusion",
-            },
-            {
-              text: "ALUMIL TECH GULF LLC",
-              link: "/about/ourgroups/alumiltech",
-            },
-            {
-              text: "THERMOSET MIDDLE EAST",
-              link: "/about/ourgroups/thermoset",
-            },
-            {
-              text: "GLOBAL PIONEER ALUMINIUM INDUSTRIES",
-              link: "/about/ourgroups/globalpioneer",
-            },
-            {
-              text: "JORDAN ALUMINIUM EXTRUSION",
-              link: "/about/ourgroups/jordan",
-            },
-            {
-              text: "UNITED POWDER COATING FZC",
-              link: "/about/ourgroups/unitedpowdercoatingfzc",
-            },
-            {
-              text: "NASHAT METAL ENGINEERING LLC",
-              link: "/about/ourgroups/nashat",
-            },
+            { text: "ELITE EXTRUSION LLC", link: "/about/ourgroups/eliteextrusion" },
+            { text: "NATIONAL ALUMINIUM EXTRUSION LLC", link: "/about/ourgroups/nationalaluminium" },
+            { text: "CLASSIC EXTRUSION LLC", link: "/about/ourgroups/classicextrusion" },
+            { text: "ALUMIL TECH GULF LLC", link: "/about/ourgroups/alumiltech" },
+            { text: "THERMOSET MIDDLE EAST", link: "/about/ourgroups/thermoset" },
+            { text: "GLOBAL PIONEER ALUMINIUM INDUSTRIES", link: "/about/ourgroups/globalpioneer" },
+            { text: "JORDAN ALUMINIUM EXTRUSION", link: "/about/ourgroups/jordan" },
+            { text: "UNITED POWDER COATING FZC", link: "/about/ourgroups/unitedpowdercoatingfzc" },
+            { text: "NASHAT METAL ENGINEERING LLC", link: "/about/ourgroups/nashat" },
           ],
         },
       ],
@@ -117,22 +70,9 @@ function Header() {
         {
           heading: null,
           items: [
-            {
-              text: "EXTRUDED PROFILES",
-              link: "/about/extrudedprofiles",
-            },
-            {
-              text: "COILS AND SHEETS",
-              link: "/about/coilandsheets",
-            },
-            {
-              text: "EXTRUSION DIES",
-              link: "/about/extrusiodies",
-            },
-            {
-              text: "EPDM RUBBER PRODUCTS",
-              link: "/about/epdmrubber",
-            },
+            { text: "Product 1", link: "/about" },
+            { text: "Product 2", link: "/about/ourprojects" },
+            { text: "Product 3", link: "/about/ourglobalmarkets" },
           ],
         },
       ],
@@ -144,18 +84,9 @@ function Header() {
         {
           heading: null,
           items: [
-            {
-              text: "FABRICATIONS",
-              link: "/about",
-            },
-            {
-              text: "COLOR COATING",
-              link: "/about/",
-            },
-            {
-              text: "SURFACE COATING",
-              link: "/about/",
-            },
+            { text: "Services 1", link: "/about" },
+            { text: "Services 2", link: "/about/ourprojects" },
+            { text: "Services 3", link: "/about/ourglobalmarkets" },
           ],
         },
       ],
@@ -167,27 +98,18 @@ function Header() {
         {
           heading: null,
           items: [
-            {
-              text: "NEWS",
-              link: "/about/news",
-            },
-            {
-              text: "IMAGE GALLERY",
-              link: "/about/images",
-            },
-            {
-              text: "VIDEO GALLERY",
-              link: "/about/",
-            },
-            {
-              text: "DOWNLOAD",
-              link: "/about/",
-            },
+            { text: "Media 1", link: "/about" },
+            { text: "Media 2", link: "/about/ourprojects" },
+            { text: "Media 3", link: "/about/ourglobalmarkets" },
           ],
         },
       ],
     },
-
+    {
+      topic: "Careers",
+      link: "/careers",
+      sections: null,
+    },
     {
       topic: "Contact Us",
       link: "/contactus",
@@ -195,22 +117,46 @@ function Header() {
     },
   ];
 
+  // Detect scroll and change header style
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolling(true); // Set scrolling state when scrolled more than 50px
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav
-      className="pb-4 bg-transparent z-10 w-full absolute pt-9"
+      className={`fixed top-0 left-0 w-full z-10 pt-5 pb-2 transition-all duration-300 ${
+        scrolling
+          ? "bg-white shadow-lg backdrop-blur-lg h-[80px]" // Smaller height on scroll
+          : "bg-transparent"
+      }`}
       style={{
         backgroundImage: `url('/frame.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%)", // Black to Transparent Gradient
       }}
     >
-      {" "}
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
-          <div className="flex items-center">
+          <div
+            className={`flex items-center transition-all duration-300 transform ${
+              scrolling ? "scale-75 opacity-0" : "scale-100 opacity-100" // Make the logo smaller and fade out when scrolling
+            }`}
+          >
             <Link href="/">
-              <Image src="/logo.png" alt="logo" width={195} height={78} />
+              <Image src="/logo.png" alt="logo" width={150} height={60} />
             </Link>
           </div>
 
@@ -227,10 +173,10 @@ function Header() {
                   {/* Navigation Link */}
                   <Link
                     href={list.link || "#"}
-                    className={`rounded-lg p-2 ${
+                    className={`rounded-lg p-2 text-white text-sm font-medium ${
                       hoveredIndex === index
                         ? "bg-[#E8D858] text-black"
-                        : "text-white hover:bg-[#E8D858] hover:text-black"
+                        : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"
                     }`}
                   >
                     {list.topic}
@@ -239,35 +185,32 @@ function Header() {
                   {/* Dropdown (Rendered only on hover) */}
                   {hoveredIndex === index && list.sections && (
                     <div
-                      className="absolute left-0 mt-1 w-[35rem] rounded-b-xl bg-white bg-opacity-80 shadow-lg p-6 grid grid-cols-2 gap-6 transition-opacity duration-300 border border-[#E8D858]"
+                      className="absolute left-0 mt-2 w-[35rem] rounded-xl bg-white bg-opacity-90 shadow-xl p-6 grid grid-cols-2 gap-6 border border-[#E8D858] transition-all duration-300 transform opacity-100"
                       style={{
                         zIndex: 10,
                         top: "100%",
                         width:
                           list.topic === "About Us"
                             ? "35rem"
-                            : list.topic === "Products"
-                            ? "15rem"
-                            : list.topic === "Services"
-                            ? "15rem"
-                            : list.topic === "Media"
-                            ? "15rem"
-                            : "15rem", // Default width
+                            : "15rem", // Adjust width as per topic
                       }}
                     >
                       {list.sections.map((section, sectionIndex) => (
                         <div key={sectionIndex}>
                           {section.heading && (
-                            <h3 className="text-lg font-bold text-[#023D68] mb-4">
+                            <h3 className="text-lg font-semibold text-[#023D68] mb-4">
                               {section.heading}
                             </h3>
                           )}
                           <ul className="space-y-2">
                             {section.items.map((item, itemIndex) => (
                               <li key={itemIndex}>
-                                <Link href={item.link} className="group">
+                                <Link
+                                  href={item.link}
+                                  className="group text-black hover:text-black"
+                                >
                                   {item.text}
-                                  <div className="bg-red-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                                  <div className="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                                 </Link>
                               </li>
                             ))}
@@ -278,7 +221,9 @@ function Header() {
                   )}
                 </div>
               ))}
-              <Button className="bg-white rounded-sm font-xl">Get Quote</Button>
+              <Button className="bg-[#E8D858] text-black rounded-sm font-xl hover:bg-[#c5b32b] transition-colors duration-300">
+                Get Quote
+              </Button>
             </div>
           </div>
 
@@ -328,10 +273,10 @@ function Header() {
                           {/* Navigation Link */}
                           <Link
                             href={list.link || "#"}
-                            className={`block py-2 ${
+                            className={`block py-2 text-gray-800 ${
                               list.sections
                                 ? "bg-[#E8D858] text-black"
-                                : "text-gray-800 hover:bg-[#E8D858] hover:text-black"
+                                : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"
                             }`}
                           >
                             {list.topic}
