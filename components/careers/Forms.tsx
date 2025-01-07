@@ -321,13 +321,21 @@ const Forms = () => {
                 className="mt-1 block w-full px-4 py-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
               >
-                <option value="" disabled>
+                <option value="">
                   Select a category
                 </option>
-                <option value="science">Science</option>
-                <option value="arts">Arts</option>
-                <option value="commerce">Commerce</option>
-                <option value="engineering">Engineering</option>
+                <option value="Administration">Administration</option>
+                <option value="Accounts">Accounts</option>
+                <option value="Audit">Audit</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Logistics">Logistics</option>
+                <option value="Production">Production</option>
+                <option value="Procurement">Procurement</option>
+                <option value="Quality Control">Quality Control</option>
+                <option value="Maintenance<">Maintenance</option>
+                <option value="Safety">Safety</option>
+                <option value="Stores">Stores</option>
+                <option value="Others">Others</option>
               </select>
             </div>
 
