@@ -47,6 +47,8 @@ function page() {
           </div>
         </motion.div>
       </div>
+      <br></br>
+      <div className="ml-40 mr-40 max-w-7xl mb-8">
       <motion.p
         className="text-[#484848] mb-6 text-justify md:pr-7"
         initial={{ opacity: 0, y: 30 }}
@@ -59,7 +61,8 @@ function page() {
         capacity vertical powder coating line, to provide finishing in the
         variety of colours in RAL.
       </motion.p>
-      <div className="mx-auto max-w-7xl mb-16">
+      </div>
+      <div className="mx-auto max-w-7xl mb-8">
         <div>
           {/* Top Section */}
           <motion.div
@@ -138,21 +141,21 @@ function page() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer3.png"
+                  src="/ourgroups/surfacecoating/surface1.jpg"
                   alt=""
                   width={350}
                   height={180}
                   className="shadow-lg -ml-10 border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
+                  src="/ourgroups/surfacecoating/surface2.jpeg"
                   alt=""
                   width={350}
                   height={180}
                   className="shadow-lg -ml-10 border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
+                  src="/ourgroups/surfacecoating/surface3.jpg"
                   alt=""
                   width={350}
                   height={180}
@@ -160,7 +163,7 @@ function page() {
                 />
 
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
+                  src="/ourgroups/surfacecoating/surface4.jpg"
                   alt=""
                   width={350}
                   height={180}
@@ -190,28 +193,28 @@ function page() {
           >
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer3.png"
+                src="/ourgroups/surfacecoating/wood1.jpg"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer2.png"
+                src="/ourgroups/surfacecoating/wood2.jpg"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer2.png"
+                src="/ourgroups/surfacecoating/wood3.jpg"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer2.png"
+                src="/ourgroups/surfacecoating/wood4.jpeg"
                 alt=""
                 width={350}
                 height={180}
@@ -380,118 +383,6 @@ function page() {
               >
                 <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
                 <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                  POWDER COATING
-                </h2>
-              </motion.div>
-              <motion.p
-                className="text-[#484848] mb-6 text-justify md:pr-7"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 2.0 }}
-              >
-                We have three powder coating plants, with two high capacity
-                vertical powder coating unit, to provide finishing in the
-                variety of colours in RAL colours. The unit is certified with
-                Qualicoat.
-              </motion.p>
-              <motion.p
-                className="text-[#484848] text-justify md:pr-7"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1.4 }}
-              >
-                Powder coating is a type of coating that is applied as a
-                free-flowing, dry powder. The main difference between
-                conventional liquid paint and powder coating is that the powder
-                coating does not require a solvent to keep the binder and filler
-                parts in a liquid suspension form. The coating is typically
-                applied electrostatically and is then cured under heat to allow
-                it to flow and form a &#34;skin&#34;. The powder may be a
-                thermoplastic or a thermoset polymer. It is usually used to
-                create a hard finish that is tougher than conventional paint.
-              </motion.p>
-              <motion.p
-                className="text-[#484848] text-justify md:pr-7"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1.4 }}
-              >
-                After application of the powder coatings, the aluminum
-                extrusions proceed to an indirectly heated convection oven for a
-                complete cure of the powder coatings. The natural gas fired
-                ovens are very energy efficient in design and provide the
-                optimum environment to cure the powder coatings. Indirectly
-                heating the powder cure oven eliminates the concerns about
-                possible contaminants from the burner and helps provide
-                excellent control over the temperature profile within the oven
-              </motion.p>
-            </div>
-            <motion.div
-              className="hidden md:col-span-4 md:block bg-[#023D68] p-6 text-white"
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              <div className="grid grid-cols-2 gap-4">
-                <Image
-                  src="/ourgroups/globalpioneer/globalpioneer3.png"
-                  alt=""
-                  width={350}
-                  height={180}
-                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
-                />
-                <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
-                  alt=""
-                  width={350}
-                  height={180}
-                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
-                />
-                <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
-                  alt=""
-                  width={350}
-                  height={180}
-                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
-                />
-
-                <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
-                  alt=""
-                  width={350}
-                  height={180}
-                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
-                />
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </div>
-      <div className="mx-auto max-w-7xl mb-16">
-        <div>
-          {/* Top Section */}
-          <motion.div
-            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-          >
-            {/* Text Column */}
-            <div className="col-span-12 md:col-span-7">
-              <motion.div
-                className="flex gap-3 mb-8"
-                initial={{ x: -50, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 2.0 }}
-              >
-                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
                   ANODIZING
                 </h2>
               </motion.div>
@@ -552,134 +443,21 @@ function page() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer3.png"
+                  src="/ourgroups/surfacecoating/anodizing1.jpeg"
                   alt=""
                   width={350}
                   height={180}
                   className="shadow-lg -ml-10 border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
+                  src="/ourgroups/surfacecoating/anodizing2.jpeg"
                   alt=""
                   width={350}
                   height={180}
                   className="shadow-lg -ml-10 border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
-                  alt=""
-                  width={350}
-                  height={180}
-                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
-                />
-
-                <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
-                  alt=""
-                  width={350}
-                  height={180}
-                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
-                />
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-7xl mb-16">
-        <div>
-          {/* Top Section */}
-          <motion.div
-            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-          >
-            {/* Text Column */}
-            <div className="col-span-12 md:col-span-7">
-              <motion.div
-                className="flex gap-3 mb-8"
-                initial={{ x: -50, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 2.0 }}
-              >
-                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                  POWDER COATING
-                </h2>
-              </motion.div>
-              <motion.p
-                className="text-[#484848] mb-6 text-justify md:pr-7"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 2.0 }}
-              >
-                We have three powder coating plants, with two high capacity
-                vertical powder coating unit, to provide finishing in the
-                variety of colours in RAL colours. The unit is certified with
-                Qualicoat.
-              </motion.p>
-              <motion.p
-                className="text-[#484848] text-justify md:pr-7"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1.4 }}
-              >
-                Powder coating is a type of coating that is applied as a
-                free-flowing, dry powder. The main difference between
-                conventional liquid paint and powder coating is that the powder
-                coating does not require a solvent to keep the binder and filler
-                parts in a liquid suspension form. The coating is typically
-                applied electrostatically and is then cured under heat to allow
-                it to flow and form a &#34;skin&#34;. The powder may be a
-                thermoplastic or a thermoset polymer. It is usually used to
-                create a hard finish that is tougher than conventional paint.
-              </motion.p>
-              <motion.p
-                className="text-[#484848] text-justify md:pr-7"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1.4 }}
-              >
-                After application of the powder coatings, the aluminum
-                extrusions proceed to an indirectly heated convection oven for a
-                complete cure of the powder coatings. The natural gas fired
-                ovens are very energy efficient in design and provide the
-                optimum environment to cure the powder coatings. Indirectly
-                heating the powder cure oven eliminates the concerns about
-                possible contaminants from the burner and helps provide
-                excellent control over the temperature profile within the oven
-              </motion.p>
-            </div>
-            <motion.div
-              className="hidden md:col-span-4 md:block bg-[#023D68] p-6 text-white"
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              <div className="grid grid-cols-2 gap-4">
-                <Image
-                  src="/ourgroups/globalpioneer/globalpioneer3.png"
-                  alt=""
-                  width={350}
-                  height={180}
-                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
-                />
-                <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
-                  alt=""
-                  width={350}
-                  height={180}
-                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
-                />
-                <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
+                  src="/ourgroups/surfacecoating/anodizing3.jpeg"
                   alt=""
                   width={350}
                   height={180}
@@ -687,7 +465,7 @@ function page() {
                 />
 
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
+                  src="/ourgroups/surfacecoating/anodizing4.jpg"
                   alt=""
                   width={350}
                   height={180}
@@ -732,7 +510,7 @@ function page() {
                 transition={{ duration: 2.0 }}
               >
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer3.png"
+                  src="/ourgroups/surfacecoating/polishing.jpg"
                   alt="Polishing Image"
                   width={350}
                   height={180}
