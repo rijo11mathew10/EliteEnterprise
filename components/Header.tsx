@@ -11,6 +11,7 @@ import {
 } from "@nextui-org/react";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion"; // Import motion from framer-motion
 
 function Header() {
   const [isClick] = useState(false);
@@ -135,26 +136,18 @@ function Header() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-10 pt-5 pb-2 transition-all duration-300 ${
-        scrolling
-          ? "bg-white shadow-lg backdrop-blur-lg h-[80px]" // Smaller height on scroll
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-10 pt-5 pb-2 transition-all duration-300 ${scrolling ? "bg-white shadow-lg backdrop-blur-lg h-[80px]" : "bg-transparent"}`}
       style={{
         backgroundImage: `url('/frame.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%)", // Black to Transparent Gradient
+        background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%)",
       }}
     >
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
-          <div
-            className={`flex items-center transition-all duration-300 transform ${
-              scrolling ? "scale-75 opacity-0" : "scale-100 opacity-100" // Make the logo smaller and fade out when scrolling
-            }`}
-          >
+          <div className={`flex items-center transition-all duration-300 transform ${scrolling ? "scale-75 opacity-0" : "scale-100 opacity-100"}`}>
             <Link href="/">
               <Image src="/logo.png" alt="logo" width={150} height={60} />
             </Link>
@@ -173,42 +166,33 @@ function Header() {
                   {/* Navigation Link */}
                   <Link
                     href={list.link || "#"}
-                    className={`rounded-lg p-2 text-white text-sm font-medium ${
-                      hoveredIndex === index
-                        ? "bg-[#E8D858] text-black"
-                        : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"
-                    }`}
+                    className={`rounded-lg p-2 text-white text-sm font-medium ${hoveredIndex === index ? "bg-[#E8D858] text-black" : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"}`}
                   >
                     {list.topic}
                   </Link>
 
-                  {/* Dropdown (Rendered only on hover) */}
+                  {/* Dropdown (Rendered only on hover with animation) */}
                   {hoveredIndex === index && list.sections && (
-                    <div
-                      className="absolute left-0 mt-2 w-[35rem] rounded-xl bg-white bg-opacity-90 shadow-xl p-6 grid grid-cols-2 gap-6 border border-[#E8D858] transition-all duration-300 transform opacity-100"
+                    <motion.div
+                      className="absolute left-0 mt-2 rounded-xl bg-white bg-opacity-90 shadow-xl p-6 grid grid-cols-2 gap-6 border border-[#E8D858] transition-all duration-300"
                       style={{
                         zIndex: 10,
                         top: "100%",
-                        width:
-                          list.topic === "About Us"
-                            ? "35rem"
-                            : "15rem", // Adjust width as per topic
+                        width: list.topic === "About Us" ? "35rem" : "15rem",
                       }}
+                      initial={{ opacity: 0, y: 0 }} // Initial state (invisible and slightly above)
+                      animate={{ opacity: 1, y: 0 }} // Final state (fully visible and at normal position)
+                      transition={{ duration: 0.5, ease: "easeOut" }} // Smooth slide-down effect
                     >
                       {list.sections.map((section, sectionIndex) => (
                         <div key={sectionIndex}>
                           {section.heading && (
-                            <h3 className="text-lg font-semibold text-[#023D68] mb-4">
-                              {section.heading}
-                            </h3>
+                            <h3 className="text-lg font-semibold text-[#023D68] mb-4">{section.heading}</h3>
                           )}
                           <ul className="space-y-2">
                             {section.items.map((item, itemIndex) => (
                               <li key={itemIndex}>
-                                <Link
-                                  href={item.link}
-                                  className="group text-black hover:text-black"
-                                >
+                                <Link href={item.link} className="group text-black hover:text-black">
                                   {item.text}
                                   <div className="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                                 </Link>
@@ -217,7 +201,7 @@ function Header() {
                           </ul>
                         </div>
                       ))}
-                    </div>
+                    </motion.div>
                   )}
                 </div>
               ))}
@@ -232,34 +216,12 @@ function Header() {
             <Button onPress={onOpen} isIconOnly>
               {/* Hamburger Icon */}
               {isClick ? (
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6L18 18"
-                  />
+                <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6L18 18" />
                 </svg>
               ) : (
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
+                <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
               )}
             </Button>
@@ -273,18 +235,19 @@ function Header() {
                           {/* Navigation Link */}
                           <Link
                             href={list.link || "#"}
-                            className={`block py-2 text-gray-800 ${
-                              list.sections
-                                ? "bg-[#E8D858] text-black"
-                                : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"
-                            }`}
+                            className={`block py-2 text-gray-800 ${list.sections ? "bg-[#E8D858] text-black" : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"}`}
                           >
                             {list.topic}
                           </Link>
 
                           {/* Dropdown (Mobile) */}
                           {list.sections && (
-                            <div className="mt-2 pl-4">
+                            <motion.div
+                              className="mt-2 pl-4"
+                              initial={{ opacity: 0, y: -20 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.5, ease: "easeOut" }}
+                            >
                               {list.sections.map((section, sectionIndex) => (
                                 <div key={sectionIndex}>
                                   {section.heading && (
@@ -295,10 +258,7 @@ function Header() {
                                   <ul className="space-y-1">
                                     {section.items.map((item, itemIndex) => (
                                       <li key={itemIndex}>
-                                        <Link
-                                          href={item.link}
-                                          className="block text-gray-700 hover:text-black"
-                                        >
+                                        <Link href={item.link} className="block text-gray-700 hover:text-black">
                                           {item.text}
                                         </Link>
                                       </li>
@@ -306,7 +266,7 @@ function Header() {
                                   </ul>
                                 </div>
                               ))}
-                            </div>
+                            </motion.div>
                           )}
                         </div>
                       ))}
