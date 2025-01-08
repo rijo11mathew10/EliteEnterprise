@@ -6,6 +6,89 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 
+import { WobbleCards } from "@/components/ourgroups/globalpioneer/WobbleSection";
+
+const productData1 = [
+  {
+    imageSrc: "/ourgroups/globalpioneer/railing_one.png",
+    title: "Railing",
+  },
+  {
+    imageSrc: "/ourgroups/globalpioneer/railing_two.png",
+    title: "Railing",
+  },
+  {
+    imageSrc: "/ourgroups/globalpioneer/railing_three.png",
+    title: "Railing",
+  },
+];
+const productData2 = [
+  {
+    imageSrc: "/ourgroups/globalpioneer/systems1.jpg",
+    title: "Systems",
+  },
+  {
+    imageSrc: "/ourgroups/globalpioneer/systems2.jpg",
+    title: "Systems",
+  },
+  {
+    imageSrc: "/ourgroups/globalpioneer/systems3.jpg",
+    title: "Systems",
+  },
+];
+const productData3 = [
+  {
+    imageSrc: "/ourgroups/globalpioneer/samples1.jpg",
+    title: "Samples",
+  },
+  {
+    imageSrc: "/ourgroups/globalpioneer/samples2.jpg",
+    title: "Samples",
+  },
+];
+
+const column1 = [
+  {
+    list: "- Curtain Wall systems",
+  },
+  {
+    list: "- Unitised Curtain Wall Systems",
+  },
+  {
+    list: "- Frameless facades / spider systems",
+  },
+  {
+    list: "- Aluminium doors/ windows / fronts",
+  },
+  {
+    list: "- Security and decorative claustras",
+  },
+  {
+    list: "- 2 & 4 sides structural glazing",
+  },
+];
+
+const column2 = [
+  {
+    list: "- Metal claddings and composite panels",
+  },
+  {
+    list: "- Aluminium Pergolas",
+  },
+  {
+    list: "- Aluminium and stainless steel handrails and balustrades",
+  },
+  {
+    list: "- Roof domes and sky lights",
+  },
+  {
+    list: "- Thermal & non-thermal break systems",
+  },
+  {
+    list: "- Rolling shutters",
+  },
+];
+
 
 
 function page() {
@@ -48,15 +131,16 @@ function page() {
           </div>
         </motion.div>
       </div>
+      <div className="ml-40 mr-40 max-w-7xl mb-16">
       <motion.p
                 className="text-[#484848] mb-6 text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ durtion: 2.0 }}
-              >
+                transition={{ durtion: 1.0 }}
+              ><br></br>
                 Specialized in manufacturing of high quality extrusion dies and tooling. Equipped with latest CNC Wire Cut Machinery, Precision Lathes & Grinding Machines and other Convectional Machines with fully automated State of the art design unit with latest software.      </motion.p><div className="mx-auto max-w-7xl mb-16">
-                    
+                </div>
         <div>
           {/* Top Section */}
           <motion.div
@@ -110,14 +194,14 @@ function page() {
           >
             <div className="flex flex-col gap-4">
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer3.png"
+                src="/ourgroups/extrusiondies/dieimg1.jpeg"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg -ml-10 border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer2.png"
+                src="/ourgroups/extrusiondies/dieimg2.jpeg"
                 alt=""
                 width={350}
                 height={180}
