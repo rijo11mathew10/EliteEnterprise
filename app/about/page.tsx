@@ -217,7 +217,7 @@ function AboutPage() {
       </div>
       <div className="relative h-[500px] flex flex-col items-center justify-center text-center">
   <video
-    className="absolute top-0 left-0 w-full h-full object-cover"
+    className="absolute inset-0 w-full h-full object-cover"
     src="/about/About_company.mp4"
     autoPlay
     loop
