@@ -70,9 +70,9 @@ function Header() {
         {
           heading: null,
           items: [
-            { text: "Product 1", link: "/about" },
-            { text: "Product 2", link: "/about/ourprojects" },
-            { text: "Product 3", link: "/about/ourglobalmarkets" },
+            { text: "EXTRUDED PROFILES", link: "/about/ourgroups/extrudedprofiles" },
+            { text: "COILS AND SHEETS", link: "/about/ourgroups/" },
+            { text: "EXTRUSION DIES", link: "/about/ourgroups/extrusiondies" },
           ],
         },
       ],
@@ -84,9 +84,9 @@ function Header() {
         {
           heading: null,
           items: [
-            { text: "Services 1", link: "/about" },
-            { text: "Services 2", link: "/about/ourprojects" },
-            { text: "Services 3", link: "/about/ourglobalmarkets" },
+            { text: "FABRICATIONS", link: "/about/ourgroups/fabrications" },
+            { text: "COLOR COATING", link: "/about/ourgroups/color" },
+            { text: "SURFACE COATING", link: "/about/ourgroups/surfacecoatings" },
           ],
         },
       ],
@@ -98,8 +98,8 @@ function Header() {
         {
           heading: null,
           items: [
-            { text: "Media 1", link: "/about" },
-            { text: "Media 2", link: "/about/ourprojects" },
+            { text: "NEWS", link: "/about/ourgroups/news" },
+            { text: "GALLERY", link: "/about/ourgroups/images" },
             { text: "Media 3", link: "/about/ourglobalmarkets" },
           ],
         },
@@ -328,3 +328,4 @@ function Header() {
 }
 
 export default Header;
+
