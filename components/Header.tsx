@@ -116,7 +116,7 @@ function Header() {
           heading: null,
           items: [
             { text: "FABRICATIONS", link: "/about/ourgroups/fabrications" },
-            { text: "COLOR COATING", link: "/about/ourgroups/color" },
+            { text: "COLOR COATING", link: "/about/ourgroups/colorcoating" },
             {
               text: "SURFACE COATING",
               link: "/about/ourgroups/surfacecoatings",
@@ -133,8 +133,9 @@ function Header() {
           heading: null,
           items: [
             { text: "NEWS", link: "/about/ourgroups/news" },
-            { text: "GALLERY", link: "/about/ourgroups/images" },
-            { text: "Media 3", link: "/about/ourglobalmarkets" },
+            { text: "IMAGE GALLERY", link: "/about/ourgroups/images" },
+            { text: "VIDEO GALLERY", link: "/about/videogallery" },
+            { text: "DOWNLOADS", link: "/about/downloads" },
           ],
         },
       ],
