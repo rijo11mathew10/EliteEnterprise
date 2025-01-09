@@ -238,63 +238,63 @@ function page() {
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 justify-items-center">
           <Image
-            src="/ourgroups/extrusionprofiles/thermal3.jpeg"
+            src="/ourgroups/colorcoating/color1.jpg"
             alt=""
             width={350}
             height={180}
             className="shadow-lg border-3 border-[#E8D858]"
           />
           <Image
-            src="/ourgroups/extrusionprofiles/thermal3.jpeg"
+            src="/ourgroups/colorcoating/color2.jpg"
             alt=""
             width={350}
             height={180}
             className="shadow-lg border-3 border-[#E8D858]"
           />
           <Image
-            src="/ourgroups/extrusionprofiles/thermal3.jpeg"
+            src="/ourgroups/colorcoating/color3.jpg"
             alt=""
             width={350}
             height={180}
             className="shadow-lg border-3 border-[#E8D858]"
           />
           <Image
-            src="/ourgroups/extrusionprofiles/thermal3.jpeg"
+            src="/ourgroups/colorcoating/color4.jpg"
             alt=""
             width={350}
             height={180}
             className="shadow-lg border-3 border-[#E8D858]"
           />
           <Image
-            src="/ourgroups/extrusionprofiles/thermal3.jpeg"
+            src="/ourgroups/colorcoating/color5.jpg"
             alt=""
             width={350}
             height={180}
             className="shadow-lg border-3 border-[#E8D858]"
           />
           <Image
-            src="/ourgroups/extrusionprofiles/thermal3.jpeg"
+            src="/ourgroups/colorcoating/color6.jpg"
             alt=""
             width={350}
             height={180}
             className="shadow-lg border-3 border-[#E8D858]"
           />
           <Image
-            src="/ourgroups/extrusionprofiles/thermal3.jpeg"
+            src="/ourgroups/colorcoating/color7.jpg"
             alt=""
             width={350}
             height={180}
             className="shadow-lg border-3 border-[#E8D858]"
           />
           <Image
-            src="/ourgroups/extrusionprofiles/thermal3.jpeg"
+            src="/ourgroups/colorcoating/color8.jpg"
             alt=""
             width={350}
             height={180}
             className="shadow-lg border-3 border-[#E8D858]"
           />
           <Image
-            src="/ourgroups/extrusionprofiles/thermal3.jpeg"
+            src="/ourgroups/colorcoating/color9.jpg"
             alt=""
             width={350}
             height={180}
