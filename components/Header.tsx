@@ -170,9 +170,9 @@ function Header() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-10 pt-5 pb-2 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 pt-5 pb-2 transition-all duration-300 ${
         scrolling
-          ? "bg-white shadow-lg backdrop-blur-lg h-[80px]"
+          ? "bg-white backdrop-blur-lg shadow-lg h-[80px]"
           : "bg-transparent"
       }`}
       style={{
