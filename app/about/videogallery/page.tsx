@@ -39,7 +39,7 @@ function page() {
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
               {/* Elite */}
-              <span className="text-4xl md:text-7xl block">DOWNLOADS</span>
+              <span className="text-4xl md:text-7xl block">VIDEO GALLERY</span>
               {/* Extrusion LLC */}
             </h1>
           </div>
@@ -54,7 +54,7 @@ function page() {
         >
           <hr className="w-2 h-8 md:h-12 bg-[#E8D858] border-none" />
           <h2 className="text-3xl  md:text-5xl font-semibold text-[#023D68] leading-tight">
-VIDEO GALLERY          </h2>
+MEDIA          </h2>
         </motion.div>
 
 
@@ -65,7 +65,7 @@ VIDEO GALLERY          </h2>
     whileInView={{ x: 0, opacity: 1 }}
     viewport={{ once: true }}
     transition={{ duration: 2.0 }}
-    onClick={() => window.open('https://example.com', '_blank')} // Link opens in a new tab
+    onClick={() => window.open('https://www.youtube.com/watch?v=5W3GkYXMmtU', '_blank')} // Link opens in a new tab
   >
     {/* Image */}
     <div className="w-full">
@@ -80,7 +80,7 @@ VIDEO GALLERY          </h2>
 
     {/* Text */}
     <p className="text-sm text-[#484848] p-4">
-    Elite Group at BIG 5 2017 Exhibition - Dubai (U.A.E.)    
+    Elite Club Onam & Bakrid 2019    
     </p>
   </motion.div>
   <motion.div
@@ -89,7 +89,7 @@ VIDEO GALLERY          </h2>
     whileInView={{ x: 0, opacity: 1 }}
     viewport={{ once: true }}
     transition={{ duration: 2.0 }}
-    onClick={() => window.open('https://example.com', '_blank')} // Link opens in a new tab
+    onClick={() => window.open('https://www.youtube.com/watch?v=xSMADUkHDXs', '_blank')} // Link opens in a new tab
   >
     {/* Image */}
     <div className="w-full">
@@ -104,7 +104,7 @@ VIDEO GALLERY          </h2>
 
     {/* Text */}
     <p className="text-sm text-[#484848] p-4">
-    Elite Group at BIG 5 2017 Exhibition - Dubai (U.A.E.)    
+    Elite Group of Companies   
     </p>
   </motion.div>
   <motion.div
@@ -113,7 +113,7 @@ VIDEO GALLERY          </h2>
     whileInView={{ x: 0, opacity: 1 }}
     viewport={{ once: true }}
     transition={{ duration: 2.0 }}
-    onClick={() => window.open('https://example.com', '_blank')} // Link opens in a new tab
+    onClick={() => window.open('https://www.youtube.com/watch?v=z2myxW-ObwA', '_blank')} // Link opens in a new tab
   >
     {/* Image */}
     <div className="w-full">
@@ -128,7 +128,7 @@ VIDEO GALLERY          </h2>
 
     {/* Text */}
     <p className="text-sm text-[#484848] p-4">
-    Elite Group at BIG 5 2017 Exhibition - Dubai (U.A.E.)    
+    ELITE GROUP UAE CORPORATE VIDEO     
     </p>
   </motion.div>
   <motion.div
@@ -137,7 +137,7 @@ VIDEO GALLERY          </h2>
     whileInView={{ x: 0, opacity: 1 }}
     viewport={{ once: true }}
     transition={{ duration: 2.0 }}
-    onClick={() => window.open('https://example.com', '_blank')} // Link opens in a new tab
+    onClick={() => window.open('https://www.youtube.com/watch?v=zhFxFv_47qQ&t=16s', '_blank')} // Link opens in a new tab
   >
     {/* Image */}
     <div className="w-full">
@@ -152,7 +152,7 @@ VIDEO GALLERY          </h2>
 
     {/* Text */}
     <p className="text-sm text-[#484848] p-4">
-    Elite Group at BIG 5 2017 Exhibition - Dubai (U.A.E.)    
+    SERVICES   
     </p>
   </motion.div>
 </div>
