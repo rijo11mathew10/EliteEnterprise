@@ -6,8 +6,6 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 
-
-
 function page() {
   return (
     <div>
@@ -48,15 +46,16 @@ function page() {
           </div>
         </motion.div>
       </div>
+      <div className="ml-40 mr-40 max-w-7xl mb-16">
       <motion.p
                 className="text-[#484848] mb-6 text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ durtion: 2.0 }}
-              >
+                transition={{ durtion: 1.0 }}
+              ><br></br>
                 Specialized in manufacturing of high quality extrusion dies and tooling. Equipped with latest CNC Wire Cut Machinery, Precision Lathes & Grinding Machines and other Convectional Machines with fully automated State of the art design unit with latest software.      </motion.p><div className="mx-auto max-w-7xl mb-16">
-                    
+                </div>
         <div>
           {/* Top Section */}
           <motion.div
@@ -110,14 +109,14 @@ function page() {
           >
             <div className="flex flex-col gap-4">
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer3.png"
+                src="/ourgroups/extrusiondies/dieimg1.jpeg"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg -ml-10 border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer2.png"
+                src="/ourgroups/extrusiondies/dieimg2.jpeg"
                 alt=""
                 width={350}
                 height={180}

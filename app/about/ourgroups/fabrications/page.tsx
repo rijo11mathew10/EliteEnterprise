@@ -45,6 +45,8 @@ function page() {
           </div>
         </motion.div>
       </div>
+      <div className="ml-40 mr-40 max-w-7xl mb-16">
+        <br></br>
       <motion.p
         className="text-[#484848] mb-6 text-justify md:pr-7"
         initial={{ opacity: 0, y: 30 }}
@@ -58,6 +60,7 @@ function page() {
         climatic conditions to add a further functional accessory to the
         aluminium production and complete its vast range.{" "}
       </motion.p>
+      </div>
       <div className="mx-auto max-w-7xl mb-16">
         <div>
           {/* Top Section */}
@@ -121,14 +124,14 @@ function page() {
             >
               <div className="flex flex-col gap-4">
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer3.png"
+                  src="/ourgroups/fabrications/fabrication3.jpg"
                   alt=""
                   width={350}
                   height={180}
                   className="shadow-lg -ml-10 border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
+                  src="/ourgroups/fabrications/fabrication4.jpg"
                   alt=""
                   width={350}
                   height={180}
@@ -158,28 +161,28 @@ function page() {
           >
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer3.png"
+                src="/ourgroups/fabrications/sphere1.jpeg"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer2.png"
+                src="/ourgroups/fabrications/sphere-of-operation-2.jpg"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer2.png"
+                src="/ourgroups/fabrications/sphere3.jpg"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/globalpioneer/globalpioneer2.png"
+                src="/ourgroups/fabrications/sphere4.jpg"
                 alt=""
                 width={350}
                 height={180}
@@ -305,21 +308,21 @@ function page() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer3.png"
+                  src="/ourgroups/fabrications/system1.jpg"
                   alt=""
                   width={350}
                   height={180}
                   className="shadow-lg -ml-10 border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
+                  src="/ourgroups/fabrications/system2.jpeg"
                   alt=""
                   width={350}
                   height={180}
                   className="shadow-lg -ml-10 border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
+                  src="/ourgroups/fabrications/system3.jpeg"
                   alt=""
                   width={350}
                   height={180}
@@ -327,7 +330,7 @@ function page() {
                 />
 
                 <Image
-                  src="/ourgroups/globalpioneer/globalpioneer2.png"
+                  src="/ourgroups/fabrications/system4.jpg"
                   alt=""
                   width={350}
                   height={180}

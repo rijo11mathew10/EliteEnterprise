@@ -215,17 +215,15 @@ function AboutPage() {
 </motion.div>
 
       </div>
-      <div className="relative h-[500px] flex flex-col items-center justify-center text-center">
+      <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">
   <video
-    className="absolute top-0 left-0 w-full h-full object-cover"
+    className="absolute inset-0 w-full h-full object-cover"
+    src="/about/About_company.mp4"
     autoPlay
     loop
     muted
     playsInline
-  >
-    <source src="/about/About_company.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  ></video>
 
   
         {/* Color Grading Overlay */}

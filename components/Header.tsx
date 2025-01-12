@@ -11,6 +11,7 @@ import {
 } from "@nextui-org/react";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion"; // Import motion from framer-motion
 
 function Header() {
   const [isClick] = useState(false);
@@ -50,15 +51,42 @@ function Header() {
         {
           heading: "OUR GROUPS",
           items: [
-            { text: "ELITE EXTRUSION LLC", link: "/about/ourgroups/eliteextrusion" },
-            { text: "NATIONAL ALUMINIUM EXTRUSION LLC", link: "/about/ourgroups/nationalaluminium" },
-            { text: "CLASSIC EXTRUSION LLC", link: "/about/ourgroups/classicextrusion" },
-            { text: "ALUMIL TECH GULF LLC", link: "/about/ourgroups/alumiltech" },
-            { text: "THERMOSET MIDDLE EAST", link: "/about/ourgroups/thermoset" },
-            { text: "GLOBAL PIONEER ALUMINIUM INDUSTRIES", link: "/about/ourgroups/globalpioneer" },
-            { text: "JORDAN ALUMINIUM EXTRUSION", link: "/about/ourgroups/jordan" },
-            { text: "UNITED POWDER COATING FZC", link: "/about/ourgroups/unitedpowdercoatingfzc" },
-            { text: "NASHAT METAL ENGINEERING LLC", link: "/about/ourgroups/nashat" },
+            {
+              text: "ELITE EXTRUSION LLC",
+              link: "/about/ourgroups/eliteextrusion",
+            },
+            {
+              text: "NATIONAL ALUMINIUM EXTRUSION LLC",
+              link: "/about/ourgroups/nationalaluminium",
+            },
+            {
+              text: "CLASSIC EXTRUSION LLC",
+              link: "/about/ourgroups/classicextrusion",
+            },
+            {
+              text: "ALUMIL TECH GULF LLC",
+              link: "/about/ourgroups/alumiltech",
+            },
+            {
+              text: "THERMOSET MIDDLE EAST",
+              link: "/about/ourgroups/thermoset",
+            },
+            {
+              text: "GLOBAL PIONEER ALUMINIUM INDUSTRIES",
+              link: "/about/ourgroups/globalpioneer",
+            },
+            {
+              text: "JORDAN ALUMINIUM EXTRUSION",
+              link: "/about/ourgroups/jordan",
+            },
+            {
+              text: "UNITED POWDER COATING FZC",
+              link: "/about/ourgroups/unitedpowdercoatingfzc",
+            },
+            {
+              text: "NASHAT METAL ENGINEERING LLC",
+              link: "/about/ourgroups/nashat",
+            },
           ],
         },
       ],
@@ -70,9 +98,12 @@ function Header() {
         {
           heading: null,
           items: [
-            { text: "Product 1", link: "/about" },
-            { text: "Product 2", link: "/about/ourprojects" },
-            { text: "Product 3", link: "/about/ourglobalmarkets" },
+            {
+              text: "EXTRUDED PROFILES",
+              link: "/about/ourgroups/extrudedprofiles",
+            },
+            { text: "COILS AND SHEETS", link: "/about/ourgroups/" },
+            { text: "EXTRUSION DIES", link: "/about/ourgroups/extrusiondies" },
           ],
         },
       ],
@@ -84,9 +115,12 @@ function Header() {
         {
           heading: null,
           items: [
-            { text: "Services 1", link: "/about" },
-            { text: "Services 2", link: "/about/ourprojects" },
-            { text: "Services 3", link: "/about/ourglobalmarkets" },
+            { text: "FABRICATIONS", link: "/about/ourgroups/fabrications" },
+            { text: "COLOR COATING", link: "/about/ourgroups/colorcoating" },
+            {
+              text: "SURFACE COATING",
+              link: "/about/ourgroups/surfacecoatings",
+            },
           ],
         },
       ],
@@ -98,9 +132,10 @@ function Header() {
         {
           heading: null,
           items: [
-            { text: "Media 1", link: "/about" },
-            { text: "Media 2", link: "/about/ourprojects" },
-            { text: "Media 3", link: "/about/ourglobalmarkets" },
+            { text: "NEWS", link: "/about/ourgroups/news" },
+            { text: "IMAGE GALLERY", link: "/about/ourgroups/images" },
+            { text: "VIDEO GALLERY", link: "/about/videogallery" },
+            { text: "DOWNLOADS", link: "/about/downloads" },
           ],
         },
       ],
@@ -135,16 +170,17 @@ function Header() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-10 pt-5 pb-2 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 pt-5 pb-2 transition-all duration-300 ${
         scrolling
-          ? "bg-white shadow-lg backdrop-blur-lg h-[80px]" // Smaller height on scroll
+          ? "bg-white backdrop-blur-lg shadow-lg h-[80px]"
           : "bg-transparent"
       }`}
       style={{
         backgroundImage: `url('/frame.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%)", // Black to Transparent Gradient
+        background:
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%)",
       }}
     >
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-2">
@@ -152,7 +188,7 @@ function Header() {
           {/* Logo Section */}
           <div
             className={`flex items-center transition-all duration-300 transform ${
-              scrolling ? "scale-75 opacity-0" : "scale-100 opacity-100" // Make the logo smaller and fade out when scrolling
+              scrolling ? "scale-75 opacity-0" : "scale-100 opacity-100"
             }`}
           >
             <Link href="/">
@@ -182,18 +218,18 @@ function Header() {
                     {list.topic}
                   </Link>
 
-                  {/* Dropdown (Rendered only on hover) */}
+                  {/* Dropdown (Rendered only on hover with animation) */}
                   {hoveredIndex === index && list.sections && (
-                    <div
-                      className="absolute left-0 mt-2 w-[35rem] rounded-xl bg-white bg-opacity-90 shadow-xl p-6 grid grid-cols-2 gap-6 border border-[#E8D858] transition-all duration-300 transform opacity-100"
+                    <motion.div
+                      className="absolute left-0 mt-2 rounded-xl bg-white bg-opacity-90 shadow-xl p-6 grid grid-cols-2 gap-6 border border-[#E8D858] transition-all duration-300"
                       style={{
                         zIndex: 10,
                         top: "100%",
-                        width:
-                          list.topic === "About Us"
-                            ? "35rem"
-                            : "15rem", // Adjust width as per topic
+                        width: list.topic === "About Us" ? "35rem" : "15rem",
                       }}
+                      initial={{ opacity: 0, y: 0 }} // Initial state (invisible and slightly above)
+                      animate={{ opacity: 1, y: 0 }} // Final state (fully visible and at normal position)
+                      transition={{ duration: 0.5, ease: "easeOut" }} // Smooth slide-down effect
                     >
                       {list.sections.map((section, sectionIndex) => (
                         <div key={sectionIndex}>
@@ -204,20 +240,29 @@ function Header() {
                           )}
                           <ul className="space-y-2">
                             {section.items.map((item, itemIndex) => (
-                              <li key={itemIndex}>
+                              <li
+                                key={`${index}-${sectionIndex}-${itemIndex}`}
+                                className={`${
+                                  list.topic !== "About Us"
+                                    ? "whitespace-nowrap"
+                                    : ""
+                                }`}
+                              >
                                 <Link
                                   href={item.link}
-                                  className="group text-black hover:text-black"
+                                  className="group text-black hover:text-black inline-block relative"
                                 >
-                                  {item.text}
-                                  <div className="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                                  <span className="relative">
+                                    {item.text}
+                                    <span className="absolute left-0 bottom-0 bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></span>
+                                  </span>
                                 </Link>
                               </li>
                             ))}
                           </ul>
                         </div>
                       ))}
-                    </div>
+                    </motion.div>
                   )}
                 </div>
               ))}
@@ -284,7 +329,12 @@ function Header() {
 
                           {/* Dropdown (Mobile) */}
                           {list.sections && (
-                            <div className="mt-2 pl-4">
+                            <motion.div
+                              className="mt-2 pl-4"
+                              initial={{ opacity: 0, y: -20 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.5, ease: "easeOut" }}
+                            >
                               {list.sections.map((section, sectionIndex) => (
                                 <div key={sectionIndex}>
                                   {section.heading && (
@@ -306,7 +356,7 @@ function Header() {
                                   </ul>
                                 </div>
                               ))}
-                            </div>
+                            </motion.div>
                           )}
                         </div>
                       ))}
