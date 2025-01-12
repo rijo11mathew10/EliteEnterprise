@@ -102,7 +102,10 @@ function Header() {
               text: "EXTRUDED PROFILES",
               link: "/about/ourgroups/extrudedprofiles",
             },
-            { text: "COILS AND SHEETS", link: "/about/ourgroups/" },
+            {
+              text: "COILS AND SHEETS",
+              link: "/about/ourgroups/coilsandsheets",
+            },
             { text: "EXTRUSION DIES", link: "/about/ourgroups/extrusiondies" },
           ],
         },
