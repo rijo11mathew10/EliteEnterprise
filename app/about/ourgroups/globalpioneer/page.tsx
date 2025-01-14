@@ -10,15 +10,15 @@ import { WobbleCards } from "@/components/ourgroups/globalpioneer/WobbleSection"
 
 const productData1 = [
   {
-    imageSrc: "/ourgroups/globalpioneer/railing_one.png",
+    imageSrc: "/ourgroups/globalpioneer/railing_one.jpg",
     title: "Railing",
   },
   {
-    imageSrc: "/ourgroups/globalpioneer/railing_two.png",
+    imageSrc: "/ourgroups/globalpioneer/railing_two.jpg",
     title: "Railing",
   },
   {
-    imageSrc: "/ourgroups/globalpioneer/railing_three.png",
+    imageSrc: "/ourgroups/globalpioneer/railing_three.jpg",
     title: "Railing",
   },
 ];
