@@ -151,6 +151,12 @@ function page() {
               whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.2, ease: "easeOut" }}
+              style={{
+                backgroundImage:"url('/ourgroups/nationalaluminium/nalexco.jpg')", // Replace with your image path
+                backgroundSize: "cover", // Ensures the image completely fills the div
+                backgroundPosition: "right", // Centers the image in the div
+                backgroundRepeat: "no-repeat", // Prevents the image from repeating
+              }}
             >
               <Image
                 src={"/ourgroups/nationalaluminium/nationalaluminium.png"}
