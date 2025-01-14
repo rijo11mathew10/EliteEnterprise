@@ -40,7 +40,7 @@ function page() {
             <h1 className="text-white font-semibold">
               {/* Elite */}
               <span className="text-4xl md:text-7xl block">
-                EXTRUDED PROFILES
+                COILS AND SHEETS
               </span>
               {/* Extrusion LLC */}
             </h1>
