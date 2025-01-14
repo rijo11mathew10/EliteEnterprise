@@ -39,7 +39,9 @@ function page() {
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
               {/* Elite */}
-              <span className="text-4xl md:text-7xl block">FABRICATIONS</span>
+              <span className="text-4xl md:text-7xl block">
+                EPDM RUBBER PRODUCTS
+              </span>
               {/* Extrusion LLC */}
             </h1>
           </div>
@@ -115,14 +117,14 @@ function page() {
           </motion.div>
         </div>
       </div>
-      <div>
+      <div className="mx-auto max-w-7xl p-4 bg-white rounded-lg shadow-lg">
         {/* Image banner to Upload */}
         <Image
-          src="/ourgroups/globalpioneer/globalpioneer3.png"
+          src=""
           alt=""
           width={977}
           height={361}
-          className="shadow-lg border-3 border-[#E8D858]"
+          className="w-full h-auto rounded-md border-4 border-[#E8D858] shadow-lg"
         />
       </div>
       <div>
