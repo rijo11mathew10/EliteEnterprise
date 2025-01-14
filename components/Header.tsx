@@ -104,7 +104,7 @@ function Header() {
             },
             { text: "COILS AND SHEETS", link: "/about/ourgroups/coilsandsheets" },
             { text: "EXTRUSION DIES", link: "/about/ourgroups/extrusiondies" },
-            { text: "EPDM RUBBER PRODUCTS", link: "/about/ourgroups/edpm" },
+            { text: "EPDM RUBBER", link: "/about/ourgroups/edpm" },
           ],
         },
       ],
