@@ -35,7 +35,7 @@ function Header() {
     },
     {
       topic: "About Us",
-      link: null,
+      link: "/about",
       sections: [
         {
           heading: "WHO WE ARE",
