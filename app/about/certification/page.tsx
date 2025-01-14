@@ -4,6 +4,13 @@ import Header from "@/components/Header";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
+// Define the certificate type
+interface Certificate {
+  title: string;
+  image: string;
+  url: string;
+}
+
 function Page() {
   const certificates = [
     {
@@ -26,30 +33,10 @@ function Page() {
       image: "/certification/qualityclassic.jpg", // Path to image
       url: "/certification/qualityclassic.pdf",   // Path to PDF
     },
-    {
-      title: "Coil Coater License",
-      image: "/certification/certificate1.jpg", // Path to image
-      url: "/certification/certificate1.pdf",   // Path to PDF
-    },
-    {
-      title: "Emirates Quality Mark - Alumill",
-      image: "/certification/qualityalumill.jpg", // Path to image
-      url: "/certification/qualityalumill.pdf",   // Path to PDF
-    },
-    {
-      title: "ISO - Alumill",
-      image: "/certification/isoalumill.jpg", // Path to image
-      url: "/certification/isoalumill.pdf",   // Path to PDF
-    },
-    {
-      title: "Emirates Quality Mark - Classic",
-      image: "/certification/qualityclassic.jpg", // Path to image
-      url: "/certification/qualityclassic.pdf",   // Path to PDF
-    },
   ];
 
-  // State to handle the modal visibility and the currently selected certificate
-  const [selectedCertificate, setSelectedCertificate] = useState(null);
+  // Define the selectedCertificate state with the proper type
+  const [selectedCertificate, setSelectedCertificate] = useState<Certificate | null>(null);
 
   // Function to close the modal
   const closeModal = () => {
@@ -87,7 +74,9 @@ function Page() {
         >
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
-              <span className="text-4xl md:text-7xl block">CERTIFICATIONS</span>
+              <span className="text-4xl md:text-7xl block">
+                QUALITY POLICY &amp; ASSURANCE
+              </span>
             </h1>
           </div>
         </motion.div>
@@ -95,11 +84,11 @@ function Page() {
 
       {/* Certificates Section */}
       <div className="flex flex-col items-center justify-center min-h-screen px-4 md:px-10 lg:px-20 bg-gray-100">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 w-full max-w-7xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-5xl">
           {certificates.map((certificate, index) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-white shadow-xl rounded-lg p-8 hover:shadow-2xl transition"
+              className="flex flex-col items-center bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition"
             >
               <img
                 src={certificate.image}
@@ -164,4 +153,3 @@ function Page() {
 }
 
 export default Page;
-
