@@ -40,13 +40,21 @@ function page() {
             <h1 className="text-white font-semibold">
               {/* Elite */}
               <span className="text-4xl md:text-7xl block">
+<<<<<<< HEAD
                 EXTRUDED PROFILES
+=======
+                COILS AND SHEETS
+>>>>>>> 746d55793018636ea1e2c234652e6834c137925e
               </span>
               {/* Extrusion LLC */}
             </h1>
           </div>
         </motion.div>
       </div>
+<<<<<<< HEAD
+=======
+      <div className="ml-40 mr-40 max-w-7xl mb-16"><br></br>
+>>>>>>> 746d55793018636ea1e2c234652e6834c137925e
       <motion.p
         className="text-[#484848] mb-6 text-justify md:pr-7"
         initial={{ opacity: 0, y: 30 }}
@@ -94,6 +102,10 @@ function page() {
         <li>ALLOYS AA 6063, 6061, 6082 </li>
         <li>TEMPER T4, T6 </li>
       </motion.ul> */}
+<<<<<<< HEAD
+=======
+      </div>
+>>>>>>> 746d55793018636ea1e2c234652e6834c137925e
 
       <div className="mx-auto max-w-7xl mb-16">
         <div>
@@ -130,7 +142,13 @@ function page() {
                 melted in the furnace, alloyed and analysed to ensure that the
                 correct composition is achieved. The alloy is created and
                 transferred to the holding furnace for direct casting.{" "}
+<<<<<<< HEAD
               </motion.p>
+=======
+
+              </motion.p>
+             
+>>>>>>> 746d55793018636ea1e2c234652e6834c137925e
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
@@ -143,6 +161,10 @@ function page() {
                 the caster machine with on line edge milling for the next
                 multi-stage rolling mill.{" "}
               </motion.p>
+<<<<<<< HEAD
+=======
+              <br></br>
+>>>>>>> 746d55793018636ea1e2c234652e6834c137925e
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
@@ -151,7 +173,13 @@ function page() {
                 transition={{ duration: 1.4 }}
               >
                 Fields of Applications:{" "}
+<<<<<<< HEAD
               </motion.p>
+=======
+                
+              </motion.p>
+              <br></br>
+>>>>>>> 746d55793018636ea1e2c234652e6834c137925e
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
@@ -204,6 +232,7 @@ function page() {
           </motion.div>
         </div>
       </div>
+<<<<<<< HEAD
       <div>
         {/* Image banner to Upload */}
         <Image
@@ -214,6 +243,9 @@ function page() {
           className="shadow-lg border-3 border-[#E8D858]"
         />
       </div>
+=======
+      
+>>>>>>> 746d55793018636ea1e2c234652e6834c137925e
       <div>
         {/* Top Section */}
         <motion.div
@@ -338,6 +370,7 @@ function page() {
           </div>
         </motion.div>
       </div>
+<<<<<<< HEAD
       <div>
         {/* Image banner to Upload */}
         <Image
@@ -348,6 +381,9 @@ function page() {
           className="shadow-lg border-3 border-[#E8D858]"
         />
       </div>
+=======
+      
+>>>>>>> 746d55793018636ea1e2c234652e6834c137925e
       <div className="mx-auto max-w-7xl mb-16">
         <div>
           {/* Top Section */}
@@ -449,6 +485,7 @@ function page() {
           </motion.div>
         </div>
       </div>
+<<<<<<< HEAD
       <div>
         {/* Image banner to Upload */}
         <Image
@@ -459,6 +496,8 @@ function page() {
           className="shadow-lg border-3 border-[#E8D858]"
         />
       </div>
+=======
+>>>>>>> 746d55793018636ea1e2c234652e6834c137925e
       <div className="mx-auto max-w-7xl mb-16">
         <div>
           {/* Top Section */}

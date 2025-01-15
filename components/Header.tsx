@@ -35,7 +35,7 @@ function Header() {
     },
     {
       topic: "About Us",
-      link: null,
+      link: "/about",
       sections: [
         {
           heading: "WHO WE ARE",
@@ -44,8 +44,8 @@ function Header() {
             { text: "OUR PROJECTS", link: "/about/ourprojects" },
             { text: "OUR GLOBAL MARKETS", link: "/about/ourglobalmarkets" },
             { text: "OUR SUPPLIERS", link: "/about/oursuppliers" },
-            { text: "OUR CERTIFICATIONS", link: "/about" },
-            { text: "OUR POLICIES AND ASSURANCE", link: "/about" },
+            { text: "OUR CERTIFICATIONS", link: "/about/certification" },
+            { text: "OUR POLICIES AND ASSURANCE", link: "/about/qualitypolicy" },
           ],
         },
         {
@@ -102,8 +102,9 @@ function Header() {
               text: "EXTRUDED PROFILES",
               link: "/about/ourgroups/extrudedprofiles",
             },
-            { text: "COILS AND SHEETS", link: "/about/ourgroups/" },
+            { text: "COILS AND SHEETS", link: "/about/ourgroups/coilsandsheets" },
             { text: "EXTRUSION DIES", link: "/about/ourgroups/extrusiondies" },
+            { text: "EPDM RUBBER", link: "/about/ourgroups/edpm" },
           ],
         },
       ],
