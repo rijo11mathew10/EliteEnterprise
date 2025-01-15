@@ -100,10 +100,10 @@ const App: React.FC = () => {
       unit: "Elite Group Stand once again at the BIG 5 2018",
       relatedImages: [
         "/imagegallery/imagegallcard1/img1.jpg",
-        "/imagegallery//imagegallcard1/img2.jpg",
-        "/imagegallery//imagegallcard1/img3.jpg",
-        "/imagegallery//imagegallcard1/img4.jpg",
-        "/imagegallery//imagegallcard1/img5.jpg",
+        "/imagegallery/imagegallcard1/img2.jpg",
+        "/imagegallery/imagegallcard1/img3.jpg",
+        "/imagegallery/imagegallcard1/img4.jpg",
+        "/imagegallery/imagegallcard1/img5.jpg",
       ],
     },
     {
@@ -111,9 +111,12 @@ const App: React.FC = () => {
       description: "29/11/2018",
       unit: "Elite Group Stand once again at the BIG 5 2018",
       relatedImages: [
-        "/imagegallery/related4.jpg",
-        "/imagegallery/related5.jpg",
-        "/imagegallery/related6.jpg",
+        "/imagegallery/imagegallcard2/img1.jpg",
+        "/imagegallery/imagegallcard2/img2.jpg",
+        "/imagegallery/imagegallcard2/img3.jpg",
+        "/imagegallery/imagegallcard2/img4.jpg",
+        "/imagegallery/imagegallcard2/img5.jpg",
+        "/imagegallery/imagegallcard2/img6.jpg",
       ],
     },
     {
@@ -121,9 +124,11 @@ const App: React.FC = () => {
       description: "29/11/2018",
       unit: "Elite Group Stand once again at the BIG 5 2018",
       relatedImages: [
-        "/imagegallery/related7.jpg",
-        "/imagegallery/related8.jpg",
-        "/imagegallery/related9.jpg",
+        "/imagegallery/imagegallcard3/img1.jpg",
+        "/imagegallery/imagegallcard3/img2.jpg",
+        "/imagegallery/imagegallcard3/img3.jpg",
+        "/imagegallery/imagegallcard3/img4.jpg",
+        "/imagegallery/imagegallcard3/img5.jpg",
       ],
     },
     {
@@ -131,9 +136,9 @@ const App: React.FC = () => {
       description: "29/11/2018",
       unit: "Elite Group Stand once again at the BIG 5 2018",
       relatedImages: [
-        "/imagegallery/related7.jpg",
-        "/imagegallery/related8.jpg",
-        "/imagegallery/related9.jpg",
+        "/imagegallery/imagegallcard4/img1.jpg",
+        "/imagegallery/imagegallcard4/img2.jpg",
+        "/imagegallery/imagegallcard4/img3.jpg",
       ],
     },
     {
@@ -141,9 +146,9 @@ const App: React.FC = () => {
       description: "29/11/2018",
       unit: "Elite Group Stand once again at the BIG 5 2018",
       relatedImages: [
-        "/imagegallery/related7.jpg",
-        "/imagegallery/related8.jpg",
-        "/imagegallery/related9.jpg",
+        "/imagegallery/imagegallcard5/img1.jpg",
+        "/imagegallery/imagegallcard5/img2.jpg",
+        "/imagegallery/imagegallcard5/img3.jpg",
       ],
     },
     {
@@ -151,9 +156,9 @@ const App: React.FC = () => {
       description: "29/11/2018",
       unit: "Elite Group Stand once again at the BIG 5 2018",
       relatedImages: [
-        "/imagegallery/related7.jpg",
-        "/imagegallery/related8.jpg",
-        "/imagegallery/related9.jpg",
+        "/imagegallery/imagegallcard6/img1.jpg",
+        "/imagegallery/imagegallcard6/img2.jpg",
+        "/imagegallery/imagegallcard6/img3.jpg",
       ],
     },
     {
@@ -161,9 +166,9 @@ const App: React.FC = () => {
       description: "29/11/2018",
       unit: "Elite Group Stand once again at the BIG 5 2018",
       relatedImages: [
-        "/imagegallery/related7.jpg",
-        "/imagegallery/related8.jpg",
-        "/imagegallery/related9.jpg",
+        "/imagegallery/imagegallcard7/img1.jpg",
+        "/imagegallery/imagegallcard7/img2.jpg",
+        "/imagegallery/imagegallcard7/img3.jpg",
       ],
     },
     {
@@ -171,9 +176,9 @@ const App: React.FC = () => {
       description: "29/11/2018",
       unit: "Elite Group Stand once again at the BIG 5 2018",
       relatedImages: [
-        "/imagegallery/related7.jpg",
-        "/imagegallery/related8.jpg",
-        "/imagegallery/related9.jpg",
+        "/imagegallery/imagegallcard8/img1.jpg",
+        "/imagegallery/imagegallcard8/img2.jpg",
+        "/imagegallery/imagegallcard8/img3.jpg",
       ],
     },
     // Add more cards as needed
