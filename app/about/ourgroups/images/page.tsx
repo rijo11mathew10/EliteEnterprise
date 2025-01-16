@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { motion } from "framer-motion";
 
 interface Card {
   image: string;
@@ -189,25 +190,38 @@ const App: React.FC = () => {
       <Header />
       {/* Banner Section */}
       <div
-        className="relative bg-cover bg-center h-[550px] flex items-center justify-center overflow-hidden group"
+        className="relative bg-cover bg-center h-[550px] flex items-center justify-center overflow-hidden"
         style={{
           backgroundImage: "url('/banner.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-
-        {/* Decorative lines with CSS transitions */}
-        <div className="absolute top-[120px] right-6 h-1 w-[45%] bg-[#E8D858] opacity-0 transform translate-x-12 transition-all duration-1000 ease-out group-hover:opacity-100 group-hover:translate-x-0"></div>
-        <div className="absolute bottom-6 left-6 h-1 w-[45%] bg-[#E8D858] opacity-0 transform -translate-x-12 transition-all duration-1000 ease-out group-hover:opacity-100 group-hover:translate-x-0"></div>
-
-        {/* Title */}
-        <div className="relative z-10 text-center px-4 opacity-0 transform translate-y-8 transition-all duration-1000 ease-out group-hover:opacity-100 group-hover:translate-y-0">
+        <div className="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
+        <motion.div
+          className="absolute top-[120px] right-6 h-1 w-[45%] bg-[#E8D858] z-0 pointer-events-none"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2.5, ease: "easeOut" }}
+        ></motion.div>
+        <motion.div
+          className="absolute bottom-6 left-6 h-1 w-[45%] bg-[#E8D858] z-0 pointer-events-none"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2.5, ease: "easeOut" }}
+        ></motion.div>
+        <motion.div
+          className="relative z-0 text-center px-4"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+        >
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
-              <span className="text-4xl md:text-7xl block">IMAGE GALLERY</span>
+              {/* Elite */}
+              <span className="text-4xl md:text-7xl block">IMAGES</span>
+              {/* Extrusion LLC */}
             </h1>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <CardGrid cards={cards} />
