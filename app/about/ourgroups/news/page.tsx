@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { motion } from "framer-motion";
 
 interface Card {
   image: string;
