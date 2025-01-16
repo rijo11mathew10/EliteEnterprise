@@ -41,7 +41,7 @@ function page() {
       </div>
 
       {/* Adjusted Description Section */}
-      <div className="p-24 text-[#484848]">
+      <div className="p-12 lg:p-24 text-[#484848]">
         <motion.p
           className="mb-6 leading-6 text-justify mt-[-100px]" // Negative margin to move text up
           initial={{ opacity: 0, y: 50 }}
