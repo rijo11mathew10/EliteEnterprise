@@ -43,7 +43,7 @@ function page() {
         </motion.div>
       </div>
 
-      <div className="bg-[#023D68] -top-96">
+      <div className="bg-[#023D68] top-96">
         <ContactForm />
       </div>
       <hr className=" bg-white" />
