@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+import React, { useState } from "react";
+import Image from "next/image";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
@@ -7,6 +9,7 @@ interface Card {
   title?: string;
   description: string;
   unit: string;
+  relatedImages: string[]; // Array of related images for "View More"
 }
 
 interface CardGridProps {
@@ -14,30 +17,77 @@ interface CardGridProps {
 }
 
 const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
+  const [expandedCard, setExpandedCard] = useState<number | null>(null);
+
+  const handleViewMore = (index: number) => {
+    setExpandedCard(index === expandedCard ? null : index);
+  };
+
   return (
     <div className="container mx-auto px-4 py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {cards.map((card, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 relative">
-            <div className="relative h-64">
-              <img 
-                src={card.image} 
-                alt={card.title || card.description}
-                className="w-full h-full object-cover"
-              />
+      {expandedCard === null ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 relative"
+            >
+              {/* Image Section */}
+              <div className="relative h-64">
+                <Image
+                  src={card.image}
+                  alt={card.title || card.description}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-t-lg"
+                />
+                {/* View More Button */}
+                <button
+                  onClick={() => handleViewMore(index)}
+                  className="absolute bottom-4 left-4 bg-[#023D68] text-white py-2 px-4 rounded hover:bg-[#03508A] transition duration-300"
+                >
+                  View More
+                </button>
+              </div>
+
+              {/* Card Details */}
+              <div className="p-6">
+                <p className="text-sm text-gray-600">{card.description}</p>
+                <p className="text-sm text-gray-600">{card.unit}</p>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#E8D858]"></div>
             </div>
-            <div className="p-6">
-              <p className="text-sm text-gray-600">
-                {card.description}
-              </p>
-              <p className="text-sm text-gray-600">
-                {card.unit}
-              </p>
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#E8D858]"></div>
+          ))}
+        </div>
+      ) : (
+        // Render Related Images Section
+        <div>
+          <button
+            onClick={() => setExpandedCard(null)}
+            className="mb-4 bg-[#023D68] text-white py-2 px-4 rounded hover:bg-[#03508A] transition duration-300"
+          >
+            Back to Gallery
+          </button>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {cards[expandedCard].relatedImages.map((image, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 relative"
+              >
+                <div className="relative h-64">
+                  <Image
+                    src={image}
+                    alt={`Related image ${index + 1}`}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-t-lg"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
@@ -45,106 +95,93 @@ const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
 const App: React.FC = () => {
   const cards: Card[] = [
     {
-      image: "/cardgrid/slide1.jpg",
+      image: "/imagegallery/initialcardsimage/imagegallery1.jpg",
       description: "29/11/2018",
       unit: "Elite Group Stand once again at the BIG 5 2018",
+      relatedImages: [
+        "/imagegallery/imagegallcard1/img1.jpg",
+        "/imagegallery/imagegallcard1/img2.jpg",
+        "/imagegallery/imagegallcard1/img3.jpg",
+        "/imagegallery/imagegallcard1/img4.jpg",
+        "/imagegallery/imagegallcard1/img5.jpg",
+      ],
     },
     {
-      image: "/cardgrid/slide2.jpg",
-      title: "POWDER COATING DIVISION",
-      description: "44,400 metric ton",
-      unit: "Output per annum",
+      image: "/imagegallery/initialcardsimage/imagegallery2.jpg",
+      description: "29/11/2018",
+      unit: "Elite Group Stand once again at the BIG 5 2018",
+      relatedImages: [
+        "/imagegallery/imagegallcard2/img1.jpg",
+        "/imagegallery/imagegallcard2/img2.jpg",
+        "/imagegallery/imagegallcard2/img3.jpg",
+        "/imagegallery/imagegallcard2/img4.jpg",
+        "/imagegallery/imagegallcard2/img5.jpg",
+        "/imagegallery/imagegallcard2/img6.jpg",
+      ],
     },
     {
-      image: "/cardgrid/slide3.jpg",
-      title: "ANODIZING DIVISION",
-      description: "14,800 metric ton",
-      unit: "Output per annum",
+      image: "/imagegallery/initialcardsimage/imagegallery3.jpg",
+      description: "29/11/2018",
+      unit: "Elite Group Stand once again at the BIG 5 2018",
+      relatedImages: [
+        "/imagegallery/imagegallcard3/img1.jpg",
+        "/imagegallery/imagegallcard3/img2.jpg",
+        "/imagegallery/imagegallcard3/img3.jpg",
+        "/imagegallery/imagegallcard3/img4.jpg",
+        "/imagegallery/imagegallcard3/img5.jpg",
+      ],
     },
     {
-      image: "/cardgrid/slide4.jpg",
-      title: "WOOD COATING DIVISION",
-      description: "1500 metric ton",
-      unit: "Output per annum",
+      image: "/imagegallery/initialcardsimage/imagegallery4.jpg",
+      description: "29/11/2018",
+      unit: "Elite Group Stand once again at the BIG 5 2018",
+      relatedImages: [
+        "/imagegallery/imagegallcard4/img1.jpg",
+        "/imagegallery/imagegallcard4/img2.jpg",
+        "/imagegallery/imagegallcard4/img3.jpg",
+      ],
     },
     {
-      image: "/cardgrid/slide5.jpg",
-      title: "EXTRUSION DIE DIVISION",
-      description: "1800 Dies",
-      unit: "Output per annum",
+      image: "/imagegallery/initialcardsimage/imagegallery5.jpg",
+      description: "29/11/2018",
+      unit: "Elite Group Stand once again at the BIG 5 2018",
+      relatedImages: [
+        "/imagegallery/imagegallcard5/img1.jpg",
+        "/imagegallery/imagegallcard5/img2.jpg",
+        "/imagegallery/imagegallcard5/img3.jpg",
+      ],
     },
     {
-      image: "/cardgrid/slide6.jpg",
-      title: "EPDM RUBBER PRODUCTS DIVISION",
-      description: "1800 metric ton",
-      unit: "Output per annum",
+      image: "/imagegallery/initialcardsimage/imagegallery6.jpg",
+      description: "29/11/2018",
+      unit: "Elite Group Stand once again at the BIG 5 2018",
+      relatedImages: [
+        "/imagegallery/imagegallcard6/img1.jpg",
+        "/imagegallery/imagegallcard6/img2.jpg",
+        "/imagegallery/imagegallcard6/img3.jpg",
+      ],
     },
     {
-      image: "/cardgrid/slide7.jpg",
-      title: "ALUMINIUM COIL & SHEET DIVISION",
-      description: "30,000 metric ton",
-      unit: "Output per annum",
+      image: "/imagegallery/initialcardsimage/imagegallery7.jpg",
+      description: "29/11/2018",
+      unit: "Elite Group Stand once again at the BIG 5 2018",
+      relatedImages: [
+        "/imagegallery/imagegallcard7/img1.jpg",
+        "/imagegallery/imagegallcard7/img2.jpg",
+        "/imagegallery/imagegallcard7/img3.jpg",
+      ],
     },
     {
-      image: "/cardgrid/slide4.jpg",
-      title: "SOLAR DIVISION",
-      description: "25,000 metric ton",
-      unit: "Output per annum",
+      image: "/imagegallery/initialcardsimage/imagegallery8.jpg",
+      description: "29/11/2018",
+      unit: "Elite Group Stand once again at the BIG 5 2018",
+      relatedImages: [
+        "/imagegallery/imagegallcard8/img1.jpg",
+        "/imagegallery/imagegallcard8/img2.jpg",
+        "/imagegallery/imagegallcard8/img3.jpg",
+      ],
     },
-    {
-      image: "/cardgrid/slide4.jpg",
-      title: "RECYCLING DIVISION",
-      description: "18,000 metric ton",
-      unit: "Recycled aluminium per annum",
-    },
-    {
-      image: "/cardgrid/slide4.jpg",
-      title: "FOUNDRY DIVISION",
-      description: "20,000 metric ton",
-      unit: "Output per annum",
-    },
-    {
-      image: "/cardgrid/slide4.jpg",
-      title: "ARCHITECTURAL PRODUCTS",
-      description: "Premium designs",
-      unit: "Available worldwide",
-    },
-    {
-      image: "/cardgrid/slide4.jpg",
-      title: "SPECIALTY EXTRUSIONS",
-      description: "Custom solutions",
-      unit: "For diverse industries",
-    },
-    {
-      image: "/cardgrid/slide4.jpg",
-      title: "INDUSTRIAL PRODUCTS",
-      description: "High performance",
-      unit: "For manufacturing needs",
-    },
-    {
-      image: "/cardgrid/slide4.jpg",
-      title: "TRANSPORTATION PRODUCTS",
-      description: "Lightweight aluminium",
-      unit: "For vehicles",
-    },
-    {
-      image: "/cardgrid/slide4.jpg",
-      title: "ENERGY EFFICIENT SOLUTIONS",
-      description: "Advanced designs",
-      unit: "For sustainable development",
-    },
-    {
-      image: "/cardgrid/slide4.jpg",
-      title: "HIGH PRECISION EXTRUSIONS",
-      description: "Precision engineering",
-      unit: "For critical applications",
-    },
-    {
-      image: "/cardgrid/slide4.jpg",
-      title: "EXTRUSION TESTING FACILITY",
-      description: "Quality assurance",
-      unit: "State-of-the-art labs",
-    },
+    // Add more cards as needed
   ];
 
   return (
@@ -158,7 +195,7 @@ const App: React.FC = () => {
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-        
+
         {/* Decorative lines with CSS transitions */}
         <div className="absolute top-[120px] right-6 h-1 w-[45%] bg-[#E8D858] opacity-0 transform translate-x-12 transition-all duration-1000 ease-out group-hover:opacity-100 group-hover:translate-x-0"></div>
         <div className="absolute bottom-6 left-6 h-1 w-[45%] bg-[#E8D858] opacity-0 transform -translate-x-12 transition-all duration-1000 ease-out group-hover:opacity-100 group-hover:translate-x-0"></div>
