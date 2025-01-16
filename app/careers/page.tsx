@@ -9,8 +9,13 @@ import Forms from "@/components/careers/Forms";
 interface Job {
   title: string;
   paragraph: string;
+  description: string;
+  description1: string;
   bulletPoints: string[];
   location: string;
+  roles: string;
+  bulletPoints1: string[];
+  purpose: string;
   type: string;
 }
 
@@ -20,44 +25,55 @@ function Page() {
 
   const jobOpenings: Job[] = [  // Explicitly define jobOpenings as an array of Job objects
     {
-      title: "Frontend Developer",
-      paragraph: "We are looking for a talented frontend developer to join our team. You'll work closely with the product and design teams to create beautiful, responsive user interfaces.",
+      title: "Finance Manager",
+      paragraph: "Qualification/ Prerequisite:",
+      description: "",
       bulletPoints: [
-        "Develop responsive user interfaces.",
-        "Work closely with design and product teams.",
-        "Optimize components for maximum performance.",
-        "Write clean, scalable, and reusable code.",
+        "MCom/MBA Finance/CA",
+        "Min 5 years’ experience in extrusion companies or similar industries",
+      ],
+      purpose: "Job Purpose:",
+      description1: "To lead finance department and support all other departments for smooth operation of the company.",
+      roles: "Roles, Responsibilities and Authorities:",
+      bulletPoints1: [
+        "Leading finance team to provide vital financial information to ensure smooth running of the organisation. Implementation of ERP Systems and co-ordination for system improvements in accounting and reporting system along with internal controls.",
+        "Preparation of all Reports like Inventory related Report, MIS and Cash Flow & Daily Bank Position to Internal and External Auditors.",
+        "Monthly Billet Details preparation for pricing and billet delivery on daily basis, including uploading of billet requirement details in EGA portal.",
+        "Coordination with Banking concern person for related documents submission and required details.",
+        "Coordination with Internal &amp; External Auditors and Banker for time-to-time reports and submission.",
+        "Signature of all finance related documents and vouchers",
       ],
       location: "Remote",
       type: "Full-time",
     },
     {
-      title: "Backend Developer",
-      paragraph: "Join our backend team to develop scalable applications. You'll work with cutting-edge technologies to build and maintain APIs and databases.",
+      title: "Die Corrector",
+      paragraph: "Qualification/ Prerequisite:",
+      description: "",
       bulletPoints: [
-        "Develop and maintain scalable APIs.",
-        "Work with databases to ensure high availability.",
-        "Implement security and data protection measures.",
-        "Collaborate with frontend developers for seamless integration.",
+        "High school diploma or equivalent technical certifications.",
+        "5+ years of experience in aluminium extrusion or die manufacturing.",
+        "Strong knowledge of extrusion techniques and die design.",
+        "Ability to work with multiple departments and deliver concise findings and recommendations.",
+        "Physical ability to lift and handle heavy die components.",
       ],
-      location: "New York",
+      purpose: "",
+      description1: "",
+      roles: "Roles, Responsibilities and Authorities:",
+      bulletPoints1: [
+        "Inspect, analyze, and correct flaws in extrusion dies.",
+        "Evaluate die designs to ensure adherence to quality standards.",
+        "Resolve extrusion issues impacting die performance.",
+        "Collaborate with extrusion press operators and quality inspectors to improve die functionality.",
+        "Conduct quality tests on extruded profiles to meet client requirements.",
+        "Maintain expertise in die handling, storage, and performance monitoring.",
+        "Adhere to all safety protocols and practices.",
+      ],
+      location: "Remote",
       type: "Full-time",
-    },
-    {
-      title: "UI/UX Designer",
-      paragraph: "We need a creative UI/UX designer to enhance our user experience. The ideal candidate will work on improving the visual elements and the overall experience of our product.",
-      bulletPoints: [
-        "Design intuitive and beautiful user interfaces.",
-        "Conduct user research and usability testing.",
-        "Create prototypes and high-fidelity mockups.",
-        "Collaborate with developers to ensure accurate implementation.",
-      ],
-      location: "Los Angeles",
-      type: "Part-time",
     },
   ];
 
-  // Explicitly define the type of 'job' parameter in openModal function
   const openModal = (job: Job) => {
     setSelectedJob(job);
     setIsModalOpen(true);
@@ -99,7 +115,6 @@ function Page() {
         >
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
-              {/* Elite */}
               <span className="text-4xl md:text-7xl block">CAREERS</span>
             </h1>
           </div>
@@ -176,15 +191,32 @@ function Page() {
           >
             <h4 className="text-2xl font-semibold text-[#023D68] mb-4">{selectedJob.title}</h4>
             <p className="text-gray-700 mb-4">{selectedJob.paragraph}</p>
+            <p className="text-gray-700 mb-4">{selectedJob.description1}</p>
+
+            {/* Display Bullet Points */}
             <ul className="text-gray-700 mb-4">
               {selectedJob.bulletPoints.map((point, index) => (
                 <li key={index} className="list-disc pl-5">{point}</li>
               ))}
             </ul>
+
+            {/* Display Job Purpose */}
+            <p className="text-gray-700 mb-4">{selectedJob.purpose}</p>
+
+            {/* Display Roles, Responsibilities, and Authorities */}
+            <h5 className="text-xl font-semibold text-[#023D68] mb-4">{selectedJob.roles}</h5>
+            <ul className="text-gray-700 mb-4">
+              {selectedJob.bulletPoints1.map((point, index) => (
+                <li key={index} className="list-disc pl-5">{point}</li>
+              ))}
+            </ul>
+
+            {/* Display Job Location and Type */}
             <div className="flex justify-between text-sm text-gray-600 mb-4">
               <span>{selectedJob.location}</span>
               <span>{selectedJob.type}</span>
             </div>
+
             <button
               className="bg-[#023D68] text-white py-2 px-6 rounded-lg"
               onClick={closeModal}
