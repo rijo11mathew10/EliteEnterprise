@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { motion } from "framer-motion";
 
 interface Card {
   image: string;
@@ -209,8 +210,14 @@ const App: React.FC = () => {
           </div>
         </div>
       </div>
-
+      
+          <motion.div
+                    className="absolute top-[120px] right-6 h-1 w-[45%] bg-[#E8D858] z-0 pointer-events-none"
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 2.5, ease: "easeOut" }}>
       <CardGrid cards={cards} />
+      </motion.div>
       <Footer />
     </div>
   );

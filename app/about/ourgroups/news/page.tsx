@@ -26,14 +26,18 @@ const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {cards.map((card, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 relative">
-            <div className="relative h-64">
+            <motion.div
+                    className="relative h-64 pointer-events-none"
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 2.5, ease: "easeOut" }}>
               <img 
                 src={card.image} 
                 alt={card.title || card.description}
                 className="w-full h-full object-cover cursor-pointer"
                 onClick={() => setSelectedImage(card.image)} // Set selected image on click
               />
-            </div>
+            </motion.div>
             <div className="p-6">
               <p className="text-sm text-gray-600">
                 {card.description}
