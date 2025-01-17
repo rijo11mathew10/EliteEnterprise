@@ -39,7 +39,7 @@ function page() {
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
               {/* Elite */}
-              <span className="text-4xl md:text-7xl block">FABRICATIONS</span>
+              <span className="text-4xl md:text-7xl block">EPDM RUBBER PRODUCTS</span>
               {/* Extrusion LLC */}
             </h1>
           </div>
@@ -71,8 +71,9 @@ function page() {
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
+            
             {/* Text Column */}
-            <div className="col-span-12 md:col-span-7">
+            <div className="col-span-50 md:col-span-7">
               <motion.div
                 className="flex gap-3 mb-8"
                 initial={{ x: -50, opacity: 0 }}
@@ -115,16 +116,7 @@ function page() {
           </motion.div>
         </div>
       </div>
-      <div>
-        {/* Image banner to Upload */}
-        <Image
-          src="/ourgroups/globalpioneer/globalpioneer3.png"
-          alt=""
-          width={977}
-          height={361}
-          className="shadow-lg border-3 border-[#E8D858]"
-        />
-      </div>
+      
       <div>
         {/* Top Section */}
         <motion.div
@@ -142,46 +134,53 @@ function page() {
             viewport={{ once: true }}
             transition={{ duration: 2.0 }}
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-6">
               <Image
-                src="/ourgroups/fabrications/sphere1.jpeg"
-                alt=""
-                width={270}
-                height={260}
-                className="shadow-lg border-3 border-[#E8D858]"
-              />
-              <Image
-                src="/ourgroups/fabrications/sphere-of-operation-2.jpg"
+                src="/ourgroups/epdm/epdm1.jpg"
                 alt=""
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
-              <div>
+              <Image
+                src="/ourgroups/epdm/epdm2.jpg"
+                alt=""
+                width={270}
+                height={270}
+                className="shadow-lg border-3 border-[#E8D858]"
+              />
+              
                 <Image
-                  src="/ourgroups/fabrications/sphere3.jpg"
+                  src="/ourgroups/epdm/epdm6.jpg"
                   alt=""
-                  width={350}
-                  height={180}
+                  width={270}
+                  height={270}
                   className="shadow-lg border-3 border-[#E8D858]"
                 />
-              </div>
-              <div>
+              
+              
                 <Image
-                  src="/ourgroups/fabrications/sphere4.jpg"
+                  src="/ourgroups/epdm/epdm4.jpg"
                   alt=""
                   width={270}
                   height={270}
                   className="shadow-lg border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/fabrications/sphere4.jpg"
+                  src="/ourgroups/epdm/epdm5.jpg"
                   alt=""
                   width={270}
                   height={270}
                   className="shadow-lg border-3 border-[#E8D858]"
                 />
-              </div>
+                <Image
+                  src="/ourgroups/epdm/epdm7.jpg"
+                  alt=""
+                  width={270}
+                  height={270}
+                  className="shadow-lg border-3 border-[#E8D858]"
+                />
+              
             </div>
           </motion.div>
 
@@ -340,40 +339,32 @@ function page() {
               </motion.ul>
             </div>
             <motion.div
-              className="hidden md:col-span-4 md:block bg-[#023D68] p-6 text-white"
+              className="hidden md:col-span-4 md:block text-[#484848] p-6"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 2.0 }}
             >
-              <div className="col-span-12 md:col-span-7">
+              
                 <motion.p
-                  className="text-[#484848] mb-6 text-justify md:pr-7"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 2.0 }}
                 >
                   Below are different sphere of application:{" "}
                 </motion.p>
+                <br></br>
                 <motion.ul
-                  className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1.4 }}
+                  
                 >
-                  <li>Aluminium & Glass / Wood / PVC: Window Systems</li>
-                  <li>Thermal Break & Conventional Systems</li>
-                  <li>Curtain Walls</li>
-                  <li>Structural Glazing</li>
-                  <li>Sliding Windows</li>
-                  <li>Casement Windows</li>
-                  <li>Tilt & Turn Windows</li>
-                  <li>Doors</li>
-                  <li>Facades</li>
+                  <li>*Aluminium & Glass / Wood / PVC:Window</li>
+                  <li>*Thermal Break & Conventional Systems</li>
+                  <li>*Curtain Walls</li>
+                  <li>*Structural Glazing</li>
+                  <li>*Sliding Windows</li>
+                  <li>*Casement Windows</li>
+                  <li>*Tilt & Turn Windows</li>
+                  <li>*Doors</li>
+                  <li>*Facades</li>
                 </motion.ul>
-              </div>
+              
             </motion.div>
           </motion.div>
         </div>
