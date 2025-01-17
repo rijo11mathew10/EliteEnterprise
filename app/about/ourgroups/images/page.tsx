@@ -19,13 +19,23 @@ interface CardGridProps {
 
 const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const handleViewMore = (index: number) => {
     setExpandedCard(index === expandedCard ? null : index);
   };
 
+  const openImageModal = (image: string) => {
+    setSelectedImage(image);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="container mx-auto px-4 py-16">
+      {/* Render Cards or Related Images */}
       {expandedCard === null ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card, index) => (
@@ -69,23 +79,56 @@ const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
           >
             Back to Gallery
           </button>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
             {cards[expandedCard].relatedImages.map((image, index) => (
-              <div
+              <motion.div
                 key={index}
                 className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 relative"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="relative h-64">
+                <div className="relative h-64 cursor-pointer">
                   <Image
                     src={image}
                     alt={`Related image ${index + 1}`}
                     layout="fill"
                     objectFit="cover"
                     className="rounded-t-lg"
+                    onClick={() => openImageModal(image)} // Open image in modal
                   />
                 </div>
-              </div>
+              </motion.div>
             ))}
+          </motion.div>
+        </div>
+      )}
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
+          onClick={closeImageModal} // Close modal on clicking outside
+        >
+          <div className="relative">
+            <Image
+              src={selectedImage}
+              alt="Selected Image"
+              width={800}
+              height={600}
+              className="rounded-lg"
+            />
+            <button
+              onClick={closeImageModal} // Close modal
+              className="absolute top-2 right-2 text-white bg-[#023D68] hover:bg-[#03508A] p-2 rounded-full"
+            >
+              &times;
+            </button>
           </div>
         </div>
       )}
@@ -97,7 +140,7 @@ const App: React.FC = () => {
   const cards: Card[] = [
     {
       image: "/imagegallery/imagegallcard1/IMG03.jpeg",
-      description: "29/11/2018",
+      description: "",
       unit: "13TH ANNUAL FUNCTION-2018",
       relatedImages: [
         "/imagegallery/imagegallcard1/IMG01.jpeg",
@@ -136,26 +179,6 @@ const App: React.FC = () => {
         "/imagegallery/imagegallcard1/IMG34.jpeg",
         "/imagegallery/imagegallcard1/IMG35.jpeg",
         "/imagegallery/imagegallcard1/IMG36.jpeg",
-        "/imagegallery/imagegallcard1/IMG37.jpeg",
-        "/imagegallery/imagegallcard1/IMG38.jpeg",
-        "/imagegallery/imagegallcard1/IMG39.jpeg",
-        "/imagegallery/imagegallcard1/IMG40.jpeg",
-        "/imagegallery/imagegallcard1/IMG41.jpeg",
-        "/imagegallery/imagegallcard1/IMG42.jpeg",
-        "/imagegallery/imagegallcard1/IMG43.jpeg",
-        "/imagegallery/imagegallcard1/IMG44.jpeg",
-        "/imagegallery/imagegallcard1/IMG45.jpeg",
-        "/imagegallery/imagegallcard1/IMG46.jpeg",
-        "/imagegallery/imagegallcard1/IMG47.jpeg",
-        "/imagegallery/imagegallcard1/IMG48.jpeg",
-        "/imagegallery/imagegallcard1/IMG49.jpeg",
-        "/imagegallery/imagegallcard1/IMG50.jpeg",
-        "/imagegallery/imagegallcard1/IMG51.jpeg",
-        "/imagegallery/imagegallcard1/IMG52.jpeg",
-        "/imagegallery/imagegallcard1/IMG53.jpeg",
-        "/imagegallery/imagegallcard1/IMG54.jpeg",
-        "/imagegallery/imagegallcard1/IMG55.jpeg",
-        "/imagegallery/imagegallcard1/IMG56.jpeg",
       ],
     },
     {
@@ -170,13 +193,9 @@ const App: React.FC = () => {
         "/imagegallery/imagegallcard2/IMG05.jpg",
         "/imagegallery/imagegallcard2/IMG06.jpg",
         "/imagegallery/imagegallcard2/IMG07.jpg",
-        "/imagegallery/imagegallcard2/IMG08.jpg",
+        
         "/imagegallery/imagegallcard2/IMG09.jpg",
         "/imagegallery/imagegallcard2/IMG10.jpg",
-        "/imagegallery/imagegallcard2/IMG11.jpg",
-        "/imagegallery/imagegallcard2/IMG12.jpg",
-        "/imagegallery/imagegallcard2/IMG13.jpg",
-        "/imagegallery/imagegallcard2/IMG14.jpg",
       ],
     },
     {
@@ -228,8 +247,9 @@ const App: React.FC = () => {
         "/imagegallery/imagegallcard3/IMG42.jpeg",
         "/imagegallery/imagegallcard3/IMG43.jpeg",
         "/imagegallery/imagegallcard3/IMG44.jpeg",
-        "/imagegallery/imagegallcard3/IMG45.jpeg",
         "/imagegallery/imagegallcard3/IMG46.jpeg",
+        
+
       ],
     },
     {
@@ -256,7 +276,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      image: "/imagegallery/imagegallcard6/IMG09.jpg",
+      image: "/imagegallery/imagegallcard6/IMG01.jpg",
       description: "",
       unit: "ONAM BAKRID CELEBRATION 2017",
       relatedImages: [
@@ -279,7 +299,7 @@ const App: React.FC = () => {
       ],
     },
     {
-      image: "/imagegallery/imagegallcard7/IMG05.jpeg",
+      image: "/imagegallery/imagegallcard7/IMG01.jpeg",
       description: "",
       unit: "Safety and First Aid course in Elite Group",
       relatedImages: [
@@ -290,10 +310,60 @@ const App: React.FC = () => {
         "/imagegallery/imagegallcard7/IMG05.jpeg",
         "/imagegallery/imagegallcard7/IMG06.jpeg",
         "/imagegallery/imagegallcard7/IMG07.jpeg",
-        "/imagegallery/imagegallcard7/IMG08.jpeg",
       ],
     },
-    // Add more cards as needed
+    {
+      image: "/imagegallery/imagegallcard8/IMG01.jpg",
+      description: "",
+      unit: "SPORTS MEET 2018",
+      relatedImages: [
+        "/imagegallery/imagegallcard8/IMG01.jpg",
+        "/imagegallery/imagegallcard8/IMG02.jpg",
+        "/imagegallery/imagegallcard8/IMG03.jpg",
+        "/imagegallery/imagegallcard8/IMG04.jpg",
+        "/imagegallery/imagegallcard8/IMG05.jpg",
+        "/imagegallery/imagegallcard8/IMG06.jpg",
+        "/imagegallery/imagegallcard8/IMG07.jpg",
+        "/imagegallery/imagegallcard8/IMG08.jpg",
+        "/imagegallery/imagegallcard8/IMG09.jpg",
+        "/imagegallery/imagegallcard8/IMG10.jpg",
+        "/imagegallery/imagegallcard8/IMG11.jpg",
+        "/imagegallery/imagegallcard8/IMG12.jpg",
+        "/imagegallery/imagegallcard8/IMG13.jpg",
+        "/imagegallery/imagegallcard8/IMG14.jpg",
+        "/imagegallery/imagegallcard8/IMG15.jpg",
+        "/imagegallery/imagegallcard8/IMG16.jpg",
+        "/imagegallery/imagegallcard8/IMG17.jpg",
+        "/imagegallery/imagegallcard8/IMG18.jpg",
+        "/imagegallery/imagegallcard8/IMG19.jpg",
+        "/imagegallery/imagegallcard8/IMG20.jpg",
+        "/imagegallery/imagegallcard8/IMG21.jpg",
+        "/imagegallery/imagegallcard8/IMG22.jpg",
+        "/imagegallery/imagegallcard8/IMG23.jpg",
+        "/imagegallery/imagegallcard8/IMG24.jpg",
+        "/imagegallery/imagegallcard8/IMG25.jpg",
+        "/imagegallery/imagegallcard8/IMG26.jpg",
+        "/imagegallery/imagegallcard8/IMG27.jpg",
+        "/imagegallery/imagegallcard8/IMG28.jpg",
+        "/imagegallery/imagegallcard8/IMG29.jpg",
+        "/imagegallery/imagegallcard8/IMG30.jpg",
+        "/imagegallery/imagegallcard8/IMG31.jpg",
+        "/imagegallery/imagegallcard8/IMG32.jpg",
+        "/imagegallery/imagegallcard8/IMG33.jpg",
+        "/imagegallery/imagegallcard8/IMG34.jpg",
+        "/imagegallery/imagegallcard8/IMG35.jpg",
+        "/imagegallery/imagegallcard8/IMG36.jpg",
+        "/imagegallery/imagegallcard8/IMG37.jpg",
+        "/imagegallery/imagegallcard8/IMG38.jpg",
+        "/imagegallery/imagegallcard8/IMG39.jpg",
+        "/imagegallery/imagegallcard8/IMG40.jpg",
+        "/imagegallery/imagegallcard8/IMG41.jpg",
+        "/imagegallery/imagegallcard8/IMG42.jpg",
+        "/imagegallery/imagegallcard8/IMG43.jpg",
+        "/imagegallery/imagegallcard8/IMG44.jpg",
+        "/imagegallery/imagegallcard8/IMG46.jpg",
+      ],
+    },
   ];
 
   return (
@@ -327,9 +397,7 @@ const App: React.FC = () => {
         >
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
-              {/* Elite */}
-              <span className="text-4xl md:text-7xl block">IMAGES</span>
-              {/* Extrusion LLC */}
+              <span className="text-4xl md:text-7xl block">IMAGES GALLERY</span>
             </h1>
           </div>
         </motion.div>
