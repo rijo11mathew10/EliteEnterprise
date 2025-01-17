@@ -5,6 +5,56 @@ import React from "react";
 import { motion } from "framer-motion";
 import { GlareCard } from "@/components/glare-card";
 
+const projects = [
+  {
+    name: "Project",
+    fabricator: "Al Awee",
+    consultant: "Mazaya",
+    image: "/project1.jpg",
+  },
+  {
+    name: "Project",
+    fabricator: "Al Awee",
+    consultant: "Mazaya",
+    image: "/project2.jpg",
+  },
+  {
+    name: "Project",
+    fabricator: "Inventure Metal Products Ind. LLC",
+    consultant: "ARCH Group",
+    image: "/project3.jpg",
+  },
+  {
+    name: "Sultan Group of Investment",
+    fabricator: "",
+    consultant: "Alfa Metal, Consultant: Port Saeed Engg",
+    image: "/project4.jpg",
+  },
+  {
+    name: "Project",
+    fabricator: "Al Awee",
+    consultant: "Mazaya",
+    image: "/project5.jpg",
+  },
+  {
+    name: "Al Barsha Business Centre",
+    fabricator: "Al Tadamon Glass & Aluminium Company",
+    consultant: "ARCH Group",
+    image: "/project6.jpg",
+  },
+  {
+    name: "TARIQ TOWER",
+    fabricator: "Al Tadamon Glass & Aluminium Company",
+    image: "/project7.jpg",
+  },
+  {
+    name: "Project",
+    fabricator: "Al Awee",
+    consultant: "Mazaya",
+    image: "/project9.jpg",
+  },
+];
+
 function Page() {
   return (
     <div>
@@ -45,24 +95,24 @@ function Page() {
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px md:px-10 mb-28">
-        {Array.from({ length: 8 }).map((_, index) => (
+        {projects.map((project, index) => (
           <GlareCard
             key={index}
-            className="flex flex-col items-center justify-center  rounded-lg shadow-md overflow-hidden"
+            className="flex flex-col items-center justify-center rounded-lg shadow-md overflow-hidden"
           >
             <div className="relative w-full h-[300px] mb-4">
               <img
                 className="absolute inset-0 h-full w-full object-cover rounded-lg"
-                src={`/project${index + 1}.jpg`} // Replace with your image URL
+                src={project.image} // Use dynamic image path
                 alt={`Project ${index + 1}`}
               />
             </div>
             <div className="text-left px-2 mb-4">
-              <h3 className="text-lg text-white font-semibold ">
-                Sultan Group of Investment
+              <h3 className="text-lg text-white font-semibold">
+                {project.name}
               </h3>
               <p className="text-sm text-white mt-2">
-                Fabricator: Alfa Metal, Consultant: Port Saeed Engg.
+                Fabricator: {project.fabricator}, Consultant: {project.consultant}
               </p>
             </div>
           </GlareCard>
