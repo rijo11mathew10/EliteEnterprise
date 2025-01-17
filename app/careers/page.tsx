@@ -40,7 +40,7 @@ function Page() {
         "Preparation of all Reports like Inventory related Report, MIS and Cash Flow & Daily Bank Position to Internal and External Auditors.",
         "Monthly Billet Details preparation for pricing and billet delivery on daily basis, including uploading of billet requirement details in EGA portal.",
         "Coordination with Banking concern person for related documents submission and required details.",
-        "Coordination with Internal &amp; External Auditors and Banker for time-to-time reports and submission.",
+        "Coordination with Internal & External Auditors and Banker for time-to-time reports and submission.",
         "Signature of all finance related documents and vouchers",
       ],
       location: "Remote",
@@ -184,7 +184,7 @@ function Page() {
           transition={{ duration: 0.3 }}
         >
           <motion.div
-            className="bg-white rounded-lg p-8 max-w-3xl w-full"
+            className="bg-white rounded-lg p-8 max-w-3xl w-full max-h-[90vh] overflow-y-auto"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.3 }}
