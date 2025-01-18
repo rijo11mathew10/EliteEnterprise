@@ -47,7 +47,7 @@ function page() {
           </div>
         </motion.div>
       </div>
-      <div className="ml-40 mr-40 max-w-7xl mb-16">
+      <div className="ml-10 mr-10 max-w-7xl mb-8">
         <br></br>
         <motion.p
           className="text-[#484848] mb-6 text-justify md:pr-7"

@@ -74,7 +74,7 @@ function page() {
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
             {/* Text Column */}
-            <div className="col-span-12 md:col-span-7">
+            <div className="ml-40 mr-40 max-w-7xl mb-16">
               <motion.div
                 className="flex gap-3 mb-8"
                 initial={{ x: -50, opacity: 0 }}
@@ -89,7 +89,7 @@ function page() {
                 </h2>
               </motion.div>
               <motion.p
-                className="text-[#484848] mb-6 text-justify md:pr-7"
+                className="  text-[#484848] mb-6 text-justify md:pr-7 "
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

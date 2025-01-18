@@ -41,21 +41,25 @@ function page() {
               {/* Elite */}
               <span className="text-4xl md:text-7xl block">EXTRUSION DIES</span>
               {/* Extrusion LLC */}
-
             </h1>
           </div>
         </motion.div>
       </div>
-      <div className="ml-40 mr-40 max-w-7xl mb-16">
-      <motion.p
-                className="text-[#484848] mb-6 text-justify md:pr-7"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ durtion: 1.0 }}
-              ><br></br>
-                Specialized in manufacturing of high quality extrusion dies and tooling. Equipped with latest CNC Wire Cut Machinery, Precision Lathes & Grinding Machines and other Convectional Machines with fully automated State of the art design unit with latest software.      </motion.p><div className="mx-auto max-w-7xl mb-16">
-                </div>
+      <div className="ml-10 mr-10 max-w-7xl mb-16">
+        <motion.p
+          className="text-[#484848] mb-6 text-justify md:pr-7"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ durtion: 1.0 }}
+        >
+          <br></br>
+          Specialized in manufacturing of high quality extrusion dies and
+          tooling. Equipped with latest CNC Wire Cut Machinery, Precision Lathes
+          & Grinding Machines and other Convectional Machines with fully
+          automated State of the art design unit with latest software.{" "}
+        </motion.p>
+        <div className="mx-auto max-w-7xl mb-16"></div>
         <div>
           {/* Top Section */}
           <motion.div
@@ -74,12 +78,10 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 2.0 }}
               >
-   
-
                 <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
                 <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                ALUMINIUM <br />
-                EXTRUSION DIES
+                  ALUMINIUM <br />
+                  EXTRUSION DIES
                 </h2>
               </motion.div>
               <motion.p
@@ -89,7 +91,13 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 2.0 }}
               >
-                Specializes in manufacturing of extrusion dies and tooling, houses a modern tool room capable of manufacturing high quality extrusion dies. It is equipped with latest CNC wire cut machinery, precision lathes & grinding machines and other convectional machines with fully equipped and automated state of the art design unit with latest software.                </motion.p>
+                Specializes in manufacturing of extrusion dies and tooling,
+                houses a modern tool room capable of manufacturing high quality
+                extrusion dies. It is equipped with latest CNC wire cut
+                machinery, precision lathes & grinding machines and other
+                convectional machines with fully equipped and automated state of
+                the art design unit with latest software.{" "}
+              </motion.p>
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
@@ -97,39 +105,38 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 1.4 }}
               >
-
-            This division has an annual production capacity of 3,600 Dies and caters to the urgent needs of the sister companies thereby increasing the service levels to incomparable limits.                </motion.p>
+                This division has an annual production capacity of 3,600 Dies
+                and caters to the urgent needs of the sister companies thereby
+                increasing the service levels to incomparable limits.{" "}
+              </motion.p>
             </div>
             <motion.div
-            className="hidden md:col-span-4 md:block bg-[#023D68] p-6 text-white"
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2.0 }}
-          >
-            <div className="flex flex-col gap-4">
-              <Image
-                src="/ourgroups/extrusiondies/dieimg1.jpeg"
-                alt=""
-                width={350}
-                height={180}
-                className="shadow-lg -ml-10 border-3 border-[#E8D858]"
-              />
-              <Image
-                src="/ourgroups/extrusiondies/dieimg2.jpeg"
-                alt=""
-                width={350}
-                height={180}
-                className="shadow-lg -ml-10 border-3 border-[#E8D858]"
-              />
-            </div>
-          </motion.div>
-
-        
+              className="hidden md:col-span-4 md:block bg-[#023D68] p-6 text-white"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              <div className="flex flex-col gap-4">
+                <Image
+                  src="/ourgroups/extrusiondies/dieimg1.jpeg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/ourgroups/extrusiondies/dieimg2.jpeg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
-  
 
       <Footer />
     </div>

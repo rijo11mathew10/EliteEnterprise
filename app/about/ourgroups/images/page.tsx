@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { motion } from "framer-motion";
 
 interface Card {
   image: string;
@@ -24,7 +25,13 @@ const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-16">
+    <motion.div
+      className="container mx-auto px-4 py-16"
+      initial={{ x: -50, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      viewport={{ once: false, amount: "some" }} // Adjust viewport to trigger animation when the element is visible at least partially
+      transition={{ duration: 2.0 }}
+    >
       {expandedCard === null ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card, index) => (
@@ -88,7 +95,7 @@ const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

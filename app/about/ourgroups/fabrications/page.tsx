@@ -45,21 +45,21 @@ function page() {
           </div>
         </motion.div>
       </div>
-      <div className="ml-40 mr-40 max-w-7xl mb-16">
+      <div className="w-full px-4 py-6">
         <br></br>
-      <motion.p
-        className="text-[#484848] mb-6 text-justify md:pr-7"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 2.0 }}
-      >
-        We manufacture and offer a complementary product that is much more than
-        an additional component. Our wide array of standard & customized
-        architectural sealing gaskets is designed to withstand the extreme
-        climatic conditions to add a further functional accessory to the
-        aluminium production and complete its vast range.{" "}
-      </motion.p>
+        <motion.p
+          className="text-[#484848] mb-6 text-justify md:pr-7"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2.0 }}
+        >
+          We manufacture and offer a complementary product that is much more
+          than an additional component. Our wide array of standard & customized
+          architectural sealing gaskets is designed to withstand the extreme
+          climatic conditions to add a further functional accessory to the
+          aluminium production and complete its vast range.{" "}
+        </motion.p>
       </div>
       <div className="mx-auto max-w-7xl mb-16">
         <div>

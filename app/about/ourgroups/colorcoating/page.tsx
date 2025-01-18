@@ -49,7 +49,7 @@ function page() {
 
       <div className="col-span-12 md:col-span-7">
         <motion.div
-          className="flex gap-3 mb-8 ml-32"
+          className="flex gap-3 mb-8 ml-20"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -62,96 +62,79 @@ function page() {
         </motion.div>
       </div>
       <div className="mx-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-      <motion.div
+        <motion.div
           className="mx-4 p-4 border-b-4 mb-8 border-[#E8D858] shadow-md rounded-lg bg-white"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 2.0 }}
-        >   
-      <h3 className="text-lg font-bold text-[#023D68] mb-2">
-      ALLOYS AA
-      </h3>
-      <p className="text-sm text-[#484848]">
-      1050, 1060, 1070, 1100, 3003, 3004, 3005, 3103, 3105, 5005, 8011
-      </p>
-    </motion.div>
-    <motion.div
+        >
+          <h3 className="text-lg font-bold text-[#023D68] mb-2">ALLOYS AA</h3>
+          <p className="text-sm text-[#484848]">
+            1050, 1060, 1070, 1100, 3003, 3004, 3005, 3103, 3105, 5005, 8011
+          </p>
+        </motion.div>
+        <motion.div
           className="mx-4 p-4 border-b-4 mb-8 border-[#E8D858] shadow-md rounded-lg bg-white"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 2.0 }}
-        >   
-      <h3 className="text-lg font-bold text-[#023D68] mb-2">
-      TEMPER
-      </h3>
-      <p className="text-sm text-[#484848]">
-      H44, H45, H48(as per customer requirement)
-      </p>
-    </motion.div>
-    <motion.div
+        >
+          <h3 className="text-lg font-bold text-[#023D68] mb-2">TEMPER</h3>
+          <p className="text-sm text-[#484848]">
+            H44, H45, H48(as per customer requirement)
+          </p>
+        </motion.div>
+        <motion.div
           className="mx-4 p-4 border-b-4 mb-8 border-[#E8D858] shadow-md rounded-lg bg-white"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 2.0 }}
-        >   
-      <h3 className="text-lg font-bold text-[#023D68] mb-2">
-      COIL WEIGHT
-      </h3>
-      <p className="text-sm text-[#484848]">
-      1 to 4.5 MT      </p>
-    </motion.div>
-    <motion.div
+        >
+          <h3 className="text-lg font-bold text-[#023D68] mb-2">COIL WEIGHT</h3>
+          <p className="text-sm text-[#484848]">1 to 4.5 MT </p>
+        </motion.div>
+        <motion.div
           className="mx-4 p-4 border-b-4 mb-8 border-[#E8D858] shadow-md rounded-lg bg-white"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 2.0 }}
-        >   
-      <h3 className="text-lg font-bold text-[#023D68] mb-2">
-      COATING TYPE
-      </h3>
-      <p className="text-sm text-[#484848]">
-      PVDF, PE & Service Coat
-      </p>
-    </motion.div>
-    <motion.div
+        >
+          <h3 className="text-lg font-bold text-[#023D68] mb-2">
+            COATING TYPE
+          </h3>
+          <p className="text-sm text-[#484848]">PVDF, PE & Service Coat</p>
+        </motion.div>
+        <motion.div
           className="mx-4 p-4 border-b-4 mb-8 border-[#E8D858] shadow-md rounded-lg bg-white"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 2.0 }}
-        >   
-      <h3 className="text-lg font-bold text-[#023D68] mb-2">
-      Thickness Range
-      </h3>
-      <p className="text-sm text-[#484848]">
-      0.35 – 1.20 mm
-      </p>
-    </motion.div>
-    <motion.div
+        >
+          <h3 className="text-lg font-bold text-[#023D68] mb-2">
+            Thickness Range
+          </h3>
+          <p className="text-sm text-[#484848]">0.35 – 1.20 mm</p>
+        </motion.div>
+        <motion.div
           className="mx-4 p-4 border-b-4 mb-8 border-[#E8D858] shadow-md rounded-lg bg-white"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 2.0 }}
-        >   
-      <h3 className="text-lg font-bold text-[#023D68] mb-2">
-      Width Range
-      </h3>
-      <p className="text-sm text-[#484848]">
-      150 - 1260 mm
-      </p>
-    </motion.div>
-
-</div>
-
+        >
+          <h3 className="text-lg font-bold text-[#023D68] mb-2">Width Range</h3>
+          <p className="text-sm text-[#484848]">150 - 1260 mm</p>
+        </motion.div>
+      </div>
 
       <div className="col-span-12 md:col-span-7">
         <motion.div
-          className="flex gap-3 mb-8 ml-32"
+          className="flex gap-3 mb-8 ml-20"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -163,7 +146,7 @@ function page() {
           </h2>
         </motion.div>
       </div>
-      <div className=" max-w-7xl ml-32 mb-16">
+      <div className=" max-w-7xl ml-20 mr-20 mb-16">
         <motion.p
           className="text-[#484848] mb-6 text-justify md:pr-7"
           initial={{ opacity: 0, y: 30 }}
@@ -203,7 +186,7 @@ function page() {
       </div>
 
       <motion.ul
-        className="text-[#484848] text-justify md:pr-7 list-disc pl-5 ml-32 mb-8"
+        className="text-[#484848] text-justify md:pr-7 list-disc pl-5 ml-20 mb-8"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -223,7 +206,7 @@ function page() {
 
       <div className="col-span-12 md:col-span-7">
         <motion.div
-          className="flex gap-3 mb-8 ml-32"
+          className="flex gap-3 mb-8 ml-20 mr-20"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
