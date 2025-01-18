@@ -132,7 +132,6 @@ function AboutPage() {
             transition={{ duration: 2.5, ease: "easeOut" }}
             className="text-gray-700 text-base md:text-lg leading-snug"
           >
-            {" "}
             We produce and offer simultaneously:
             <li>- Aluminum extruded profiles & systems</li>
             <li>- Aluminum flat-rolled products (coils & sheets)</li>
@@ -202,30 +201,30 @@ function AboutPage() {
 
         {/* Logo */}
         <motion.div
-  className="absolute -top-16 right-0 md:-top-30 w-80 md:w-[300px]" // Increase width for larger size
-  initial={{ opacity: 0, scale: 0.9 }}
-  whileInView={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 2, ease: "easeOut" }}
->
-  <img
-    src="/aboutuslogo.png" // Replace with your logo path
-    alt="Company Logo"
-    className="w-full h-auto" // This ensures the aspect ratio remains correct while scaling
-  />
-</motion.div>
-
+          className="absolute -top-20 right-0 md:-top-30 max-w-[180px] md:max-w-[200px] lg:max-w-[250px]" // Adjust for responsive sizing
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2, ease: "easeOut" }}
+        >
+          <img
+            src="/aboutuslogo.png"
+            alt="Company Logo"
+            className="w-full h-auto"
+          />
+        </motion.div>
       </div>
-      <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">
-  <video
-    className="absolute inset-0 w-full h-full object-cover"
-    src="/about/About_company.mp4"
-    autoPlay
-    loop
-    muted
-    playsInline
-  ></video>
 
-  
+      {/* Video Section */}
+      <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/about/About_company.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        ></video>
+
         {/* Color Grading Overlay */}
         <div
           className="absolute inset-0"
@@ -266,7 +265,8 @@ function AboutPage() {
       </div>
 
       {/* Logo Section */}
-      <div className="relative mt-[-80px] z-20 flex justify-center items-center gap-8 flex-wrap md:flex-nowrap px-4 mb-10">
+      {/* Logo Section */}
+      <div className="relative z-20 flex justify-center items-center gap-4 flex-wrap px-4 mb-10">
         {[
           "/company1.png",
           "/company2.png",
@@ -285,7 +285,7 @@ function AboutPage() {
               delay: 0.2 + index * 0.1,
               ease: "easeOut",
             }}
-            className="flex justify-center items-center bg-white shadow-lg rounded-lg p-2 w-28 h-16 md:w-32 md:h-20 lg:w-40 lg:h-24"
+            className="flex justify-center items-center bg-white shadow-lg rounded-lg p-2 w-20 h-14 sm:w-28 sm:h-16 md:w-32 md:h-20 lg:w-40 lg:h-24"
           >
             <img
               src={logo}
