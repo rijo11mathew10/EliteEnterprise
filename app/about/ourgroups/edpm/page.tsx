@@ -38,14 +38,17 @@ function page() {
         >
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
-              <span className="text-4xl md:text-7xl block">EPDM RUBBER PRODUCTS</span>
+              {/* Elite */}
+              <span className="text-4xl md:text-7xl block">
+                EPDM RUBBER PRODUCTS
+              </span>
+              {/* Extrusion LLC */}
             </h1>
           </div>
         </motion.div>
       </div>
-
-      {/* Introduction Section */}
-      <div className="mx-4 md:mx-40 max-w-7xl mb-16"><br></br>
+      <div className="ml-10 mr-10 max-w-7xl mb-16">
+        <br></br>
         <motion.p
           className="text-[#484848] mb-6 text-justify md:pr-7"
           initial={{ opacity: 0, y: 30 }}
@@ -53,60 +56,72 @@ function page() {
           viewport={{ once: true }}
           transition={{ duration: 2.0 }}
         >
-          We manufacture and offer a complementary product that is much more than an additional component. Our wide array of standard & customized architectural sealing gaskets is designed to withstand the extreme climatic conditions to add a further functional accessory to the aluminium production and complete its vast range. 
+          We manufacture and offer a complementary product that is much more
+          than an additional component. Our wide array of standard & customized
+          architectural sealing gaskets is designed to withstand the extreme
+          climatic conditions to add a further functional accessory to the
+          aluminium production and complete its vast range.{" "}
         </motion.p>
       </div>
-
-      {/* EPDM Rubber Profiles Section */}
-      <div className="mx-auto max-w-7xl mb-16 px-6">
-        <motion.div
-          className="grid grid-cols-12 gap-8"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
-          {/* Text Column */}
-          <div className="col-span-12 md:col-span-7">
-            <motion.div
-              className="flex gap-3 mb-8"
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-              <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                EDPM RUBBER <br />
-                PROFILES
-              </h2>
-            </motion.div>
-            <motion.p
-              className="text-[#484848] mb-6 text-justify md:pr-7"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              Thermoset Middle East in-house capabilities include a fully equipped Rubber Extrusion line with an output capacity of 10,000 metric tons per year. Cold Feed Extrusion Line with LCM Vulcanization (Liquid Cure Medium) is able to create quality Peroxide Cure EPDM Profiles that offer better compression set performance at higher temperatures, providing stability for building and industrial applications.
-            </motion.p>
-            <motion.p
-              className="text-[#484848] text-justify md:pr-7"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.4 }}
-            >
-              Only LCM lines can make products which can comply with all needs of DIN 7863.
-            </motion.p>
-          </div>
-        </motion.div>
+      <div className="mx-auto max-w-7xl mb-16">
+        <div>
+          {/* Top Section */}
+          <motion.div
+            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            {/* Text Column */}
+            <div className="col-span-12 md:col-span-7">
+              <motion.div
+                className="flex gap-3 mb-8"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
+                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+                  EDPM RUBBER <br />
+                  PROFILES
+                </h2>
+              </motion.div>
+              <motion.p
+                className="  text-[#484848] mb-6 text-justify md:pr-7 "
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                Thermoset Middle East in-house capabilities include a fully
+                equipped Rubber Extrusion line with an output capacity of 10.000
+                metric tons per year to serve the market. Cold Feed Extrusion
+                Line with LCM Vulcanization (Liquid Cure Medium) is able to
+                create quality Peroxide Cure EPDM Profiles that offer better
+                compression set performance at higher temperatures, providing
+                stability for building and industrial applications.{" "}
+              </motion.p>
+              <motion.p
+                className="text-[#484848] text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
+                Only LCM lines can make products which can comply with all needs
+                of DIN 7863.{" "}
+              </motion.p>
+            </div>
+          </motion.div>
+        </div>
       </div>
 
-      {/* Product Range Section */}
-      <div className="mx-auto max-w-7xl mb-16 px-6">
+      <div>
+        {/* Top Section */}
         <motion.div
-          className="grid grid-cols-12 gap-8"
+          className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -123,42 +138,44 @@ function page() {
             <div className="grid grid-cols-2 gap-6">
               <Image
                 src="/ourgroups/epdm/epdm1.jpg"
-                alt="EPDM Rubber"
+                alt=""
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
                 src="/ourgroups/epdm/epdm2.jpg"
-                alt="EPDM Rubber"
+                alt=""
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
+
               <Image
                 src="/ourgroups/epdm/epdm6.jpg"
-                alt="EPDM Rubber"
+                alt=""
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
+
               <Image
                 src="/ourgroups/epdm/epdm4.jpg"
-                alt="EPDM Rubber"
+                alt=""
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
                 src="/ourgroups/epdm/epdm5.jpg"
-                alt="EPDM Rubber"
+                alt=""
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
                 src="/ourgroups/epdm/epdm7.jpg"
-                alt="EPDM Rubber"
+                alt=""
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
@@ -188,7 +205,9 @@ function page() {
               viewport={{ once: true }}
               transition={{ duration: 2.0 }}
             >
-              All our premier EPDM gaskets and polymer products are engineered to deliver optimal performance and meet the harsh environmental and tough operational conditions.
+              All our premier EPDM gaskets and polymer products are engineered
+              to deliver optimal performance and meet the harsh environmental
+              and tough operational condition.{" "}
             </motion.p>
             <motion.p
               className="text-[#484848] mb-6 text-justify md:pr-7"
@@ -209,9 +228,14 @@ function page() {
               <li>EPDM, Neoprene, Silicone, Rubber dense/solid profiles</li>
               <li>Fire Rated EPDM rubber gasket as per standard EN 455 45-2</li>
               <li>Silicone compatible EPDM rubber gaskets.</li>
-              <li>Rubber setting blocks, expansion joint and moulded corner, vulcanized frame gasket.</li>
+              <li>
+                Rubber setting blocks, expansion joint and moulded corner,
+                vulcanized frame gasket.
+              </li>
               <li>Rubber sponge profiles.</li>
-              <li>Rubber Fenders & Other Rubber Extruded & co-extruded items.</li>
+              <li>
+                Rubber Fenders & Other Rubber Extruded & co-extruded items.
+              </li>
               <li>Rubber Sheets/water proofing membrane.</li>
             </motion.ul>
             <motion.p
@@ -258,9 +282,58 @@ function page() {
           </div>
         </motion.div>
       </div>
+      <div className="mx-auto max-w-7xl mb-16">
+        <div className="mx-auto max-w-7xl mb-16 p-6">
+          {/* Applications Section */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 items-start">
+            {/* Title Section */}
+            <div className="col-span-12">
+              <div className="flex gap-3 items-center mb-6">
+                <hr className="w-2 h-16 bg-[#E8D858] border-none" />
+                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68]">
+                  APPLICATIONS
+                </h2>
+              </div>
+            </div>
 
-      {/* Applications Section */}
-      <div className="mx-auto max-w-7xl mb-16 px-6">
+            {/* Description Section */}
+            <div className="col-span-12 md:col-span-6">
+              <p className="text-[#484848] mb-4">
+                We are highly specialized in sealing protection for products
+                such as extruded aluminium section & glazing systems.
+              </p>
+              <p className="text-[#484848] font-semibold">
+                Industrial Applications
+              </p>
+              <ul className="list-disc pl-5 mt-2 text-[#484848]">
+                <li>Sealing and gasket</li>
+                <li>Cushioning</li>
+                <li>Damping vibrations</li>
+              </ul>
+            </div>
+
+            {/* Different Sphere of Application */}
+            <div className="col-span-12 md:col-span-6">
+              <p className="text-[#484848] font-semibold">
+                Below are different sphere of application:
+              </p>
+              <ul className="list-disc pl-5 mt-2 text-[#484848]">
+                <li>Aluminium & Glass / Wood / PVC: Window Systems</li>
+                <li>Thermal Break & Conventional Systems</li>
+                <li>Curtain Walls</li>
+                <li>Structural Glazing</li>
+                <li>Sliding Windows</li>
+                <li>Casement Windows</li>
+                <li>Tilt & Turn Windows</li>
+                <li>Doors</li>
+                <li>Facades</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        {/* Top Section */}
         <motion.div
           className="grid grid-cols-12 gap-8"
           initial={{ opacity: 0, y: 30 }}
@@ -271,16 +344,25 @@ function page() {
           {/* Text Column */}
           <div className="col-span-12 md:col-span-7">
             <motion.div
-              className="flex gap-3 mb-8"
-              initial={{ x: -50, opacity: 0 }}
+              className="hidden md:col-span-4 md:block text-[#484848] p-6"
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 2.0 }}
             >
-              <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-              <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                APPLICATIONS
-              </h2>
+              <motion.p>Below are different sphere of application: </motion.p>
+              <br></br>
+              <motion.ul>
+                <li>*Aluminium & Glass / Wood / PVC:Window</li>
+                <li>*Thermal Break & Conventional Systems</li>
+                <li>*Curtain Walls</li>
+                <li>*Structural Glazing</li>
+                <li>*Sliding Windows</li>
+                <li>*Casement Windows</li>
+                <li>*Tilt & Turn Windows</li>
+                <li>*Doors</li>
+                <li>*Facades</li>
+              </motion.ul>
             </motion.div>
             <motion.p
               className="text-[#484848] mb-6 text-justify md:pr-7"
@@ -289,7 +371,8 @@ function page() {
               viewport={{ once: true }}
               transition={{ duration: 2.0 }}
             >
-              We are highly specialized in sealing protection for products such as extruded aluminium section & glazing systems.
+              We are highly specialized in sealing protection for products such
+              as extruded aluminium section & glazing systems.
             </motion.p>
             <motion.p
               className="text-[#484848] mb-6 text-justify md:pr-7"
@@ -321,9 +404,7 @@ function page() {
             viewport={{ once: true }}
             transition={{ duration: 2.0 }}
           >
-            <motion.p>
-              Below are different sphere of application:
-            </motion.p>
+            <motion.p>Below are different sphere of application:</motion.p>
             <motion.ul className="mt-4">
               <li>*Aluminium & Glass / Wood / PVC:Window</li>
               <li>*Thermal Break & Conventional Systems</li>
@@ -351,16 +432,25 @@ function page() {
           {/* Text Column */}
           <div className="col-span-12 md:col-span-7">
             <motion.div
-              className="flex gap-3 mb-8"
-              initial={{ x: -50, opacity: 0 }}
+              className="hidden md:col-span-4 md:block text-[#484848] p-6"
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 2.0 }}
             >
-              <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-              <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                EDPM TECHNOLOGY
-              </h2>
+              <motion.p>Below are different sphere of application: </motion.p>
+              <br></br>
+              <motion.ul>
+                <li>*Aluminium & Glass / Wood / PVC:Window</li>
+                <li>*Thermal Break & Conventional Systems</li>
+                <li>*Curtain Walls</li>
+                <li>*Structural Glazing</li>
+                <li>*Sliding Windows</li>
+                <li>*Casement Windows</li>
+                <li>*Tilt & Turn Windows</li>
+                <li>*Doors</li>
+                <li>*Facades</li>
+              </motion.ul>
             </motion.div>
             <motion.ul
               className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
@@ -370,13 +460,56 @@ function page() {
               transition={{ duration: 1.4 }}
             >
               <li>
-                EPDM is a polymer of ethylene, propylene and a small percentage of non-conjugated diene.
+                EPDM is a polymer of ethylene, propylene and small percentage of
+                non-conjugated diene. Diene provides unsaturation in side chains
+                pendent from the fully saturated backbone.
               </li>
               <li>
-                This polymer is largely used as a gasket for applications in automotive, construction, and other industries.
+                EPDM compounds usually contain carbon black, zinc oxide,
+                antioxidants, processing aids, petroleum based plasticizers and
+                curing ingredients.
               </li>
               <li>
-                EPDM provides resistance to weathering, heat, ozone, and extreme temperature variations.
+                Rubber grades with higher ethylene content can be more easily
+                processed and more highly loaded with fillers and oils. But this
+                results in products with inferior ‘Low Temperature Properties’
+                and ‘High Compression Set’.
+              </li>
+              <li>
+                Other properties, particularly compression set, high temperature
+                performance and low temperature flexibility, are highly
+                dependent on the formulation and polymer composition.
+              </li>
+              <li>
+                EPDMs can be cured with peroxides or conventional Sulphur cure
+                systems.
+              </li>
+              <li>
+                Sulfur-cured EPDM compounds have high compression set and are
+                less resistant to high temperatures.
+              </li>
+              <li>
+                Peroxide cured compounds exhibit excellent heat aging properties
+                and resistance to compression set up to 150 C.
+              </li>
+              <li>
+                Peroxide-cured EPDM grades with low ethylene content have a
+                service temperature range from -40 to +150 C and short exposures
+                to even higher temperatures.
+              </li>
+              <li>
+                Peroxide-cured EPDM can be vulcanized by LCM line only, to
+                comply with compression set properties as per DIN 7863.
+              </li>
+              <li>
+                Peroxide-cured EPDM can deliver compression set performance for
+                decades.
+              </li>
+              <li>
+                Peroxide-cured EPDM are ideal for applications requiring ‘Good
+                High Temperature Performance’ and ‘Low Compression Set’ e.g.
+                Architectural Sealing Products in harsh climate areas of the
+                world.
               </li>
             </motion.ul>
           </div>
