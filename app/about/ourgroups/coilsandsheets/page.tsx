@@ -47,46 +47,45 @@ function page() {
           </div>
         </motion.div>
       </div>
-      <div className="ml-10 mr-10 max-w-7xl mb-8">
-        <br></br>
-        <motion.p
-          className="text-[#484848] mb-6 text-justify md:pr-7"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 2.0 }}
-        >
-          Alumill Tech Gulf LLC is one of the foremost industrial leaders in top
-          quality aluminum flat-rolled products, color coated coils and sheets.
-          The factory is one of the largest in all aluminum industry in the
-          Middle East and currently the only producer of continuous casting &
-          Cold rolling Mill in the United Arab Emirates
-        </motion.p>
-        <motion.p
-          className="text-[#484848] mb-6 text-justify md:pr-7"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 2.0 }}
-        >
-          Allmill Tech Gulf manufacturing plant operates out of a wide-spread
-          campus of over 55,000 square meters in the industrial area of Ras Al
-          Khaimah (U.A.E.).{" "}
-        </motion.p>
+      <div className="mx-auto max-w-7xl mb-16"><br></br>
+      <motion.p
+        className="text-[#484848] mb-6 text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        Alumill Tech Gulf LLC is one of the foremost industrial leaders in top
+        quality aluminum flat-rolled products, color coated coils and sheets.
+        The factory is one of the largest in all aluminum industry in the Middle
+        East and currently the only producer of continuous casting & Cold
+        rolling Mill in the United Arab Emirates
+      </motion.p>
+      <motion.p
+        className="text-[#484848] mb-6 text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        Allmill Tech Gulf manufacturing plant operates out of a wide-spread
+        campus of over 55,000 square meters in the industrial area of Ras Al
+        Khaimah (U.A.E.).{" "}
+      </motion.p>
 
-        <motion.p
-          className="text-[#484848] mb-6 text-justify md:pr-7"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 2.0 }}
-        >
-          The integrated cast house provides continuous production for
-          subsequent rolling mill process of coils, based on the advanced
-          technology of Presezzi SpA (Italy). The state-of-the-art line is fully
-          equipped lab for end-to-end testing solutions of materials.{" "}
-        </motion.p>
-        {/* <motion.ul
+      <motion.p
+        className="text-[#484848] mb-6 text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        The integrated cast house provides continuous production for subsequent
+        rolling mill process of coils, based on the advanced technology of
+        Presezzi SpA (Italy). The state-of-the-art line is fully equipped lab
+        for end-to-end testing solutions of materials.{" "}
+      </motion.p>
+      {/* <motion.ul
         className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -133,8 +132,9 @@ function page() {
                 melted in the furnace, alloyed and analysed to ensure that the
                 correct composition is achieved. The alloy is created and
                 transferred to the holding furnace for direct casting.{" "}
-              </motion.p>
 
+              </motion.p>
+             
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
@@ -156,6 +156,7 @@ function page() {
                 transition={{ duration: 1.4 }}
               >
                 Fields of Applications:{" "}
+                
               </motion.p>
               <br></br>
               <motion.p
@@ -210,7 +211,7 @@ function page() {
           </motion.div>
         </div>
       </div>
-
+      
       <div>
         {/* Top Section */}
         <motion.div
@@ -335,7 +336,7 @@ function page() {
           </div>
         </motion.div>
       </div>
-
+      
       <div className="mx-auto max-w-7xl mb-16">
         <div>
           {/* Top Section */}
