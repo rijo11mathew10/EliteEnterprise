@@ -39,28 +39,64 @@ function page() {
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
               {/* Elite */}
-              <span className="text-4xl md:text-7xl block">FABRICATIONS</span>
+              <span className="text-4xl md:text-7xl block">
+                COILS AND SHEETS
+              </span>
               {/* Extrusion LLC */}
             </h1>
           </div>
         </motion.div>
       </div>
-      <div className="w-full px-4 py-6">
-        <br></br>
-        <motion.p
-          className="text-[#484848] mb-6 text-justify md:pr-7"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 2.0 }}
-        >
-          We manufacture and offer a complementary product that is much more
-          than an additional component. Our wide array of standard & customized
-          architectural sealing gaskets is designed to withstand the extreme
-          climatic conditions to add a further functional accessory to the
-          aluminium production and complete its vast range.{" "}
-        </motion.p>
+      <div className="mx-auto max-w-7xl mb-16"><br></br>
+      <motion.p
+        className="text-[#484848] mb-6 text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        Alumill Tech Gulf LLC is one of the foremost industrial leaders in top
+        quality aluminum flat-rolled products, color coated coils and sheets.
+        The factory is one of the largest in all aluminum industry in the Middle
+        East and currently the only producer of continuous casting & Cold
+        rolling Mill in the United Arab Emirates
+      </motion.p>
+      <motion.p
+        className="text-[#484848] mb-6 text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        Allmill Tech Gulf manufacturing plant operates out of a wide-spread
+        campus of over 55,000 square meters in the industrial area of Ras Al
+        Khaimah (U.A.E.).{" "}
+      </motion.p>
+
+      <motion.p
+        className="text-[#484848] mb-6 text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        The integrated cast house provides continuous production for subsequent
+        rolling mill process of coils, based on the advanced technology of
+        Presezzi SpA (Italy). The state-of-the-art line is fully equipped lab
+        for end-to-end testing solutions of materials.{" "}
+      </motion.p>
+      {/* <motion.ul
+        className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.4 }}
+      >
+        <li>ALLOYS AA 6063, 6061, 6082 </li>
+        <li>TEMPER T4, T6 </li>
+      </motion.ul> */}
       </div>
+
       <div className="mx-auto max-w-7xl mb-16">
         <div>
           {/* Top Section */}
@@ -82,8 +118,7 @@ function page() {
               >
                 <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
                 <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                  ALUMINIUM <br />
-                  FABRICATION
+                  CAST COILS
                 </h2>
               </motion.div>
               <motion.p
@@ -93,15 +128,13 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 2.0 }}
               >
-                The Fabrication division it is specialized in design,
-                engineering, manufacturing, and installation of all kinds of
-                architectural aluminum and metal works. The division is involved
-                in a workflow with the extrusion sister companies to operate in
-                straight-chain afterward the aluminum & rubber profiles
-                manufacturing, and so offer the benefit of their knowledge and
-                experience in the aluminum & glass along with the accessories’
-                industry.{" "}
+                We offer high quality Cold Rolled Pure aluminium ingots are
+                melted in the furnace, alloyed and analysed to ensure that the
+                correct composition is achieved. The alloy is created and
+                transferred to the holding furnace for direct casting.{" "}
+
               </motion.p>
+             
               <motion.p
                 className="text-[#484848] text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
@@ -109,10 +142,32 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 1.4 }}
               >
-                Our commitment to technical excellence has led us to invest in
-                machinery, shaping utensils, designing unit and whole
-                infrastructure, enabling us to offer comprehensive engineering
-                designs, quality craftsmanship to configure customers’ orders.{" "}
+                In the Cast House the hot metal is continuously casted and
+                solidified in the shape of coil form. Subsequently trimmed in
+                the caster machine with on line edge milling for the next
+                multi-stage rolling mill.{" "}
+              </motion.p>
+              <br></br>
+              <motion.p
+                className="text-[#484848] text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
+                Fields of Applications:{" "}
+                
+              </motion.p>
+              <br></br>
+              <motion.p
+                className="text-[#484848] text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
+                Roofing & Claddings, Rolling shutters, Facade & Awnings,
+                Interior ceilings, Transportation Vehicles etc.{" "}
               </motion.p>
             </div>
             <motion.div
@@ -122,16 +177,30 @@ function page() {
               viewport={{ once: true }}
               transition={{ duration: 2.0 }}
             >
-              <div className="flex flex-col gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/ourgroups/fabrications/fabrication3.jpg"
+                  src="/coilsandsheets/coil1.png"
                   alt=""
                   width={350}
                   height={180}
                   className="shadow-lg -ml-10 border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/fabrications/fabrication4.jpg"
+                  src="/coilsandsheets/coil2.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/coil4.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/coil3.jpg"
                   alt=""
                   width={350}
                   height={180}
@@ -142,6 +211,7 @@ function page() {
           </motion.div>
         </div>
       </div>
+      
       <div>
         {/* Top Section */}
         <motion.div
@@ -161,33 +231,33 @@ function page() {
           >
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="/ourgroups/fabrications/sphere1.jpeg"
+                src="/coilsandsheets/sheet1.png"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/fabrications/sphere-of-operation-2.jpg"
+                src="/coilsandsheets/sheet2.png"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
-                src="/ourgroups/fabrications/sphere3.jpg"
+                src="/coilsandsheets/sheet3.png"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
-              <Image
-                src="/ourgroups/fabrications/sphere4.jpg"
+              {/* <Image
+                src="/ourgroups/globalpioneer/globalpioneer2.png"
                 alt=""
                 width={350}
                 height={180}
                 className="shadow-lg border-3 border-[#E8D858]"
-              />
+              /> */}
             </div>
           </motion.div>
 
@@ -202,8 +272,8 @@ function page() {
             >
               <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
               <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                SPHERE OF <br />
-                OPERATIONS
+                COLD ROLLED <br />
+                COILS AND SHEETS
               </h2>
             </motion.div>
             <motion.p
@@ -213,36 +283,160 @@ function page() {
               viewport={{ once: true }}
               transition={{ duration: 2.0 }}
             >
-              Irrespective of the scale of the project the fabrication division
-              of Elite Group of Companies work on par with the clientele to
-              evaluate the project requirements and bespoke the aluminium
-              solution and related metal needs. Area of specification are:{" "}
+              We offer high quality Cold Rolled coils are processed in the
+              rolling mill to reach the thickness as per customer’s specific
+              requirement.{" "}
             </motion.p>
-            <motion.ul
-              className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
+
+            <motion.p
+              className="text-[#484848] mb-6 text-justify md:pr-7"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1.4 }}
+              transition={{ duration: 2.0 }}
             >
-              <li>
-                Turnkey projects of complete aluminium and related metal works,
-                with project management until handing over to clients or end
-                users.
-              </li>
-              <li>
-                Clients and Designers’ consultancy, project-wise, to
-                architectural address according to specifications and client
-                requirements.
-              </li>
-              <li>
-                Contracting & subcontracting for design, engineering,
-                procurement, fabrication, supply, and installation of all kinds
-                of architectural and non-architectural aluminium works.
-              </li>
-            </motion.ul>
+              The reversible rolling mill is equipped with automatic gauge
+              measuring unit on each side to have a precise control on
+              thicknesses and minimum tolerances. Further treatment in the
+              annealing furnace is processed to achieve the required
+              temper-strength.{" "}
+            </motion.p>
+            <motion.p
+              className="text-[#484848] mb-6 text-justify md:pr-7"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              Tension Levelling - Cut to Length Line - Slitting Line - Embossing
+              Line{" "}
+            </motion.p>
+            <motion.p
+              className="text-[#484848] mb-6 text-justify md:pr-7"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              The tension levelling line aim to test and improve the flatness of
+              the material prior to coating or cut to length for final output of
+              coils and sheets. The slitting line for side trimmings and exact
+              required size for mill finish or coated coils.{" "}
+            </motion.p>
+            <motion.p
+              className="text-[#484848] mb-6 text-justify md:pr-7"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              Alumill Tech can process an additional step to emboss the
+              aluminium surface in mill finish or coated coils & sheets.{" "}
+            </motion.p>
           </div>
         </motion.div>
+      </div>
+      
+      <div className="mx-auto max-w-7xl mb-16">
+        <div>
+          {/* Top Section */}
+          <motion.div
+            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            {/* Text Column */}
+            <div className="col-span-12 md:col-span-7">
+              <motion.div
+                className="flex gap-3 mb-8"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
+                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+                  COLOR COATED <br />
+                  COILS
+                </h2>
+              </motion.div>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                We offer high quality Cold Rolled The coil coating process it is
+                a high-volume operation that produces a perfect finish based on
+                a liquid application of the common resins such as Polyester (PE)
+                and Polyvinylidene fluoride (PVDF). The process involves
+                uncoiling, chemical pre-treatment, application of primer & top
+                coating and recoiling.{" "}
+              </motion.p>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                Fields of Applications:{" "}
+              </motion.p>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                Roofing & Claddings, Rolling shutters, Facade & Awnings,
+                Interior ceilings, Transportation Vehicles etc.{" "}
+              </motion.p>
+            </div>
+            <motion.div
+              className="hidden md:col-span-4 md:block bg-[#023D68] p-6 text-white"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src="/coilsandsheets/colorcoated1.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/colorcoated2.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/colorcoated4.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+
+                <Image
+                  src="/coilsandsheets/colorcoated3.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
       </div>
       <div className="mx-auto max-w-7xl mb-16">
         <div>
@@ -265,7 +459,8 @@ function page() {
               >
                 <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
                 <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                  SYSTEMS
+                  STANDARD <br />
+                  PACKING
                 </h2>
               </motion.div>
               <motion.p
@@ -275,29 +470,29 @@ function page() {
                 viewport={{ once: true }}
                 transition={{ duration: 2.0 }}
               >
-                The Division is licensed for fabrication and installation of the
-                modern glazing systems engineered by Elite Group:{" "}
+                Aluminium coils export standard sea worthy wooden pallet eye to
+                wall (Horizontal Type){" "}
               </motion.p>
-              <motion.ul
-                className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 1.4 }}
+                transition={{ duration: 2.0 }}
               >
-                <li>
-                  THERMOS 110® and THERMOS 120® sliding series (thermal break).
-                </li>
-                <li>ECO 500® casement and sliding series (thermal break).</li>
-                <li>
-                  Elegant 65® & Elegant 50® Structural Glazing System (thermal
-                  break).
-                </li>
-                <li>
-                  AL-WIN 80® casement series and AL-WIN 105® sliding series
-                  (non-thermal break).
-                </li>
-              </motion.ul>
+                Aluminium coils export standard sea worthy wooden pallet eye to
+                sky (Vertical Type){" "}
+              </motion.p>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                Aluminium sheets export standard sea worthy wooden pallet with
+                interleaving paper in between{" "}
+              </motion.p>
             </div>
             <motion.div
               className="hidden md:col-span-4 md:block bg-[#023D68] p-6 text-white"
@@ -308,21 +503,21 @@ function page() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/ourgroups/fabrications/system1.jpg"
+                  src="/coilsandsheets/packingcoil1.jpg"
                   alt=""
                   width={350}
                   height={180}
                   className="shadow-lg -ml-10 border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/fabrications/system2.jpeg"
+                  src="/coilsandsheets/packingsheet1.jpg"
                   alt=""
                   width={350}
                   height={180}
                   className="shadow-lg -ml-10 border-3 border-[#E8D858]"
                 />
                 <Image
-                  src="/ourgroups/fabrications/system3.jpeg"
+                  src="/coilsandsheets/packingcoil4.jpg"
                   alt=""
                   width={350}
                   height={180}
@@ -330,7 +525,7 @@ function page() {
                 />
 
                 <Image
-                  src="/ourgroups/fabrications/system4.jpg"
+                  src="/coilsandsheets/packingcoil3.jpg"
                   alt=""
                   width={350}
                   height={180}
@@ -338,47 +533,6 @@ function page() {
                 />
               </div>
             </motion.div>
-          </motion.div>
-        </div>
-
-        <div>
-          {/* Top Section */}
-          <motion.div
-            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-          >
-            {/* Text Column */}
-            <div className="col-span-12 md:col-span-7">
-              <motion.div
-                className="flex gap-3 mb-8"
-                initial={{ x: -50, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 2.0 }}
-              >
-                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                  SERVICES
-                </h2>
-              </motion.div>
-              <motion.p
-                className="text-[#484848] mb-6 text-justify md:pr-7"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 2.0 }}
-              >
-                We offer a complete service from the initial concept to project
-                completion, following our sequential methodology:
-                <br />
-                Consultancy → Shop drawings → Materials take-off → Material
-                submittal → Works program → Procurement → Fabrication → Quality
-                control → Supply → Installation → Testing → Handover.
-              </motion.p>
-            </div>
           </motion.div>
         </div>
       </div>
