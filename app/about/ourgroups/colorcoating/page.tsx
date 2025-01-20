@@ -11,14 +11,14 @@ function page() {
       <Header />
       {/* Banner Section */}
       <div
-        className="relative bg-cover bg-center h-[350px] md:h-[550px] flex items-center justify-center overflow-hidden"
+        className="relative bg-cover bg-center h-[550px] flex items-center justify-center overflow-hidden"
         style={{
           backgroundImage: "url('/banner.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
         <motion.div
-          className="absolute top-[60px] right-6 h-1 w-[45%] bg-[#E8D858] z-0 pointer-events-none"
+          className="absolute top-[120px] right-6 h-1 w-[45%] bg-[#E8D858] z-0 pointer-events-none"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2.5, ease: "easeOut" }}
