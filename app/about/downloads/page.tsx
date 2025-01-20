@@ -5,7 +5,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 function Page() {
-  // Card data for each section with unique titles and PDFs
   const sectionData = [
     {
       heading: "ELITE EXTRUSION",
@@ -266,7 +265,7 @@ function Page() {
         >
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
-              <span className="text-4xl md:text-7xl block">DOWNLOADS</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl block">DOWNLOADS</span>
             </h1>
           </div>
         </motion.div>
@@ -276,19 +275,19 @@ function Page() {
       {sectionData.map((section, sectionIndex) => (
         <div key={sectionIndex}>
           <motion.div
-            className="flex gap-3 mb-8 mt-8 ml-32"
+            className="flex gap-3 mb-8 mt-8 ml-8 sm:ml-16 md:ml-32"
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 2.0 }}
           >
             <hr className="w-2 h-8 md:h-12 bg-[#E8D858] border-none" />
-            <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#023D68] leading-tight">
               {section.heading}
             </h2>
           </motion.div>
 
-          <div className="mx-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+          <div className="mx-4 sm:mx-8 md:mx-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
             {section.cards.map((card, cardIndex) => (
               <motion.div
                 key={cardIndex}
