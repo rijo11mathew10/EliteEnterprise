@@ -270,7 +270,7 @@ function Header() {
                   )}
                 </div>
               ))}
-              <Link href={"/careers"}>
+              <Link href={"/contactus"}>
                 <Button className="bg-[#E8D858] text-black rounded-sm font-xl hover:bg-[#c5b32b] transition-colors duration-300">
                   Get Quote
                 </Button>
