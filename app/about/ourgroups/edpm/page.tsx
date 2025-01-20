@@ -39,13 +39,7 @@ function page() {
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
               {/* Elite */}
-<<<<<<< HEAD
-              <span className="text-4xl md:text-7xl block">
-                EPDM RUBBER PRODUCTS
-              </span>
-=======
               <span className="text-4xl md:text-7xl block">EPDM RUBBER PRODUCTS</span>
->>>>>>> fa41596c6beb9245d151ced7359167ca9c62b3fe
               {/* Extrusion LLC */}
             </h1>
           </div>
@@ -79,11 +73,7 @@ function page() {
           >
             
             {/* Text Column */}
-<<<<<<< HEAD
-            <div className="ml-40 mr-40 max-w-7xl mb-16">
-=======
             <div className="col-span-50 md:col-span-7">
->>>>>>> fa41596c6beb9245d151ced7359167ca9c62b3fe
               <motion.div
                 className="flex gap-3 mb-8"
                 initial={{ x: -50, opacity: 0 }}
@@ -98,7 +88,7 @@ function page() {
                 </h2>
               </motion.div>
               <motion.p
-                className="  text-[#484848] mb-6 text-justify md:pr-7 "
+                className="text-[#484848] mb-6 text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -126,20 +116,7 @@ function page() {
           </motion.div>
         </div>
       </div>
-<<<<<<< HEAD
-      <div className="mx-auto max-w-7xl p-4 bg-white rounded-lg shadow-lg">
-        {/* Image banner to Upload */}
-        <Image
-          src=""
-          alt=""
-          width={977}
-          height={361}
-          className="w-full h-auto rounded-md border-4 border-[#E8D858] shadow-lg"
-        />
-      </div>
-=======
       
->>>>>>> fa41596c6beb9245d151ced7359167ca9c62b3fe
       <div>
         {/* Top Section */}
         <motion.div
@@ -307,84 +284,67 @@ function page() {
         </motion.div>
       </div>
       <div className="mx-auto max-w-7xl mb-16">
-        <div className="mx-auto max-w-7xl mb-16 p-6">
-          {/* Applications Section */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 items-start">
-            {/* Title Section */}
-            <div className="col-span-12">
-              <div className="flex gap-3 items-center mb-6">
-                <hr className="w-2 h-16 bg-[#E8D858] border-none" />
-                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68]">
+        <div>
+          {/* Top Section */}
+          <motion.div
+            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            {/* Text Column */}
+            <div className="col-span-12 md:col-span-7">
+              <motion.div
+                className="flex gap-3 mb-8"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
+                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
                   APPLICATIONS
                 </h2>
-              </div>
-            </div>
-
-            {/* Description Section */}
-            <div className="col-span-12 md:col-span-6">
-              <p className="text-[#484848] mb-4">
+              </motion.div>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
                 We are highly specialized in sealing protection for products
-                such as extruded aluminium section & glazing systems.
-              </p>
-              <p className="text-[#484848] font-semibold">
-                Industrial Applications
-              </p>
-              <ul className="list-disc pl-5 mt-2 text-[#484848]">
+                such as extruded aluminium section & glazing systems.{" "}
+              </motion.p>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                Industrial Applications{" "}
+              </motion.p>
+              <motion.ul
+                className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
                 <li>Sealing and gasket</li>
                 <li>Cushioning</li>
                 <li>Damping vibrations</li>
-              </ul>
+              </motion.ul>
             </div>
-
-            {/* Different Sphere of Application */}
-            <div className="col-span-12 md:col-span-6">
-              <p className="text-[#484848] font-semibold">
-                Below are different sphere of application:
-              </p>
-              <ul className="list-disc pl-5 mt-2 text-[#484848]">
-                <li>Aluminium & Glass / Wood / PVC: Window Systems</li>
-                <li>Thermal Break & Conventional Systems</li>
-                <li>Curtain Walls</li>
-                <li>Structural Glazing</li>
-                <li>Sliding Windows</li>
-                <li>Casement Windows</li>
-                <li>Tilt & Turn Windows</li>
-                <li>Doors</li>
-                <li>Facades</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        {/* Top Section */}
-        <motion.div
-          className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
-          {/* Text Column */}
-          <div className="col-span-12 md:col-span-7">
             <motion.div
-<<<<<<< HEAD
-              className="flex gap-3 mb-8"
-              initial={{ x: -50, opacity: 0 }}
-=======
               className="hidden md:col-span-4 md:block text-[#484848] p-6"
               initial={{ x: 50, opacity: 0 }}
->>>>>>> fa41596c6beb9245d151ced7359167ca9c62b3fe
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 2.0 }}
             >
-<<<<<<< HEAD
-              <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-              <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                EDPM TECHNOLOGY
-              </h2>
-=======
               
                 <motion.p
                 >
@@ -405,70 +365,96 @@ function page() {
                   <li>*Facades</li>
                 </motion.ul>
               
->>>>>>> fa41596c6beb9245d151ced7359167ca9c62b3fe
             </motion.div>
-            <motion.ul
-              className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.4 }}
-            >
-              <li>
-                EPDM is a polymer of ethylene, propylene and small percentage of
-                non-conjugated diene. Diene provides unsaturation in side chains
-                pendent from the fully saturated backbone.
-              </li>
-              <li>
-                EPDM compounds usually contain carbon black, zinc oxide,
-                antioxidants, processing aids, petroleum based plasticizers and
-                curing ingredients.
-              </li>
-              <li>
-                Rubber grades with higher ethylene content can be more easily
-                processed and more highly loaded with fillers and oils. But this
-                results in products with inferior ‘Low Temperature Properties’
-                and ‘High Compression Set’.
-              </li>
-              <li>
-                Other properties, particularly compression set, high temperature
-                performance and low temperature flexibility, are highly
-                dependent on the formulation and polymer composition.
-              </li>
-              <li>
-                EPDMs can be cured with peroxides or conventional Sulphur cure
-                systems.
-              </li>
-              <li>
-                Sulfur-cured EPDM compounds have high compression set and are
-                less resistant to high temperatures.
-              </li>
-              <li>
-                Peroxide cured compounds exhibit excellent heat aging properties
-                and resistance to compression set up to 150 C.
-              </li>
-              <li>
-                Peroxide-cured EPDM grades with low ethylene content have a
-                service temperature range from -40 to +150 C and short exposures
-                to even higher temperatures.
-              </li>
-              <li>
-                Peroxide-cured EPDM can be vulcanized by LCM line only, to
-                comply with compression set properties as per DIN 7863.
-              </li>
-              <li>
-                Peroxide-cured EPDM can deliver compression set performance for
-                decades.
-              </li>
-              <li>
-                Peroxide-cured EPDM are ideal for applications requiring ‘Good
-                High Temperature Performance’ and ‘Low Compression Set’ e.g.
-                Architectural Sealing Products in harsh climate areas of the
-                world.
-              </li>
-            </motion.ul>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
+
+        <div>
+          {/* Top Section */}
+          <motion.div
+            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            {/* Text Column */}
+            <div className="col-span-12 md:col-span-7">
+              <motion.div
+                className="flex gap-3 mb-8"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
+                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+                  EDPM TECHNOLOGY
+                </h2>
+              </motion.div>
+              <motion.ul
+                className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
+                <li>
+                  EPDM is a polymer of ethylene, propylene and small percentage
+                  of non-conjugated diene. Diene provides unsaturation in side
+                  chains pendent from the fully saturated backbone.
+                </li>
+                <li>
+                  EPDM compounds usually contain carbon black, zinc oxide,
+                  antioxidants, processing aids, petroleum based plasticizers
+                  and curing ingredients.
+                </li>
+                <li>
+                  Rubber grades with higher ethylene content can be more easily
+                  processed and more highly loaded with fillers and oils. But
+                  this results in products with inferior ‘Low Temperature
+                  Properties’ and ‘High Compression Set’.
+                </li>
+                <li>
+                  Other properties, particularly compression set, high
+                  temperature performance and low temperature flexibility, are
+                  highly dependent on the formulation and polymer composition.
+                </li>
+                <li>
+                  EPDMs can be cured with peroxides or conventional Sulphur cure
+                  systems.
+                </li>
+                <li>
+                  Sulfur-cured EPDM compounds have high compression set and are
+                  less resistant to high temperatures.
+                </li>
+                <li>
+                  Peroxide cured compounds exhibit excellent heat aging
+                  properties and resistance to compression set up to 150 C.
+                </li>
+                <li>
+                  Peroxide-cured EPDM grades with low ethylene content have a
+                  service temperature range from -40 to +150 C and short
+                  exposures to even higher temperatures.
+                </li>
+                <li>
+                  Peroxide-cured EPDM can be vulcanized by LCM line only, to
+                  comply with compression set properties as per DIN 7863.
+                </li>
+                <li>
+                  Peroxide-cured EPDM can deliver compression set performance
+                  for decades.
+                </li>
+                <li>
+                  Peroxide-cured EPDM are ideal for applications requiring ‘Good
+                  High Temperature Performance’ and ‘Low Compression Set’ e.g.
+                  Architectural Sealing Products in harsh climate areas of the
+                  world.
+                </li>
+              </motion.ul>
+            </div>
+          </motion.div>
+        </div>
       </div>
 
       <Footer />
