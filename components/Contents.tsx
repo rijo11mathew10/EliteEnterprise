@@ -98,7 +98,7 @@ function Contents() {
                 muted
                 playsInline
                 className="w-full h-auto rounded-md mt-4"
-                src="/logo-anim.mp4"
+                // src="/logo-anim.mp4"
               >
                 Your browser does not support the video tag.
               </video>
@@ -160,11 +160,12 @@ function Contents() {
               >
                 <p className="text-sm md:text-base lg:text-lg leading-relaxed">
                   OUR MISSION <br />
-                  To complement and support the ever-growing demand for aluminium
-                  architecture and design internationally, with special emphasis on the
-                  national needs. To continuously invest in infrastructure and technical
-                  expertise and be a leader in the industry creating new standards of
-                  quality and service to enhance overall growth.
+                  To complement and support the ever-growing demand for
+                  aluminium architecture and design internationally, with
+                  special emphasis on the national needs. To continuously invest
+                  in infrastructure and technical expertise and be a leader in
+                  the industry creating new standards of quality and service to
+                  enhance overall growth.
                 </p>
               </motion.div>
             )}
@@ -178,11 +179,12 @@ function Contents() {
               >
                 <p className="text-sm md:text-base lg:text-lg leading-relaxed">
                   OUR VISION <br />
-                  To complement and support the ever-growing demand for aluminium
-                  architecture and design internationally, with special emphasis on the
-                  national needs. To continuously invest in infrastructure and technical
-                  expertise and be a leader in the industry creating new standards of
-                  quality and service to enhance overall growth.
+                  To complement and support the ever-growing demand for
+                  aluminium architecture and design internationally, with
+                  special emphasis on the national needs. To continuously invest
+                  in infrastructure and technical expertise and be a leader in
+                  the industry creating new standards of quality and service to
+                  enhance overall growth.
                 </p>
               </motion.div>
             )}

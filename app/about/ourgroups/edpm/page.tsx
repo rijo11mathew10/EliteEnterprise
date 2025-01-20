@@ -47,7 +47,7 @@ function page() {
           </div>
         </motion.div>
       </div>
-      <div className="ml-40 mr-40 max-w-7xl mb-16">
+      <div className="ml-10 mr-10 max-w-7xl mb-16">
         <br></br>
         <motion.p
           className="text-[#484848] mb-6 text-justify md:pr-7"
@@ -89,7 +89,7 @@ function page() {
                 </h2>
               </motion.div>
               <motion.p
-                className="text-[#484848] mb-6 text-justify md:pr-7"
+                className="  text-[#484848] mb-6 text-justify md:pr-7 "
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -117,16 +117,7 @@ function page() {
           </motion.div>
         </div>
       </div>
-      <div className="mx-auto max-w-7xl p-4 bg-white rounded-lg shadow-lg">
-        {/* Image banner to Upload */}
-        <Image
-          src=""
-          alt=""
-          width={977}
-          height={361}
-          className="w-full h-auto rounded-md border-4 border-[#E8D858] shadow-lg"
-        />
-      </div>
+
       <div>
         {/* Top Section */}
         <motion.div
@@ -144,46 +135,51 @@ function page() {
             viewport={{ once: true }}
             transition={{ duration: 2.0 }}
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-6">
               <Image
-                src="/ourgroups/fabrications/sphere1.jpeg"
-                alt=""
-                width={270}
-                height={260}
-                className="shadow-lg border-3 border-[#E8D858]"
-              />
-              <Image
-                src="/ourgroups/fabrications/sphere-of-operation-2.jpg"
+                src="/ourgroups/epdm/epdm1.jpg"
                 alt=""
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
-              <div>
-                <Image
-                  src="/ourgroups/fabrications/sphere3.jpg"
-                  alt=""
-                  width={350}
-                  height={180}
-                  className="shadow-lg border-3 border-[#E8D858]"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/ourgroups/fabrications/sphere4.jpg"
-                  alt=""
-                  width={270}
-                  height={270}
-                  className="shadow-lg border-3 border-[#E8D858]"
-                />
-                <Image
-                  src="/ourgroups/fabrications/sphere4.jpg"
-                  alt=""
-                  width={270}
-                  height={270}
-                  className="shadow-lg border-3 border-[#E8D858]"
-                />
-              </div>
+              <Image
+                src="/ourgroups/epdm/epdm2.jpg"
+                alt=""
+                width={270}
+                height={270}
+                className="shadow-lg border-3 border-[#E8D858]"
+              />
+
+              <Image
+                src="/ourgroups/epdm/epdm6.jpg"
+                alt=""
+                width={270}
+                height={270}
+                className="shadow-lg border-3 border-[#E8D858]"
+              />
+
+              <Image
+                src="/ourgroups/epdm/epdm4.jpg"
+                alt=""
+                width={270}
+                height={270}
+                className="shadow-lg border-3 border-[#E8D858]"
+              />
+              <Image
+                src="/ourgroups/epdm/epdm5.jpg"
+                alt=""
+                width={270}
+                height={270}
+                className="shadow-lg border-3 border-[#E8D858]"
+              />
+              <Image
+                src="/ourgroups/epdm/epdm7.jpg"
+                alt=""
+                width={270}
+                height={270}
+                className="shadow-lg border-3 border-[#E8D858]"
+              />
             </div>
           </motion.div>
 
@@ -348,16 +344,25 @@ function page() {
           {/* Text Column */}
           <div className="col-span-12 md:col-span-7">
             <motion.div
-              className="flex gap-3 mb-8"
-              initial={{ x: -50, opacity: 0 }}
+              className="hidden md:col-span-4 md:block text-[#484848] p-6"
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 2.0 }}
             >
-              <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-              <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                EDPM TECHNOLOGY
-              </h2>
+              <motion.p>Below are different sphere of application: </motion.p>
+              <br></br>
+              <motion.ul>
+                <li>*Aluminium & Glass / Wood / PVC:Window</li>
+                <li>*Thermal Break & Conventional Systems</li>
+                <li>*Curtain Walls</li>
+                <li>*Structural Glazing</li>
+                <li>*Sliding Windows</li>
+                <li>*Casement Windows</li>
+                <li>*Tilt & Turn Windows</li>
+                <li>*Doors</li>
+                <li>*Facades</li>
+              </motion.ul>
             </motion.div>
             <motion.ul
               className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
