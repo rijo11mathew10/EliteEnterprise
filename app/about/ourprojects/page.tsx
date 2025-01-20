@@ -94,13 +94,8 @@ function Page() {
       </div>
 
       {/* Projects Grid */}
-<<<<<<< HEAD
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px md:px-10 mb-28 ml-20 ">
-        {Array.from({ length: 8 }).map((_, index) => (
-=======
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px md:px-10 mb-28">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-10 mb-28">
         {projects.map((project, index) => (
->>>>>>> fa41596c6beb9245d151ced7359167ca9c62b3fe
           <GlareCard
             key={index}
             className="flex flex-col items-center justify-center rounded-lg shadow-md overflow-hidden"
