@@ -48,7 +48,7 @@ function page() {
         </motion.div>
       </div>
       <br></br>
-      <div className="ml-40 mr-40 max-w-7xl mb-8">
+      <div className="mx-4 md:mx-40 max-w-7xl mb-16">
       <motion.p
         className="text-[#484848] mb-6 text-justify md:pr-7"
         initial={{ opacity: 0, y: 30 }}
