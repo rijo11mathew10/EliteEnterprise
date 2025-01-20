@@ -213,7 +213,6 @@ function AboutPage() {
           />
         </motion.div>
       </div>
-
       {/* Video Section */}
       <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">
         <video
@@ -266,7 +265,7 @@ function AboutPage() {
 
       {/* Logo Section */}
       {/* Logo Section */}
-      <div className="relative z-20 flex justify-center items-center gap-4 flex-wrap px-4 mb-10">
+      <div className="relative z-50 flex justify-center items-center gap-4 flex-wrap px-4 mb-10">
         {[
           "/company1.png",
           "/company2.png",
