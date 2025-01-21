@@ -47,10 +47,10 @@ function page() {
           </div>
         </motion.div>
       </div>
-      <div className="ml-10 mr-10 max-w-7xl mb-16">
-        <br></br>
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-16">
+        <br />
         <motion.p
-          className="text-[#484848] mb-6 text-justify md:pr-7"
+          className="text-[#484848] mb-6 text-justify"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -60,9 +60,10 @@ function page() {
           than an additional component. Our wide array of standard & customized
           architectural sealing gaskets is designed to withstand the extreme
           climatic conditions to add a further functional accessory to the
-          aluminium production and complete its vast range.{" "}
+          aluminium production and complete its vast range.
         </motion.p>
       </div>
+
       <div className="mx-auto max-w-7xl mb-16">
         <div>
           {/* Top Section */}
@@ -313,11 +314,11 @@ function page() {
             </div>
 
             {/* Different Sphere of Application */}
-            <div className="col-span-12 md:col-span-6">
-              <p className="text-[#484848] font-semibold">
+            <motion.div className="col-span-12 md:col-span-6">
+              <motion.p className="text-[#484848] font-semibold">
                 Below are different sphere of application:
-              </p>
-              <ul className="list-disc pl-5 mt-2 text-[#484848]">
+              </motion.p>
+              <motion.ul className="list-disc pl-5 mt-2 text-[#484848]">
                 <li>Aluminium & Glass / Wood / PVC: Window Systems</li>
                 <li>Thermal Break & Conventional Systems</li>
                 <li>Curtain Walls</li>
@@ -327,133 +328,24 @@ function page() {
                 <li>Tilt & Turn Windows</li>
                 <li>Doors</li>
                 <li>Facades</li>
-              </ul>
-            </div>
+              </motion.ul>
+            </motion.div>
           </div>
         </div>
       </div>
-      <div>
-        {/* Top Section */}
-        <motion.div
-          className="grid grid-cols-12 gap-8"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
-          {/* Text Column */}
-          <div className="col-span-12 md:col-span-7">
-            <motion.div
-              className="hidden md:col-span-4 md:block text-[#484848] p-6"
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              <motion.p>Below are different sphere of application: </motion.p>
-              <br></br>
-              <motion.ul>
-                <li>*Aluminium & Glass / Wood / PVC:Window</li>
-                <li>*Thermal Break & Conventional Systems</li>
-                <li>*Curtain Walls</li>
-                <li>*Structural Glazing</li>
-                <li>*Sliding Windows</li>
-                <li>*Casement Windows</li>
-                <li>*Tilt & Turn Windows</li>
-                <li>*Doors</li>
-                <li>*Facades</li>
-              </motion.ul>
-            </motion.div>
-            <motion.p
-              className="text-[#484848] mb-6 text-justify md:pr-7"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              We are highly specialized in sealing protection for products such
-              as extruded aluminium section & glazing systems.
-            </motion.p>
-            <motion.p
-              className="text-[#484848] mb-6 text-justify md:pr-7"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              Industrial Applications
-            </motion.p>
-            <motion.ul
-              className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.4 }}
-            >
-              <li>Sealing and gasket</li>
-              <li>Cushioning</li>
-              <li>Damping vibrations</li>
-            </motion.ul>
-          </div>
-
-          {/* Application List Column */}
-          <motion.div
-            className="hidden md:col-span-4 md:block text-[#484848] p-6"
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2.0 }}
-          >
-            <motion.p>Below are different sphere of application:</motion.p>
-            <motion.ul className="mt-4">
-              <li>*Aluminium & Glass / Wood / PVC:Window</li>
-              <li>*Thermal Break & Conventional Systems</li>
-              <li>*Curtain Walls</li>
-              <li>*Structural Glazing</li>
-              <li>*Sliding Windows</li>
-              <li>*Casement Windows</li>
-              <li>*Tilt & Turn Windows</li>
-              <li>*Doors</li>
-              <li>*Facades</li>
-            </motion.ul>
-          </motion.div>
-        </motion.div>
-      </div>
-
       {/* EPDM Technology Section */}
-      <div className="mx-auto max-w-7xl mb-16 px-6">
+      <div className="w-full mb-16 px-4 sm:px-6 md:px-8">
         <motion.div
-          className="grid grid-cols-12 gap-8"
+          className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
           {/* Text Column */}
-          <div className="col-span-12 md:col-span-7">
-            <motion.div
-              className="hidden md:col-span-4 md:block text-[#484848] p-6"
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              <motion.p>Below are different sphere of application: </motion.p>
-              <br></br>
-              <motion.ul>
-                <li>*Aluminium & Glass / Wood / PVC:Window</li>
-                <li>*Thermal Break & Conventional Systems</li>
-                <li>*Curtain Walls</li>
-                <li>*Structural Glazing</li>
-                <li>*Sliding Windows</li>
-                <li>*Casement Windows</li>
-                <li>*Tilt & Turn Windows</li>
-                <li>*Doors</li>
-                <li>*Facades</li>
-              </motion.ul>
-            </motion.div>
+          <div className="col-span-12">
             <motion.ul
-              className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
+              className="text-[#484848] text-justify list-disc pl-5 pr-2 sm:pr-6 md:pr-8"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -466,7 +358,7 @@ function page() {
               </li>
               <li>
                 EPDM compounds usually contain carbon black, zinc oxide,
-                antioxidants, processing aids, petroleum based plasticizers and
+                antioxidants, processing aids, petroleum-based plasticizers and
                 curing ingredients.
               </li>
               <li>
