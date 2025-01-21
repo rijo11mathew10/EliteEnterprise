@@ -40,28 +40,403 @@ function page() {
             <h1 className="text-white font-semibold">
               {/* Elite */}
               <span className="text-4xl md:text-7xl block">
-                EPDM RUBBER PRODUCTS
+                COILS AND SHEETS
               </span>
               {/* Extrusion LLC */}
             </h1>
           </div>
         </motion.div>
       </div>
-      <div className="ml-10 mr-10 max-w-7xl mb-16">
-        <br></br>
-        <motion.p
-          className="text-[#484848] mb-6 text-justify md:pr-7"
+      <div className="mx-4 md:mx-40 max-w-7xl mb-16"><br></br>
+      <motion.p
+        className="text-[#484848] mb-6 text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        Alumill Tech Gulf LLC is one of the foremost industrial leaders in top
+        quality aluminum flat-rolled products, color coated coils and sheets.
+        The factory is one of the largest in all aluminum industry in the Middle
+        East and currently the only producer of continuous casting & Cold
+        rolling Mill in the United Arab Emirates
+      </motion.p>
+      <motion.p
+        className="text-[#484848] mb-6 text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        Allmill Tech Gulf manufacturing plant operates out of a wide-spread
+        campus of over 55,000 square meters in the industrial area of Ras Al
+        Khaimah (U.A.E.).{" "}
+      </motion.p>
+
+      <motion.p
+        className="text-[#484848] mb-6 text-justify md:pr-7"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 2.0 }}
+      >
+        The integrated cast house provides continuous production for subsequent
+        rolling mill process of coils, based on the advanced technology of
+        Presezzi SpA (Italy). The state-of-the-art line is fully equipped lab
+        for end-to-end testing solutions of materials.{" "}
+      </motion.p>
+      {/* <motion.ul
+        className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.4 }}
+      >
+        <li>ALLOYS AA 6063, 6061, 6082 </li>
+        <li>TEMPER T4, T6 </li>
+      </motion.ul> */}
+      </div>
+
+      <div className="mx-auto max-w-7xl mb-16">
+        <div>
+          {/* Top Section */}
+          <motion.div
+            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            {/* Text Column */}
+            <div className="col-span-12 md:col-span-7">
+              <motion.div
+                className="flex gap-3 mb-8"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
+                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+                  CAST COILS
+                </h2>
+              </motion.div>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                We offer high quality Cold Rolled Pure aluminium ingots are
+                melted in the furnace, alloyed and analysed to ensure that the
+                correct composition is achieved. The alloy is created and
+                transferred to the holding furnace for direct casting.{" "}
+
+              </motion.p>
+             
+              <motion.p
+                className="text-[#484848] text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
+                In the Cast House the hot metal is continuously casted and
+                solidified in the shape of coil form. Subsequently trimmed in
+                the caster machine with on line edge milling for the next
+                multi-stage rolling mill.{" "}
+              </motion.p>
+              <br></br>
+              <motion.p
+                className="text-[#484848] text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
+                Fields of Applications:{" "}
+                
+              </motion.p>
+              <br></br>
+              <motion.p
+                className="text-[#484848] text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
+                Roofing & Claddings, Rolling shutters, Facade & Awnings,
+                Interior ceilings, Transportation Vehicles etc.{" "}
+              </motion.p>
+            </div>
+            <motion.div
+              className="hidden md:col-span-4 md:block bg-[#023D68] p-6 text-white"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src="/coilsandsheets/coil1.png"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/coil2.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/coil4.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/coil3.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+      
+      <div>
+        {/* Top Section */}
+        <motion.div
+          className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 2.0 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
         >
-          We manufacture and offer a complementary product that is much more
-          than an additional component. Our wide array of standard & customized
-          architectural sealing gaskets is designed to withstand the extreme
-          climatic conditions to add a further functional accessory to the
-          aluminium production and complete its vast range.{" "}
-        </motion.p>
+          {/* Image Column */}
+          <motion.div
+            className="col-span-12 md:col-span-5 bg-[#023D68] p-6 text-white"
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2.0 }}
+          >
+            <div className="grid grid-cols-2 gap-4">
+              <Image
+                src="/coilsandsheets/sheet1.png"
+                alt=""
+                width={350}
+                height={180}
+                className="shadow-lg border-3 border-[#E8D858]"
+              />
+              <Image
+                src="/coilsandsheets/sheet2.png"
+                alt=""
+                width={350}
+                height={180}
+                className="shadow-lg border-3 border-[#E8D858]"
+              />
+              <Image
+                src="/coilsandsheets/sheet3.png"
+                alt=""
+                width={350}
+                height={180}
+                className="shadow-lg border-3 border-[#E8D858]"
+              />
+              {/* <Image
+                src="/ourgroups/globalpioneer/globalpioneer2.png"
+                alt=""
+                width={350}
+                height={180}
+                className="shadow-lg border-3 border-[#E8D858]"
+              /> */}
+            </div>
+          </motion.div>
+
+          {/* Text Column */}
+          <div className="col-span-12 md:col-span-7">
+            <motion.div
+              className="flex gap-3 mb-8"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
+              <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+                COLD ROLLED <br />
+                COILS AND SHEETS
+              </h2>
+            </motion.div>
+            <motion.p
+              className="text-[#484848] mb-6 text-justify md:pr-7"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              We offer high quality Cold Rolled coils are processed in the
+              rolling mill to reach the thickness as per customer’s specific
+              requirement.{" "}
+            </motion.p>
+
+            <motion.p
+              className="text-[#484848] mb-6 text-justify md:pr-7"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              The reversible rolling mill is equipped with automatic gauge
+              measuring unit on each side to have a precise control on
+              thicknesses and minimum tolerances. Further treatment in the
+              annealing furnace is processed to achieve the required
+              temper-strength.{" "}
+            </motion.p>
+            <motion.p
+              className="text-[#484848] mb-6 text-justify md:pr-7"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              Tension Levelling - Cut to Length Line - Slitting Line - Embossing
+              Line{" "}
+            </motion.p>
+            <motion.p
+              className="text-[#484848] mb-6 text-justify md:pr-7"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              The tension levelling line aim to test and improve the flatness of
+              the material prior to coating or cut to length for final output of
+              coils and sheets. The slitting line for side trimmings and exact
+              required size for mill finish or coated coils.{" "}
+            </motion.p>
+            <motion.p
+              className="text-[#484848] mb-6 text-justify md:pr-7"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              Alumill Tech can process an additional step to emboss the
+              aluminium surface in mill finish or coated coils & sheets.{" "}
+            </motion.p>
+          </div>
+        </motion.div>
+      </div>
+      
+      <div className="mx-auto max-w-7xl mb-16">
+        <div>
+          {/* Top Section */}
+          <motion.div
+            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            {/* Text Column */}
+            <div className="col-span-12 md:col-span-7">
+              <motion.div
+                className="flex gap-3 mb-8"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
+                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+                  COLOR COATED <br />
+                  COILS
+                </h2>
+              </motion.div>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                We offer high quality Cold Rolled The coil coating process it is
+                a high-volume operation that produces a perfect finish based on
+                a liquid application of the common resins such as Polyester (PE)
+                and Polyvinylidene fluoride (PVDF). The process involves
+                uncoiling, chemical pre-treatment, application of primer & top
+                coating and recoiling.{" "}
+              </motion.p>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                Fields of Applications:{" "}
+              </motion.p>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                Roofing & Claddings, Rolling shutters, Facade & Awnings,
+                Interior ceilings, Transportation Vehicles etc.{" "}
+              </motion.p>
+            </div>
+            <motion.div
+              className="hidden md:col-span-4 md:block bg-[#023D68] p-6 text-white"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2.0 }}
+            >
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src="/coilsandsheets/colorcoated1.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/colorcoated2.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/colorcoated4.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+
+                <Image
+                  src="/coilsandsheets/colorcoated3.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
       </div>
       <div className="mx-auto max-w-7xl mb-16">
         <div>
@@ -84,436 +459,82 @@ function page() {
               >
                 <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
                 <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                  EDPM RUBBER <br />
-                  PROFILES
+                  STANDARD <br />
+                  PACKING
                 </h2>
               </motion.div>
               <motion.p
-                className="  text-[#484848] mb-6 text-justify md:pr-7 "
+                className="text-[#484848] mb-6 text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 2.0 }}
               >
-                Thermoset Middle East in-house capabilities include a fully
-                equipped Rubber Extrusion line with an output capacity of 10.000
-                metric tons per year to serve the market. Cold Feed Extrusion
-                Line with LCM Vulcanization (Liquid Cure Medium) is able to
-                create quality Peroxide Cure EPDM Profiles that offer better
-                compression set performance at higher temperatures, providing
-                stability for building and industrial applications.{" "}
+                Aluminium coils export standard sea worthy wooden pallet eye to
+                wall (Horizontal Type){" "}
               </motion.p>
               <motion.p
-                className="text-[#484848] text-justify md:pr-7"
+                className="text-[#484848] mb-6 text-justify md:pr-7"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 1.4 }}
+                transition={{ duration: 2.0 }}
               >
-                Only LCM lines can make products which can comply with all needs
-                of DIN 7863.{" "}
+                Aluminium coils export standard sea worthy wooden pallet eye to
+                sky (Vertical Type){" "}
+              </motion.p>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                Aluminium sheets export standard sea worthy wooden pallet with
+                interleaving paper in between{" "}
               </motion.p>
             </div>
-          </motion.div>
-        </div>
-      </div>
-
-      <div>
-        {/* Top Section */}
-        <motion.div
-          className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-8"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
-          {/* Image Column */}
-          <motion.div
-            className="col-span-12 md:col-span-5 bg-[#023D68] p-6 text-white"
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2.0 }}
-          >
-            <div className="grid grid-cols-2 gap-6">
-              <Image
-                src="/ourgroups/epdm/epdm1.jpg"
-                alt=""
-                width={270}
-                height={270}
-                className="shadow-lg border-3 border-[#E8D858]"
-              />
-              <Image
-                src="/ourgroups/epdm/epdm2.jpg"
-                alt=""
-                width={270}
-                height={270}
-                className="shadow-lg border-3 border-[#E8D858]"
-              />
-
-              <Image
-                src="/ourgroups/epdm/epdm6.jpg"
-                alt=""
-                width={270}
-                height={270}
-                className="shadow-lg border-3 border-[#E8D858]"
-              />
-
-              <Image
-                src="/ourgroups/epdm/epdm4.jpg"
-                alt=""
-                width={270}
-                height={270}
-                className="shadow-lg border-3 border-[#E8D858]"
-              />
-              <Image
-                src="/ourgroups/epdm/epdm5.jpg"
-                alt=""
-                width={270}
-                height={270}
-                className="shadow-lg border-3 border-[#E8D858]"
-              />
-              <Image
-                src="/ourgroups/epdm/epdm7.jpg"
-                alt=""
-                width={270}
-                height={270}
-                className="shadow-lg border-3 border-[#E8D858]"
-              />
-            </div>
-          </motion.div>
-
-          {/* Text Column */}
-          <div className="col-span-12 md:col-span-7">
             <motion.div
-              className="flex gap-3 mb-8"
+              className="hidden md:col-span-4 md:block bg-[#023D68] p-6 text-white"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 2.0 }}
             >
-              <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-              <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-                RANGE OF <br />
-                PRODUCTS
-              </h2>
-            </motion.div>
-            <motion.p
-              className="text-[#484848] mb-6 text-justify md:pr-7"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              All our premier EPDM gaskets and polymer products are engineered
-              to deliver optimal performance and meet the harsh environmental
-              and tough operational condition.{" "}
-            </motion.p>
-            <motion.p
-              className="text-[#484848] mb-6 text-justify md:pr-7"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              Product range includes the following:
-            </motion.p>
-            <motion.ul
-              className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.4 }}
-            >
-              <li>EPDM, Neoprene, Silicone, Rubber dense/solid profiles</li>
-              <li>Fire Rated EPDM rubber gasket as per standard EN 455 45-2</li>
-              <li>Silicone compatible EPDM rubber gaskets.</li>
-              <li>
-                Rubber setting blocks, expansion joint and moulded corner,
-                vulcanized frame gasket.
-              </li>
-              <li>Rubber sponge profiles.</li>
-              <li>
-                Rubber Fenders & Other Rubber Extruded & co-extruded items.
-              </li>
-              <li>Rubber Sheets/water proofing membrane.</li>
-            </motion.ul>
-            <motion.p
-              className="text-[#484848] mb-6 text-justify md:pr-7"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              Hardness Grade Available:
-            </motion.p>
-            <motion.ul
-              className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.4 }}
-            >
-              <li>50±5 Shore A</li>
-              <li>60±5 Shore A</li>
-              <li>70±5 Shore A</li>
-              <li>80±5 Shore A</li>
-              <li>Customized</li>
-            </motion.ul>
-            <motion.p
-              className="text-[#484848] mb-6 text-justify md:pr-7"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              Color Available:
-            </motion.p>
-            <motion.ul
-              className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.4 }}
-            >
-              <li>Black</li>
-              <li>Grey, Beige or special colours on prior request</li>
-            </motion.ul>
-          </div>
-        </motion.div>
-      </div>
-      <div className="mx-auto max-w-7xl mb-16">
-        <div className="mx-auto max-w-7xl mb-16 p-6">
-          {/* Applications Section */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 items-start">
-            {/* Title Section */}
-            <div className="col-span-12">
-              <div className="flex gap-3 items-center mb-6">
-                <hr className="w-2 h-16 bg-[#E8D858] border-none" />
-                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68]">
-                  APPLICATIONS
-                </h2>
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src="/coilsandsheets/packingcoil1.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/packingsheet1.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+                <Image
+                  src="/coilsandsheets/packingcoil4.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
+
+                <Image
+                  src="/coilsandsheets/packingcoil3.jpg"
+                  alt=""
+                  width={350}
+                  height={180}
+                  className="shadow-lg -ml-10 border-3 border-[#E8D858]"
+                />
               </div>
-            </div>
-
-            {/* Description Section */}
-            <div className="col-span-12 md:col-span-6">
-              <p className="text-[#484848] mb-4">
-                We are highly specialized in sealing protection for products
-                such as extruded aluminium section & glazing systems.
-              </p>
-              <p className="text-[#484848] font-semibold">
-                Industrial Applications
-              </p>
-              <ul className="list-disc pl-5 mt-2 text-[#484848]">
-                <li>Sealing and gasket</li>
-                <li>Cushioning</li>
-                <li>Damping vibrations</li>
-              </ul>
-            </div>
-
-            {/* Different Sphere of Application */}
-            <div className="col-span-12 md:col-span-6">
-              <p className="text-[#484848] font-semibold">
-                Below are different sphere of application:
-              </p>
-              <ul className="list-disc pl-5 mt-2 text-[#484848]">
-                <li>Aluminium & Glass / Wood / PVC: Window Systems</li>
-                <li>Thermal Break & Conventional Systems</li>
-                <li>Curtain Walls</li>
-                <li>Structural Glazing</li>
-                <li>Sliding Windows</li>
-                <li>Casement Windows</li>
-                <li>Tilt & Turn Windows</li>
-                <li>Doors</li>
-                <li>Facades</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        {/* Top Section */}
-        <motion.div
-          className="grid grid-cols-12 gap-8"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
-          {/* Text Column */}
-          <div className="col-span-12 md:col-span-7">
-            <motion.div
-              className="hidden md:col-span-4 md:block text-[#484848] p-6"
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              <motion.p>Below are different sphere of application: </motion.p>
-              <br></br>
-              <motion.ul>
-                <li>*Aluminium & Glass / Wood / PVC:Window</li>
-                <li>*Thermal Break & Conventional Systems</li>
-                <li>*Curtain Walls</li>
-                <li>*Structural Glazing</li>
-                <li>*Sliding Windows</li>
-                <li>*Casement Windows</li>
-                <li>*Tilt & Turn Windows</li>
-                <li>*Doors</li>
-                <li>*Facades</li>
-              </motion.ul>
             </motion.div>
-            <motion.p
-              className="text-[#484848] mb-6 text-justify md:pr-7"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              We are highly specialized in sealing protection for products such
-              as extruded aluminium section & glazing systems.
-            </motion.p>
-            <motion.p
-              className="text-[#484848] mb-6 text-justify md:pr-7"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              Industrial Applications
-            </motion.p>
-            <motion.ul
-              className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.4 }}
-            >
-              <li>Sealing and gasket</li>
-              <li>Cushioning</li>
-              <li>Damping vibrations</li>
-            </motion.ul>
-          </div>
-
-          {/* Application List Column */}
-          <motion.div
-            className="hidden md:col-span-4 md:block text-[#484848] p-6"
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2.0 }}
-          >
-            <motion.p>Below are different sphere of application:</motion.p>
-            <motion.ul className="mt-4">
-              <li>*Aluminium & Glass / Wood / PVC:Window</li>
-              <li>*Thermal Break & Conventional Systems</li>
-              <li>*Curtain Walls</li>
-              <li>*Structural Glazing</li>
-              <li>*Sliding Windows</li>
-              <li>*Casement Windows</li>
-              <li>*Tilt & Turn Windows</li>
-              <li>*Doors</li>
-              <li>*Facades</li>
-            </motion.ul>
           </motion.div>
-        </motion.div>
-      </div>
-
-      {/* EPDM Technology Section */}
-      <div className="mx-auto max-w-7xl mb-16 px-6">
-        <motion.div
-          className="grid grid-cols-12 gap-8"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
-          {/* Text Column */}
-          <div className="col-span-12 md:col-span-7">
-            <motion.div
-              className="hidden md:col-span-4 md:block text-[#484848] p-6"
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2.0 }}
-            >
-              <motion.p>Below are different sphere of application: </motion.p>
-              <br></br>
-              <motion.ul>
-                <li>*Aluminium & Glass / Wood / PVC:Window</li>
-                <li>*Thermal Break & Conventional Systems</li>
-                <li>*Curtain Walls</li>
-                <li>*Structural Glazing</li>
-                <li>*Sliding Windows</li>
-                <li>*Casement Windows</li>
-                <li>*Tilt & Turn Windows</li>
-                <li>*Doors</li>
-                <li>*Facades</li>
-              </motion.ul>
-            </motion.div>
-            <motion.ul
-              className="text-[#484848] text-justify md:pr-7 list-disc pl-5"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.4 }}
-            >
-              <li>
-                EPDM is a polymer of ethylene, propylene and small percentage of
-                non-conjugated diene. Diene provides unsaturation in side chains
-                pendent from the fully saturated backbone.
-              </li>
-              <li>
-                EPDM compounds usually contain carbon black, zinc oxide,
-                antioxidants, processing aids, petroleum based plasticizers and
-                curing ingredients.
-              </li>
-              <li>
-                Rubber grades with higher ethylene content can be more easily
-                processed and more highly loaded with fillers and oils. But this
-                results in products with inferior ‘Low Temperature Properties’
-                and ‘High Compression Set’.
-              </li>
-              <li>
-                Other properties, particularly compression set, high temperature
-                performance and low temperature flexibility, are highly
-                dependent on the formulation and polymer composition.
-              </li>
-              <li>
-                EPDMs can be cured with peroxides or conventional Sulphur cure
-                systems.
-              </li>
-              <li>
-                Sulfur-cured EPDM compounds have high compression set and are
-                less resistant to high temperatures.
-              </li>
-              <li>
-                Peroxide cured compounds exhibit excellent heat aging properties
-                and resistance to compression set up to 150 C.
-              </li>
-              <li>
-                Peroxide-cured EPDM grades with low ethylene content have a
-                service temperature range from -40 to +150 C and short exposures
-                to even higher temperatures.
-              </li>
-              <li>
-                Peroxide-cured EPDM can be vulcanized by LCM line only, to
-                comply with compression set properties as per DIN 7863.
-              </li>
-              <li>
-                Peroxide-cured EPDM can deliver compression set performance for
-                decades.
-              </li>
-              <li>
-                Peroxide-cured EPDM are ideal for applications requiring ‘Good
-                High Temperature Performance’ and ‘Low Compression Set’ e.g.
-                Architectural Sealing Products in harsh climate areas of the
-                world.
-              </li>
-            </motion.ul>
-          </div>
-        </motion.div>
+        </div>
       </div>
 
       <Footer />
