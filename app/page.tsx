@@ -9,13 +9,13 @@ import Video from "@/components/Video";
 import CardGrid from "@/components/CardGrid";
 
 export default function App() {
-  const cards = [
+  const cardsGroup1 = [
     {
       image: "/cardgrid/slide1.jpg",
       title: "EXTRUSION DIVISION",
       description: "76,800 metric ton",
       unit: "Output per annum",
-      link: "/about/ourgroups/extrudedprofiles", // Add a link for each card
+      link: "/about/ourgroups/extrudedprofiles",
     },
     {
       image: "/cardgrid/slide2.jpg",
@@ -38,6 +38,9 @@ export default function App() {
       unit: "Output per annum",
       link: "/wood-coating-division",
     },
+  ];
+
+  const cardsGroup2 = [
     {
       image: "/cardgrid/slide5.jpg",
       title: "EXTRUSION DIE DIVISION",
@@ -59,6 +62,13 @@ export default function App() {
       unit: "Output per annum",
       link: "/aluminium-coil-sheet-division",
     },
+    {
+      image: "/cardgrid/slide3.jpg",
+      title: "METAL DIVISION",
+      description: "30,000 metric ton",
+      unit: "Output per annum",
+      link: "/about/ourgroups/nashat",
+    },
   ];
 
   return (
@@ -66,7 +76,12 @@ export default function App() {
       <Header />
       <Video />
       <Contents />
-      <CardGrid cards={cards} />
+      <div className="flex justify-center">
+        <CardGrid cards={cardsGroup1} />
+      </div>
+      <div className="flex justify-center items-center">
+        <CardGrid cards={cardsGroup2} />
+      </div>
       <Companies />
       <Testimonial />
       <IndustrySection />
