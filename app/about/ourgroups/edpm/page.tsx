@@ -38,11 +38,9 @@ function page() {
         >
           <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
-              {/* Elite */}
               <span className="text-4xl md:text-7xl block">
                 EPDM RUBBER PRODUCTS
               </span>
-              {/* Extrusion LLC */}
             </h1>
           </div>
         </motion.div>
@@ -119,10 +117,10 @@ function page() {
         </div>
       </div>
 
-      <div>
-        {/* Top Section */}
+      {/* Product Range Section */}
+      <div className="mx-auto max-w-7xl mb-16 px-6">
         <motion.div
-          className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-8"
+          className="grid grid-cols-12 gap-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -139,44 +137,42 @@ function page() {
             <div className="grid grid-cols-2 gap-6">
               <Image
                 src="/ourgroups/epdm/epdm1.jpg"
-                alt=""
+                alt="EPDM Rubber"
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
                 src="/ourgroups/epdm/epdm2.jpg"
-                alt=""
+                alt="EPDM Rubber"
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
-
               <Image
                 src="/ourgroups/epdm/epdm6.jpg"
-                alt=""
+                alt="EPDM Rubber"
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
-
               <Image
                 src="/ourgroups/epdm/epdm4.jpg"
-                alt=""
+                alt="EPDM Rubber"
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
                 src="/ourgroups/epdm/epdm5.jpg"
-                alt=""
+                alt="EPDM Rubber"
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
               />
               <Image
                 src="/ourgroups/epdm/epdm7.jpg"
-                alt=""
+                alt="EPDM Rubber"
                 width={270}
                 height={270}
                 className="shadow-lg border-3 border-[#E8D858]"
@@ -208,7 +204,7 @@ function page() {
             >
               All our premier EPDM gaskets and polymer products are engineered
               to deliver optimal performance and meet the harsh environmental
-              and tough operational condition.{" "}
+              and tough operational conditions.
             </motion.p>
             <motion.p
               className="text-[#484848] mb-6 text-justify md:pr-7"
@@ -352,9 +348,8 @@ function page() {
               transition={{ duration: 1.4 }}
             >
               <li>
-                EPDM is a polymer of ethylene, propylene and small percentage of
-                non-conjugated diene. Diene provides unsaturation in side chains
-                pendent from the fully saturated backbone.
+                EPDM is a polymer of ethylene, propylene and a small percentage
+                of non-conjugated diene.
               </li>
               <li>
                 EPDM compounds usually contain carbon black, zinc oxide,
@@ -362,46 +357,8 @@ function page() {
                 curing ingredients.
               </li>
               <li>
-                Rubber grades with higher ethylene content can be more easily
-                processed and more highly loaded with fillers and oils. But this
-                results in products with inferior ‘Low Temperature Properties’
-                and ‘High Compression Set’.
-              </li>
-              <li>
-                Other properties, particularly compression set, high temperature
-                performance and low temperature flexibility, are highly
-                dependent on the formulation and polymer composition.
-              </li>
-              <li>
-                EPDMs can be cured with peroxides or conventional Sulphur cure
-                systems.
-              </li>
-              <li>
-                Sulfur-cured EPDM compounds have high compression set and are
-                less resistant to high temperatures.
-              </li>
-              <li>
-                Peroxide cured compounds exhibit excellent heat aging properties
-                and resistance to compression set up to 150 C.
-              </li>
-              <li>
-                Peroxide-cured EPDM grades with low ethylene content have a
-                service temperature range from -40 to +150 C and short exposures
-                to even higher temperatures.
-              </li>
-              <li>
-                Peroxide-cured EPDM can be vulcanized by LCM line only, to
-                comply with compression set properties as per DIN 7863.
-              </li>
-              <li>
-                Peroxide-cured EPDM can deliver compression set performance for
-                decades.
-              </li>
-              <li>
-                Peroxide-cured EPDM are ideal for applications requiring ‘Good
-                High Temperature Performance’ and ‘Low Compression Set’ e.g.
-                Architectural Sealing Products in harsh climate areas of the
-                world.
+                EPDM provides resistance to weathering, heat, ozone, and extreme
+                temperature variations.
               </li>
             </motion.ul>
           </div>
