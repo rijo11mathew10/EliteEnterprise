@@ -15,6 +15,7 @@ export default function App() {
       title: "EXTRUSION DIVISION",
       description: "76,800 metric ton",
       unit: "Output per annum",
+      className: "hidden sm:block",
       link: "/about/ourgroups/extrudedprofiles",
     },
     {
@@ -22,6 +23,7 @@ export default function App() {
       title: "POWDER COATING DIVISION",
       description: "44,400 metric ton",
       unit: "Output per annum",
+      className: "hidden sm:block",
       link: "/about/ourgroups/extrudedprofiles",
     },
     {
@@ -29,6 +31,7 @@ export default function App() {
       title: "ANODIZING DIVISION",
       description: "14,800 metric ton",
       unit: "Output per annum",
+      className: "hidden sm:block",
       link: "/about/ourgroups/extrudedprofiles",
     },
     {
@@ -36,6 +39,7 @@ export default function App() {
       title: "WOOD COATING DIVISION",
       description: "1500 metric ton",
       unit: "Output per annum",
+      className: "hidden sm:block",
       link: "/wood-coating-division",
     },
   ];
@@ -46,6 +50,7 @@ export default function App() {
       title: "EXTRUSION DIE DIVISION",
       description: "1800 Dies",
       unit: "Output per annum",
+      className: "hidden sm:block",
       link: "/about/ourgroups/extrudedprofiles",
     },
     {
@@ -53,6 +58,7 @@ export default function App() {
       title: "EPDM RUBBER PRODUCTS DIVISION",
       description: "1800 metric ton",
       unit: "Output per annum",
+      className: "hidden sm:block",
       link: "/epdm-rubber-products-division",
     },
     {
@@ -60,6 +66,7 @@ export default function App() {
       title: "ALUMINIUM COIL & SHEET DIVISION",
       description: "30,000 metric ton",
       unit: "Output per annum",
+      // className: "hidden sm:block",
       link: "/aluminium-coil-sheet-division",
     },
     {
@@ -67,6 +74,7 @@ export default function App() {
       title: "METAL DIVISION",
       description: "30,000 metric ton",
       unit: "Output per annum",
+      className: "hidden sm:block",
       link: "/about/ourgroups/nashat",
     },
   ];

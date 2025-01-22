@@ -152,7 +152,8 @@ function page() {
               viewport={{ once: true }}
               transition={{ duration: 1.2, ease: "easeOut" }}
               style={{
-                backgroundImage:"url('/ourgroups/nationalaluminium/nalexco.jpg')", // Replace with your image path
+                backgroundImage:
+                  "url('/ourgroups/nationalaluminium/nalexco.jpg')", // Replace with your image path
                 backgroundSize: "cover", // Ensures the image completely fills the div
                 backgroundPosition: "right", // Centers the image in the div
                 backgroundRepeat: "no-repeat", // Prevents the image from repeating
@@ -163,7 +164,7 @@ function page() {
                 width={200}
                 height={200}
                 alt=""
-                className="shadow-lg border-8 border-[#E8D858] absolute lg:-top-36"
+                className=" hidden sm: block shadow-lg border-8 border-[#E8D858] absolute lg:-top-36"
               />
             </motion.div>
           </motion.div>

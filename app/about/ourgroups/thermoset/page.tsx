@@ -63,59 +63,58 @@ function page() {
           >
             {/* Text Column */}
             <div className="col-span-12 md:col-span-7">
-  <motion.div
-    className="flex gap-3 mb-8"
-    initial={{ x: -50, opacity: 0 }}
-    whileInView={{ x: 0, opacity: 1 }}
-    viewport={{ once: false, amount: "some" }} // Adjust viewport to trigger animation when the element is visible at least partially
-    transition={{ duration: 2.0 }}
-  >
-    <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
-    <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
-      EXPERTISE - <br /> OUR STRENGTH
-    </h2>
-  </motion.div>
+              <motion.div
+                className="flex gap-3 mb-8"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: false, amount: "some" }} // Adjust viewport to trigger animation when the element is visible at least partially
+                transition={{ duration: 2.0 }}
+              >
+                <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
+                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+                  EXPERTISE - <br /> OUR STRENGTH
+                </h2>
+              </motion.div>
 
-  <motion.p
-    className="text-[#484848] mb-6 text-justify md:pr-7"
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 2.0 }}
-  >
-    Thermoset Middle East LLC is an ISO 9001 certified manufacturer of
-    premium quality EPDM Rubber gaskets for architectural, construction, and
-    industrial applications. The facility is located in Dubai Investment Park
-    to produce an extensive range of rubber gaskets & profiles that offer
-    long-time performance.
-  </motion.p>
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                Thermoset Middle East LLC is an ISO 9001 certified manufacturer
+                of premium quality EPDM Rubber gaskets for architectural,
+                construction, and industrial applications. The facility is
+                located in Dubai Investment Park to produce an extensive range
+                of rubber gaskets & profiles that offer long-time performance.
+              </motion.p>
 
-  <motion.p
-    className="text-[#484848] text-justify md:pr-7"
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 1.4 }}
-  >
-    Thermoset Middle East is part of the Elite Group of Companies to add a
-    further functional accessory to the aluminium production and complete its
-    vast range.
-  </motion.p>
+              <motion.p
+                className="text-[#484848] text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
+                Thermoset Middle East is part of the Elite Group of Companies to
+                add a further functional accessory to the aluminium production
+                and complete its vast range.
+              </motion.p>
 
-  <motion.p
-    className="text-[#484848] text-justify md:pr-7"
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 1.4 }}
-  >
-    We manufacture and offer a complementary product that is much more than
-    an additional component. Our wide array of customized architectural
-    sealing gaskets is designed to withstand the extreme climatic conditions
-    in the Middle East.
-  </motion.p>
-</div>
-
+              <motion.p
+                className="text-[#484848] text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.4 }}
+              >
+                We manufacture and offer a complementary product that is much
+                more than an additional component. Our wide array of customized
+                architectural sealing gaskets is designed to withstand the
+                extreme climatic conditions in the Middle East.
+              </motion.p>
+            </div>
 
             {/* Logo Column */}
             <motion.div
@@ -136,7 +135,7 @@ function page() {
                 width={200}
                 height={200}
                 alt=""
-                className="shadow-lg border-8 border-[#E8D858] absolute lg:-top-36"
+                className="hidden sm: block shadow-lg border-8 border-[#E8D858] absolute lg:-top-36"
               />
             </motion.div>
           </motion.div>
@@ -229,7 +228,7 @@ function page() {
           </motion.div>
         </div>
       </div>
-      <CustomSection sections={sections}/>
+      <CustomSection sections={sections} />
 
       {/* Banner Section */}
       <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">

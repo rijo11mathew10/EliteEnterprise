@@ -31,6 +31,7 @@ const CustomCarousel = () => {
       heading: "Slide 2 Heading",
       description: "This is the description for Slide 2.",
       subdescription: "Output per annum",
+      className: "hidden sm:block",
     },
     {
       id: 3,
@@ -39,6 +40,7 @@ const CustomCarousel = () => {
       heading: "Slide 3 Heading",
       description: "This is the description for Slide 3.",
       subdescription: "Output per annum",
+      className: "hidden sm:block",
     },
   ];
 
