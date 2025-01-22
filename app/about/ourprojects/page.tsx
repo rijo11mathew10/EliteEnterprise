@@ -94,7 +94,7 @@ function Page() {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-10 mb-28">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px md:px-10 mb-28">
         {projects.map((project, index) => (
           <GlareCard
             key={index}
@@ -112,7 +112,8 @@ function Page() {
                 {project.name}
               </h3>
               <p className="text-sm text-white mt-2">
-                Fabricator: {project.fabricator}, Consultant: {project.consultant}
+                Fabricator: {project.fabricator}, Consultant:{" "}
+                {project.consultant}
               </p>
             </div>
           </GlareCard>

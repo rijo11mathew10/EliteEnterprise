@@ -98,7 +98,7 @@ function Contents() {
                 muted
                 playsInline
                 className="w-full h-auto rounded-md mt-4"
-                // src="/logo-anim.mp4"
+                src="/logo-anim.mp4"
               >
                 Your browser does not support the video tag.
               </video>
