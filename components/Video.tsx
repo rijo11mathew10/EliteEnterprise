@@ -9,7 +9,7 @@ function Video() {
         loop
         muted
       >
-        <source src="/about/elite123.mp4" type="video/mp4" />
+        <source src="/about/elite.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* Optionally, add content over the video */}
