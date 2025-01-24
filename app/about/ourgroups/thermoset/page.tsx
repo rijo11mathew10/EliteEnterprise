@@ -135,7 +135,7 @@ function page() {
                 width={200}
                 height={200}
                 alt=""
-                className="hidden sm: block shadow-lg border-8 border-[#E8D858] absolute lg:-top-36"
+                className="hidden sm:block shadow-lg border-8 border-[#E8D858] absolute lg:-top-36"
               />
             </motion.div>
           </motion.div>
