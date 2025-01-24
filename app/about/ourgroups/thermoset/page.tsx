@@ -228,7 +228,9 @@ function page() {
           </motion.div>
         </div>
       </div>
-      <CustomSection sections={sections} />
+      <div className="hidden sm:block">
+        <CustomSection sections={sections} />
+      </div>
 
       {/* Banner Section */}
       <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">

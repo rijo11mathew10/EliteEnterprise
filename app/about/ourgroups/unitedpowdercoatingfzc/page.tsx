@@ -158,7 +158,9 @@ function page() {
           </motion.p>
         </div>
       </div>
-      <CustomSection sections={sections} />
+      <div className="hidden sm:block">
+        <CustomSection sections={sections} />
+      </div>
       <div className="mx-auto max-w-7xl">
         {/* First Section */}
         <motion.div
