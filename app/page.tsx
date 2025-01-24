@@ -15,15 +15,13 @@ export default function App() {
       title: "EXTRUSION DIVISION",
       description: "76,800 metric ton",
       unit: "Output per annum",
-      className: "hidden sm:block",
-      link: "/about/ourgroups/extrudedprofiles",
+      link: "/about/ourgroups/extrudedprofiles", // Add a link for each card
     },
     {
       image: "/cardgrid/slide2.jpg",
       title: "POWDER COATING DIVISION",
       description: "44,400 metric ton",
       unit: "Output per annum",
-      className: "hidden sm:block",
       link: "/about/ourgroups/extrudedprofiles",
     },
     {
@@ -31,7 +29,6 @@ export default function App() {
       title: "ANODIZING DIVISION",
       description: "14,800 metric ton",
       unit: "Output per annum",
-      className: "hidden sm:block",
       link: "/about/ourgroups/extrudedprofiles",
     },
     {
@@ -40,7 +37,7 @@ export default function App() {
       description: "1500 metric ton",
       unit: "Output per annum",
       className: "hidden sm:block",
-      link: "/wood-coating-division",
+      link: "/about/ourgroups/extrudedprofiles",
     },
   ];
 
@@ -51,7 +48,7 @@ export default function App() {
       description: "1800 Dies",
       unit: "Output per annum",
       className: "hidden sm:block",
-      link: "/about/ourgroups/extrudedprofiles",
+      link: "/about/ourgroups/extrusiondies",
     },
     {
       image: "/cardgrid/slide6.jpg",
@@ -59,23 +56,14 @@ export default function App() {
       description: "1800 metric ton",
       unit: "Output per annum",
       className: "hidden sm:block",
-      link: "/epdm-rubber-products-division",
+      link: "/about/ourgroups/edpm",
     },
     {
       image: "/cardgrid/slide7.jpg",
       title: "ALUMINIUM COIL & SHEET DIVISION",
       description: "30,000 metric ton",
       unit: "Output per annum",
-      className: "hidden sm:block",
-      link: "/aluminium-coil-sheet-division",
-    },
-    {
-      image: "/cardgrid/slide3.jpg",
-      title: "METAL DIVISION",
-      description: "30,000 metric ton",
-      unit: "Output per annum",
-      className: "hidden sm:block",
-      link: "/about/ourgroups/nashat",
+      link: "/about/ourgroups/coilsandsheets",
     },
   ];
 
@@ -84,12 +72,17 @@ export default function App() {
       <Header />
       <Video />
       <Contents />
+      
+      {/* Centering the first CardGroup */}
       <div className="flex justify-center">
         <CardGrid cards={cardsGroup1} />
       </div>
-      <div className="flex justify-center items-center">
+
+      {/* Centering the second CardGroup */}
+      <div className="flex justify-center">
         <CardGrid cards={cardsGroup2} />
       </div>
+
       <Companies />
       <Testimonial />
       <IndustrySection />
