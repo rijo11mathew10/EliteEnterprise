@@ -218,7 +218,7 @@ function AboutPage() {
       <div className="relative bg-cover bg-center h-[300px] md:h-[500px] flex flex-col items-center justify-center text-center">
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/ourgroups/alumiltech/About_company.mp4"
+          src="/ourgroups/alumiltech/About_Company.mp4"
           autoPlay
           loop
           muted
