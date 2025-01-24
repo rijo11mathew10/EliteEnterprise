@@ -153,7 +153,7 @@ function page() {
                 width={200}
                 height={200}
                 alt="United Logo"
-                className=" hidden sm: block shadow-lg border-8 border-[#E8D858] absolute top-0 transform -translate-y-1/2"
+                className=" hidden sm:block shadow-lg border-8 border-[#E8D858] absolute top-0 transform -translate-y-1/2"
               />
             </motion.div>
           </motion.div>
