@@ -66,7 +66,7 @@ export default function App() {
       title: "ALUMINIUM COIL & SHEET DIVISION",
       description: "30,000 metric ton",
       unit: "Output per annum",
-      // className: "hidden sm:block",
+      className: "hidden sm:block",
       link: "/aluminium-coil-sheet-division",
     },
     {

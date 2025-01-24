@@ -32,7 +32,7 @@ const CustomSection: React.FC<CustomSectionProps> = ({ sections }) => {
         {/* First element with a relative parent */}
         <div className="relative flex items-center justify-center">
           <div
-            className="absolute top-1/2 -translate-y-1/2 w-full h-[130%] bg-[#023D68] p-4 flex items-center justify-center text-4xl text-white font-bold"
+            className=" hidden sm:block absolute top-1/2 -translate-y-1/2 w-full h-[130%] bg-[#023D68] p-4 flex items-center justify-center text-4xl text-white font-bold"
             style={{
               clipPath: "polygon(0 0, 100% 10%, 100% 90%, 0 100%)",
             }}

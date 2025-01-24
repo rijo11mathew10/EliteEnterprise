@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import React from "react";
 import { motion } from "framer-motion";
 import { GlareCard } from "@/components/glare-card";
+import Image from "next/image";
 
 const projects = [
   {
@@ -101,7 +102,7 @@ function Page() {
             className="flex flex-col items-center justify-center rounded-lg shadow-md overflow-hidden"
           >
             <div className="relative w-full h-[300px] mb-4">
-              <img
+              <Image
                 className="absolute inset-0 h-full w-full object-cover rounded-lg"
                 src={project.image} // Use dynamic image path
                 alt={`Project ${index + 1}`}
