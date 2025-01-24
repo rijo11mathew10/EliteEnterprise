@@ -59,7 +59,7 @@ function Page() {
       </div>
 
       {/* Horizontal Divider */}
-      <hr className="bg-white my-12" />
+      <hr className="border-t-2 border-white-500" />
 
       <Footer />
     </div>
