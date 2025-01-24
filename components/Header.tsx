@@ -154,6 +154,11 @@ function Header() {
       link: "/contactus",
       sections: null,
     },
+    {
+      topic: "Get Quote", // Add Get Quote here
+      link: "/contactus", // Link it to the contact page or a quote page
+      sections: null,
+    },
   ];
 
   // Detect scroll and change header style
@@ -270,11 +275,6 @@ function Header() {
                   )}
                 </div>
               ))}
-              <Link href={"/contactus"}>
-                <Button className="bg-[#E8D858] text-black rounded-sm font-xl hover:bg-[#c5b32b] transition-colors duration-300">
-                  Get Quote
-                </Button>
-              </Link>
             </div>
           </div>
 
@@ -314,6 +314,7 @@ function Header() {
                 </svg>
               )}
             </Button>
+
             <Drawer isOpen={isOpen} onOpenChange={onOpenChange}>
               <DrawerContent>
                 {(onClose) => (
