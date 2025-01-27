@@ -337,7 +337,7 @@ function Header() {
                           {list.topic === "Get Quote" ? (
                             <Link href={list.link || "#"}>
                               <Button
-                                className="block w-full py-2 text-center text-white bg-[#E8D858] hover:bg-[#D7C44C]"
+                                className="block w-full py-2 text-center text-black bg-[#E8D858] hover:bg-[#D7C44C]"
                                 variant="solid"
                               >
                                 Get Quote
