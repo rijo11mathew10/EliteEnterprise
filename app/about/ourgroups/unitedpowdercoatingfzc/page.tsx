@@ -74,6 +74,7 @@ function page() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: "easeOut" }}
+            style={{ marginTop: "-150px" }} // Added negative margin to shift it upwards
           >
             {/* Text Column */}
             <div className="col-span-12 md:col-span-7">
@@ -138,6 +139,7 @@ function page() {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 2.0 }}
+            style={{ marginTop: "-180px" }}
           >
             <hr className="w-2 h-16 md:h-24 bg-[#E8D858] border-none" />
             <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight mb-3">
@@ -222,3 +224,4 @@ function page() {
 }
 
 export default page;
+
