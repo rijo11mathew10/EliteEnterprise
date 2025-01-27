@@ -330,7 +330,7 @@ function page() {
         </div>
       </div>
       {/* EPDM Technology Section */}
-      <div className="w-full mb-16 px-4 sm:px-6 md:px-8">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-16">
         <motion.div
           className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8"
           initial={{ opacity: 0, y: 30 }}
