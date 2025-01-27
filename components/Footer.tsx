@@ -93,6 +93,7 @@ const Footer = () => {
                   Nashat Metal Engineering LLC{" "}
                 </Link>
               </li>
+              
             </ul>
           </div>
 
@@ -107,12 +108,12 @@ const Footer = () => {
             <p>
               <span className="font-semibold">Email:</span>{" "}
               <Link href="mailto:info@example.com" className="hover:underline">
-                info@example.com
+              info@eliteextrusion.ae
               </Link>
             </p>
             <p>
               <Link
-                href="https://www.google.com/maps?q=Ras+Al+Khaimah,+UAE"
+                href="https://www.google.com/maps/place/Elite+Extrusion+LLC/data=!4m2!3m1!1s0x0:0x99e42ad28c8be01c?sa=X&ved=1t:2428&ictx=111"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -138,7 +139,7 @@ const Footer = () => {
           <div className="flex space-x-4">
             {/* Social Media Icons */}
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/elitegroupuae/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#E8D858]"
