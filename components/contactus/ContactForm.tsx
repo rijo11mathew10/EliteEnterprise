@@ -74,7 +74,7 @@ const ContactFormWithCards = () => {
     console.log(values);
 
     try {
-      const response = await fetch("https://formspree.io/f/xovqbqrq", {
+      const response = await fetch("https://formspree.io/f/xvggezoz", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
