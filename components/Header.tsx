@@ -220,7 +220,7 @@ function Header() {
                     <Link href={list.link || "#"}>
                       <Button
                         className="text-sm font-medium text-black bg-[#E8D858] hover:bg-[#D7C44C] rounded-lg px-4 py-2"
-                        variant="contained"
+                        variant="solid"
                       >
                         Get Quote
                       </Button>
@@ -338,7 +338,7 @@ function Header() {
                             <Link href={list.link || "#"}>
                               <Button
                                 className="block w-full py-2 text-center text-white bg-[#E8D858] hover:bg-[#D7C44C]"
-                                variant="contained"
+                                variant="solid"
                               >
                                 Get Quote
                               </Button>
@@ -407,3 +407,4 @@ function Header() {
 }
 
 export default Header;
+
