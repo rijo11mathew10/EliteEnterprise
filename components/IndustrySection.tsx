@@ -65,9 +65,7 @@ const IndustrySection = () => {
               <p className="text-sm md:text-base font-light text-gray-600 mb-3">
                 (Chairman)
               </p>
-              <button className="bg-[#0060A6] text-white text-sm px-4 py-2 rounded-md">
-                Audio
-              </button>
+              
             </div>
 
             {/* Paragraph */}
@@ -121,9 +119,7 @@ const IndustrySection = () => {
               <p className="text-sm md:text-base font-light text-gray-600">
                 (Managing Director)
               </p>
-              <button className="bg-[#0060A6] text-white text-sm px-4 py-2 rounded-md">
-                Audio
-              </button>
+              
             </div>
 
             {/* Paragraph */}
