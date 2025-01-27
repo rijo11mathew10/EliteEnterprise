@@ -93,11 +93,6 @@ const Footer = () => {
                   Nashat Metal Engineering LLC{" "}
                 </Link>
               </li>
-              <li>
-                <Link href="/about/ourgroups/" className="hover:underline">
-                  White Metal Aluminium Trading{" "}
-                </Link>
-              </li>
             </ul>
           </div>
 
