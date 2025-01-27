@@ -216,16 +216,27 @@ function Header() {
                   onMouseLeave={handleMouseLeave}
                 >
                   {/* Navigation Link */}
-                  <Link
-                    href={list.link || "#"}
-                    className={`rounded-lg p-2 text-white text-sm font-medium ${
-                      hoveredIndex === index
-                        ? "bg-[#E8D858] text-black"
-                        : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"
-                    }`}
-                  >
-                    {list.topic}
-                  </Link>
+                  {list.topic === "Get Quote" ? (
+                    <Link href={list.link || "#"}>
+                      <Button
+                        className="text-sm font-medium text-black bg-[#E8D858] hover:bg-[#D7C44C] rounded-lg px-4 py-2"
+                        variant="contained"
+                      >
+                        Get Quote
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Link
+                      href={list.link || "#"}
+                      className={`rounded-lg p-2 text-white text-sm font-medium ${
+                        hoveredIndex === index
+                          ? "bg-[#E8D858] text-black"
+                          : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"
+                      }`}
+                    >
+                      {list.topic}
+                    </Link>
+                  )}
 
                   {/* Dropdown (Rendered only on hover with animation) */}
                   {hoveredIndex === index && list.sections && (
@@ -323,16 +334,27 @@ function Header() {
                       {navitems.map((list, index) => (
                         <div key={index} className="mb-4">
                           {/* Navigation Link */}
-                          <Link
-                            href={list.link || "#"}
-                            className={`block py-2 text-gray-800 ${
-                              list.sections
-                                ? "bg-[#E8D858] text-black"
-                                : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"
-                            }`}
-                          >
-                            {list.topic}
-                          </Link>
+                          {list.topic === "Get Quote" ? (
+                            <Link href={list.link || "#"}>
+                              <Button
+                                className="block w-full py-2 text-center text-white bg-[#E8D858] hover:bg-[#D7C44C]"
+                                variant="contained"
+                              >
+                                Get Quote
+                              </Button>
+                            </Link>
+                          ) : (
+                            <Link
+                              href={list.link || "#"}
+                              className={`block py-2 text-gray-800 ${
+                                list.sections
+                                  ? "bg-[#E8D858] text-black"
+                                  : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"
+                              }`}
+                            >
+                              {list.topic}
+                            </Link>
+                          )}
 
                           {/* Dropdown (Mobile) */}
                           {list.sections && (
