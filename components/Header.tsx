@@ -179,27 +179,18 @@ function Header() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 pt-5 pb-2 transition-all duration-300 ${
-        scrolling
-          ? "bg-white backdrop-blur-lg shadow-lg h-[80px]"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 pt-5 pb-2 transition-all duration-300 ${scrolling ? "bg-white backdrop-blur-lg shadow-lg h-[80px]" : "bg-transparent"}`}
       style={{
         backgroundImage: `url('/frame.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        background:
-          "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%)",
+        background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%)",
       }}
     >
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
-          <div
-            className={`flex items-center transition-all duration-300 transform ${
-              scrolling ? "scale-75 opacity-0" : "scale-100 opacity-100"
-            }`}
-          >
+          <div className={`flex items-center transition-all duration-300`}>
             <Link href="/">
               <Image src="/logo.png" alt="logo" width={150} height={60} />
             </Link>
@@ -218,21 +209,14 @@ function Header() {
                   {/* Navigation Link */}
                   {list.topic === "Get Quote" ? (
                     <Link href={list.link || "#"}>
-                      <Button
-                        className="text-sm font-medium text-black bg-[#E8D858] hover:bg-[#D7C44C] rounded-lg px-4 py-2"
-                        variant="solid"
-                      >
+                      <Button className="text-sm font-medium text-black bg-[#E8D858] hover:bg-[#D7C44C] rounded-lg px-4 py-2" variant="solid">
                         Get Quote
                       </Button>
                     </Link>
                   ) : (
                     <Link
                       href={list.link || "#"}
-                      className={`rounded-lg p-2 text-white text-sm font-medium ${
-                        hoveredIndex === index
-                          ? "bg-[#E8D858] text-black"
-                          : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"
-                      }`}
+                      className={`rounded-lg p-2 text-white text-sm font-medium ${hoveredIndex === index ? "bg-[#E8D858] text-black" : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"}`}
                     >
                       {list.topic}
                     </Link>
@@ -262,11 +246,7 @@ function Header() {
                             {section.items.map((item, itemIndex) => (
                               <li
                                 key={`${index}-${sectionIndex}-${itemIndex}`}
-                                className={`${
-                                  list.topic !== "About Us"
-                                    ? "whitespace-nowrap"
-                                    : ""
-                                }`}
+                                className={`${list.topic !== "About Us" ? "whitespace-nowrap" : ""}`}
                               >
                                 <Link
                                   href={item.link}
@@ -301,12 +281,7 @@ function Header() {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6L18 18"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6L18 18" />
                 </svg>
               ) : (
                 <svg
@@ -316,12 +291,7 @@ function Header() {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
               )}
             </Button>
@@ -346,11 +316,7 @@ function Header() {
                           ) : (
                             <Link
                               href={list.link || "#"}
-                              className={`block py-2 text-gray-800 ${
-                                list.sections
-                                  ? "bg-[#E8D858] text-black"
-                                  : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"
-                              }`}
+                              className={`block py-2 text-gray-800 ${list.sections ? "bg-[#E8D858] text-black" : "hover:bg-[#E8D858] hover:text-black transition-all duration-300"}`}
                             >
                               {list.topic}
                             </Link>
@@ -407,4 +373,3 @@ function Header() {
 }
 
 export default Header;
-

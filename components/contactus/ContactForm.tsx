@@ -74,19 +74,20 @@ const ContactFormWithCards = () => {
     console.log(values);
 
     try {
-      const response = await fetch("https://formspree.io/f/xvggezoz", {
+      // Send form data to the backend API route (your contact API)
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
       });
 
       if (response.ok) {
-        count.current?.reset();
+        count.current?.reset(); // Reset the form if the submission is successful
       } else {
         console.log("Error submitting form");
       }
-    } catch {
-      console.log("Failed to submit form");
+    } catch (error) {
+      console.log("Failed to submit form:", error);
     } finally {
       setIsSubmitting(false); // Reset the submitting state once the submission is complete
     }
@@ -98,15 +99,13 @@ const ContactFormWithCards = () => {
       <form
         ref={count}
         onSubmit={handleSubmit}
-        className={`w-full max-w-5xl bg-white  rounded-lg shadow-lg mb-10 transition-all duration-500 ${
+        className={`w-full max-w-5xl bg-white rounded-lg shadow-lg mb-10 transition-all duration-500 ${
           isSubmitting ? "blur-sm" : ""
         }`}
       >
         {isSubmitting && (
           <div className="absolute inset-0 bg-white opacity-50 flex items-center justify-center z-10">
-            <span className="text-xl font-medium text-gray-700">
-              Submitting...
-            </span>
+            <span className="text-xl font-medium text-gray-700">Submitting...</span>
           </div>
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
@@ -115,17 +114,15 @@ const ContactFormWithCards = () => {
             <img
               src="/contactus/923.png" // Replace with your image path
               alt="Your image description"
-              className="w-full h-full object-cover " // Ensures the image covers the left side
+              className="w-full h-full object-cover "
             />
           </div>
 
           {/* Right Column - Form */}
           <div className="flex flex-col justify-start items-start space-y-6 p-6">
+            {/* First Name */}
             <div className="w-full max-w-md">
-              <label
-                htmlFor="firstName"
-                className="block text-sm font-medium text-gray-700 text-left"
-              >
+              <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 text-left">
                 First Name
               </label>
               <input
@@ -138,11 +135,9 @@ const ContactFormWithCards = () => {
               />
             </div>
 
+            {/* Last Name */}
             <div className="w-full max-w-md">
-              <label
-                htmlFor="lastName"
-                className="block text-sm font-medium text-gray-700 text-left"
-              >
+              <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 text-left">
                 Last Name
               </label>
               <input
@@ -155,11 +150,9 @@ const ContactFormWithCards = () => {
               />
             </div>
 
+            {/* Email */}
             <div className="w-full max-w-md">
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-700 text-left"
-              >
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 text-left">
                 Email
               </label>
               <input
@@ -172,28 +165,24 @@ const ContactFormWithCards = () => {
               />
             </div>
 
+            {/* Subject */}
             <div className="w-full max-w-md">
-              <label
-                htmlFor="subject"
-                className="block text-sm font-medium text-gray-700 text-left"
-              >
+              <label htmlFor="subject" className="block text-sm font-medium text-gray-700 text-left">
                 Subject
               </label>
               <input
                 type="text"
                 id="subject"
                 name="subject"
-                placeholder="Please enter your subject message"
+                placeholder="Please enter your subject"
                 className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
               />
             </div>
 
+            {/* Message */}
             <div className="w-full max-w-md">
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-gray-700 text-left"
-              >
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 text-left">
                 Message
               </label>
               <textarea
@@ -205,7 +194,9 @@ const ContactFormWithCards = () => {
                 required
               ></textarea>
             </div>
-            <div className=" text-left">
+
+            {/* Submit Button */}
+            <div className="text-left">
               <button
                 type="submit"
                 className="px-8 py-3 bg-[#E8D858] text-black font-medium rounded-md shadow-sm hover:bg-[#ffe941] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
@@ -216,7 +207,6 @@ const ContactFormWithCards = () => {
           </div>
         </div>
       </form>
-
       {/* Cards Section */}
       <div className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
         {companydetails.map((details) => (
