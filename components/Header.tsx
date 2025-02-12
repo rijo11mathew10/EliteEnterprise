@@ -45,7 +45,10 @@ function Header() {
             { text: "OUR GLOBAL MARKETS", link: "/about/ourglobalmarkets" },
             { text: "OUR SUPPLIERS", link: "/about/oursuppliers" },
             { text: "OUR CERTIFICATIONS", link: "/about/certification" },
-            { text: "OUR POLICIES AND ASSURANCE", link: "/about/qualitypolicy" },
+            {
+              text: "OUR POLICIES AND ASSURANCE",
+              link: "/about/qualitypolicy",
+            },
           ],
         },
         {
@@ -177,19 +180,17 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // const { scrollY } = useScroll();
+  // const opacity = useTransform(scrollY, [0, 200], [1, 0]);
+
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 pt-5 pb-2 transition-all duration-300 ${
-        scrolling
-          ? "bg-white backdrop-blur-lg shadow-lg h-[80px]"
-          : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-50 pt-2 pb-2 transition-all duration-300 ${
+        scrolling ? "shadow-lg h-[60px]" : "bg-transparent"
       }`}
       style={{
-        backgroundImage: `url('/frame.png')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        background:
-          "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%)",
+        backgroundColor: scrolling ? "rgba(0, 0, 0, 0.9)" : "transparent", // Fully black with adjustable opacity
+        backdropFilter: scrolling ? "blur(5px)" : "none", // Slight blur effect (optional)
       }}
     >
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-2">
@@ -407,4 +408,3 @@ function Header() {
 }
 
 export default Header;
-

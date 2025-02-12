@@ -2,7 +2,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 import Image from "next/image";
 import { WobbleCardDemo } from "@/components/ourgroups/OurProducts";
@@ -34,8 +34,8 @@ const sections = [
 ];
 
 function Page() {
-  const { scrollY } = useScroll();
-  const opacity = useTransform(scrollY, [0, 200], [1, 0]);
+  // const { scrollY } = useScroll();
+  // const opacity = useTransform(scrollY, [0, 200], [1, 0]);
   return (
     <div>
       <Header />
@@ -65,10 +65,7 @@ function Page() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 3, ease: "easeOut" }}
         >
-          <motion.div
-            className="absolute top-[50%] left-1/2 transform -translate-x-1/2 bg-[#023D68] bg-opacity-80 py-4 px-8 rounded"
-            style={{ opacity }}
-          >
+          <motion.div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
               <span className="text-4xl md:text-7xl block">ELITE</span>
               <span className="text-2xl md:text-4xl text-white text-opacity-70 block font-medium">
