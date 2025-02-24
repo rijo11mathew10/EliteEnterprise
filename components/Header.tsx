@@ -72,10 +72,6 @@ function Header() {
               link: "/about/ourgroups/alumiltech",
             },
             {
-              text: "THERMOSET MIDDLE EAST",
-              link: "/about/ourgroups/thermoset",
-            },
-            {
               text: "GLOBAL PIONEER ALUMINIUM INDUSTRIES",
               link: "/about/ourgroups/globalpioneer",
             },
