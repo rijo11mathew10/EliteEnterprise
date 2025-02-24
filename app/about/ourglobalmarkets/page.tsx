@@ -5,7 +5,12 @@ import { motion } from "framer-motion";
 
 function page() {
   return (
-    <div>
+    <motion.div
+      className="page-container"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }} // Smooth fade-in with a vertical motion
+    >
       <Header />
       <div
         className="relative bg-cover bg-center h-[550px] flex items-center justify-center mb-16 overflow-hidden"
@@ -46,7 +51,7 @@ function page() {
           className="mb-6 leading-6 text-justify mt-[-100px]" // Negative margin to move text up
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, ease: "easeOut" }} // More professional transition
+          transition={{ duration: 2, ease: "easeOut" }}
         >
           We seek to provide excellent products that exceed Aluminum is a widely
           used metal for countless applications in the nowadays society.
@@ -57,7 +62,7 @@ function page() {
           earth#39;s crust is composed of aluminum.
         </motion.p>
         <motion.p
-          className="mb-6 leading-6 text-justify mt-[20px]" // Negative margin to move text up
+          className="mb-6 leading-6 text-justify mt-[20px]"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
@@ -72,7 +77,7 @@ function page() {
           aluminum in the world.
         </motion.p>
         <motion.p
-          className="mb-6 leading-6 text-justify mt-[20px]" // Negative margin to move text up
+          className="mb-6 leading-6 text-justify mt-[20px]"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
@@ -86,7 +91,7 @@ function page() {
           one 5” press with the production capacity of 550 kg&#39;s per hour).
         </motion.p>
         <motion.p
-          className="mb-6 leading-6 text-justify mt-[20px]" // Negative margin to move text up
+          className="mb-6 leading-6 text-justify mt-[20px]"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
@@ -96,7 +101,7 @@ function page() {
           South-Asia, and ready to serve the overseas markets.
         </motion.p>
         <motion.p
-          className="mb-6 leading-6 text-justify mt-[20px]" // Negative margin to move text up
+          className="mb-6 leading-6 text-justify mt-[20px]"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
@@ -110,7 +115,7 @@ function page() {
       </div>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 
