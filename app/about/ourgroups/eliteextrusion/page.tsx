@@ -33,11 +33,14 @@ const sections = [
   { title: "Anodizing", value: "7,200", unit: "Metric Tone" },
 ];
 
-function Page() {
-  // const { scrollY } = useScroll();
-  // const opacity = useTransform(scrollY, [0, 200], [1, 0]);
+function page() {
   return (
-    <div>
+    <motion.div
+      className="page-container"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }} // Smooth fade-in with a vertical motion
+    >
       <Header />
       {/* Banner Section */}
       <div
@@ -65,14 +68,16 @@ function Page() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 3, ease: "easeOut" }}
         >
-          <motion.div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
+          <div className="inline-block bg-[#023D68] bg-opacity-80 py-4 px-8 rounded">
             <h1 className="text-white font-semibold">
+              {/* Elite */}
               <span className="text-4xl md:text-7xl block">ELITE</span>
-              <span className="text-2xl md:text-4xl text-white text-opacity-70 block font-medium">
+              {/* Extrusion LLC */}
+              <span className="text-2xl md:text-4xl text-white text-opacity-70 block  font-medium">
                 EXTRUSION LLC
               </span>
             </h1>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
 
@@ -483,11 +488,70 @@ function Page() {
           "- The tempers include T4 & T6",
         ]}
         cards={productData}
-      />
+      />`
+            <div className="mx-auto max-w-7xl mb-16">
+        <div>
+          {/* Top Section */}
+          <motion.div
+            className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            {/* Text Column */}
+            <div className="col-span-12 md:col-span-7 mt-12 md:mt-20">
+              <motion.div
+                className="flex gap-3 mb-8"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                <hr className="w-2 h-16 md:h-16 bg-[#E8D858] border-none" />
+                <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+                  LOCATION
+                </h2>
+              </motion.div>
+
+              <motion.p
+                className="text-[#484848] mb-6 text-justify md:pr-7"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 2.0 }}
+              >
+                Address: <a href="https://www.google.com/maps?rlz=1C1FKPE_enAE1148AE1148&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTISCAEQLhhDGK8BGMcBGIAEGIoFMgYIAhBFGDsyBggDEEUYOzIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMjExNWowajeoAgiwAgHxBaIpNJ17FMkc&um=1&ie=UTF-8&fb=1&gl=ae&sa=X&geocode=Kde4j5jd4fU-MRzgi4zSKuSZ&daddr=MQ4J%2B7HM+-+Al+Jazeera+Al+Hamra+Industrial+-+Ras+Al+Khaimah" target="_blank" className="text-blue-500 hover:underline">MQ4J+7HM - Al Jazeera Al Hamra Industrial - Ras Al Khaimah </a><br></br>
+Hours: 08:00 AM - 5:00 PM <br></br>
+Phone: 07 244 7668
+              </motion.p>
+            </div>
+
+            {/* Logo Column */}
+            <motion.a
+              href="https://www.google.com/maps?rlz=1C1FKPE_enAE1148AE1148&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTISCAEQLhhDGK8BGMcBGIAEGIoFMgYIAhBFGDsyBggDEEUYOzIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMjExNWowajeoAgiwAgHxBaIpNJ17FMkc&um=1&ie=UTF-8&fb=1&gl=ae&sa=X&geocode=Kde4j5jd4fU-MRzgi4zSKuSZ&daddr=MQ4J%2B7HM+-+Al+Jazeera+Al+Hamra+Industrial+-+Ras+Al+Khaimah"
+              target="_blank"
+              className="col-span-12 md:col-span-5 border-4 border-[#E8D858] relative h-100 md:h-96 flex justify-center items-center overflow-visible"
+              initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+              whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+              style={{
+                backgroundImage:
+                  "url('/locationelite.jpg')", // Replace with your image path
+                backgroundSize: "cover", // Ensures the image completely fills the div
+                backgroundPosition: "center", // Centers the image in the div
+                backgroundRepeat: "no-repeat", // Prevents the image from repeating
+              }}
+            >
+            </motion.a>
+          </motion.div>
+        </div>
+      </div>  `
 
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 
-export default Page;
+export default page;
