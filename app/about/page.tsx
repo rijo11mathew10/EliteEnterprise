@@ -273,7 +273,7 @@ function AboutPage() {
       {/* Logo Section */}
       <div className="relative z-20 flex justify-center items-center gap-4 flex-wrap px-4 mb-10">
         {[
-          "/company1.png",
+          "/elex.jpg",
           "/company2.png",
           "/company3.png",
           "/company4.png",
