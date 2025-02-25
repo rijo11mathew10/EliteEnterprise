@@ -46,7 +46,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/about/ourgroups/thermoset"
+                  href="/about/ourgroups/elex"
                   className="hover:underline"
                 >
                   Elex Aluminium Products PVT LTD{" "}
