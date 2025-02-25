@@ -277,7 +277,7 @@ function AboutPage() {
           "/company2.png",
           "/company3.png",
           "/company4.png",
-          "/company5.png",
+          "/al-hamad-logo.jpg",
           "/company6.png",
           "/company7.png",
         ].map((logo, index) => (
