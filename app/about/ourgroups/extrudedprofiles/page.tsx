@@ -8,7 +8,12 @@ import Image from "next/image";
 
 function page() {
   return (
-    <div>
+    <motion.div
+      className="page-container"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }} // Smooth fade-in with a vertical motion
+    >
       <Header />
       {/* Banner Section */}
       <div
@@ -641,8 +646,9 @@ function page() {
 
 
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 
 export default page;
+
