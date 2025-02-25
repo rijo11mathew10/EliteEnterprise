@@ -73,7 +73,7 @@ function Header() {
             },
             {
               text: "ELEX ALUMINUM PRODUCTS PVT LTD",
-              link: "/about/ourgroups/globalpioneer",
+              link: "/about/ourgroups/elex",
             },
 
             {
