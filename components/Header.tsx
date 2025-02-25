@@ -72,6 +72,11 @@ function Header() {
               link: "/about/ourgroups/alumiltech",
             },
             {
+              text: "ELEX ALUMINUM PRODUCTS PVT LTD",
+              link: "/about/ourgroups/globalpioneer",
+            },
+
+            {
               text: "GLOBAL PIONEER ALUMINIUM INDUSTRIES",
               link: "/about/ourgroups/globalpioneer",
             },
@@ -156,7 +161,7 @@ function Header() {
     },
     {
       topic: "Get Quote", // Add Get Quote here
-      link: "/contactus", // Link it to the contact page or a quote page
+      link: "/about/getaquote", // Link it to the contact page or a quote page
       sections: null,
     },
   ];
