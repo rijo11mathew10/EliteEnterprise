@@ -49,7 +49,7 @@ const Footer = () => {
                   href="/about/ourgroups/thermoset"
                   className="hover:underline"
                 >
-                  {" "}
+                  Elex Aluminium Products PVT LTD{" "}
                 </a>
               </li>
             </ul>
