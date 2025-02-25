@@ -460,7 +460,7 @@ Architecture, Electronics, Solar Energy & ladder industry.
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     style={{
                       backgroundImage:
-                        "url('/locationalumill.jpg')", // Replace with your image path
+                        "url('/locationelex.jpg')", // Replace with your image path
                       backgroundSize: "cover", // Ensures the image completely fills the div
                       backgroundPosition: "center", // Centers the image in the div
                       backgroundRepeat: "no-repeat", // Prevents the image from repeating
