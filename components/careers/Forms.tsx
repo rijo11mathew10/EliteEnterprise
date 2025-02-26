@@ -45,7 +45,7 @@ const Forms = () => {
     formData.append("categoryEmail", email);
 
     try {
-      const response = await fetch("http://localhost:3000/api/send-application", {
+      const response = await fetch("/api/send-application", {
         method: "post",
         body: formData, // Send the form data (with file) directly
       });
