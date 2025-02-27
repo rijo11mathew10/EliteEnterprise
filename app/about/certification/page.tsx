@@ -74,14 +74,23 @@ function Page() {
   };
 
   return (
-    <div>
+    <motion.div
+      className="page-container"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }} // Smooth fade-in with a vertical motion
+    >
       <Header />
+      
       {/* Banner Section */}
-      <div
+      <motion.div
         className="relative bg-cover bg-center h-[550px] flex items-center justify-center overflow-hidden"
         style={{
           backgroundImage: "url('/banner.jpg')",
         }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
         <motion.div
@@ -108,16 +117,24 @@ function Page() {
             </h1>
           </div>
         </motion.div>
-      </div>
-      <br></br>
+      </motion.div>
+      <br />
 
       {/* Certificates Section */}
-      <div className="flex flex-col items-center justify-center min-h-screen px-4 md:px-10 lg:px-20 bg-gray-100">
+      <motion.div
+        className="flex flex-col items-center justify-center min-h-screen px-4 md:px-10 lg:px-20 bg-gray-100"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 w-full max-w-7xl">
           {certificates.map((certificate, index) => (
-            <div
+            <motion.div
               key={index}
               className="flex flex-col items-center bg-white shadow-xl rounded-lg p-8 hover:shadow-2xl transition"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 + 0.1 * index, ease: "easeOut" }}
             >
               <img
                 src={certificate.image}
@@ -126,10 +143,10 @@ function Page() {
                 onClick={() => setSelectedCertificate(certificate)} // Open modal with selected certificate
               />
               <h3 className="text-xl font-semibold">{certificate.title}</h3>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* Modal Section - Display certificate details */}
       {selectedCertificate && (
@@ -141,7 +158,7 @@ function Page() {
           transition={{ duration: 0.3 }} // Fade-in/fade-out transition
         >
           <motion.div
-            className="bg-white p-8 rounded-lg relative max-w-lg w-full"
+            className="bg-white p-6 rounded-lg relative max-w-md w-full"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0.8 }}
@@ -175,11 +192,12 @@ function Page() {
           </motion.div>
         </motion.div>
       )}
-      <br></br>
+      <br />
 
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 
 export default Page;
+

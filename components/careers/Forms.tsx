@@ -9,30 +9,31 @@ const Forms = () => {
   // Mapping of categories to specific email addresses
   const categoryEmails: { [key: string]: string } = {
     Administration: "kuriansybu@gmail.com",
-    Accounts: "accounts@example.com",
-    Audit: "audit@example.com",
-    InformationTechnology: "it@example.com",
-    Logistics: "logistics@example.com",
-    Production: "production@example.com",
-    Procurement: "procurement@example.com",
-    QualityControl: "quality@example.com",
-    Maintenance: "maintenance@example.com",
-    Safety: "safety@example.com",
-    Stores: "stores@example.com",
-    Others: "others@example.com",
+    Accounts: "kuriansybu@gmail.com",
+    Audit: "kuriansybu@gmail.com",
+    InformationTechnology: "kuriansybu@gmail.com",
+    Logistics: "kuriansybu@gmail.com",
+    Production: "kuriansybu@gmail.com",
+    Procurement: "kuriansybu@gmail.com",
+    QualityControl: "kuriansybu@gmail.com",
+    Maintenance: "kuriansybu@gmail.com",
+    Safety: "kuriansybu@gmail.com",
+    Stores: "kuriansybu@gmail.com",
+    Others: "kuriansybu@gmail.com",
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const formdata = new FormData(e.currentTarget);
-    const values = Object.fromEntries(formdata.entries());
-    console.log(values);
+    // Create a FormData object from the form
+    const formData = new FormData(e.currentTarget);
 
     // Get the selected category and map it to the corresponding email
-    const selectedCategory = values.category as string;
+    const selectedCategory = formData.get("category") as string;
     const email = categoryEmails[selectedCategory];
+
+    
 
     if (!email) {
       console.log("No email address found for the selected category.");
@@ -40,14 +41,13 @@ const Forms = () => {
       return;
     }
 
-    // Add the selected category's email to the form data
-    const formDataToSend = { ...values, categoryEmail: email };
+    // Add the category email to the FormData
+    formData.append("categoryEmail", email);
 
     try {
-      const response = await fetch("https://formspree.io/f/xovqbqrq", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formDataToSend),
+      const response = await fetch("/api/send-application", {
+        method: "post",
+        body: formData, // Send the form data (with file) directly
       });
 
       if (response.ok) {
@@ -63,7 +63,7 @@ const Forms = () => {
   };
 
   return (
-    <div className="min-h-screen ml-9 flex flex-col  items-center justify-center p overflow-x-hidden -top-60 ">
+    <div className="min-h-screen ml-9 flex flex-col items-center justify-center p overflow-x-hidden -top-60 ">
       <form
         ref={formRef}
         onSubmit={handleSubmit}
@@ -73,24 +73,17 @@ const Forms = () => {
       >
         {isSubmitting && (
           <div className="absolute inset-0 bg-white opacity-50 flex items-center justify-center z-10">
-            <span className="text-xl font-medium text-gray-700">
-              Submitting...
-            </span>
+            <span className="text-xl font-medium text-gray-700">Submitting...</span>
           </div>
         )}
 
         {/* Personal Details */}
         <div className="p-6 space-y-6">
-          <h2 className="text-xl font-semibold text-gray-800">
-            Personal Details
-          </h2>
+          <h2 className="text-xl font-semibold text-gray-800">Personal Details</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Full Name */}
             <div>
-              <label
-                htmlFor="fullName"
-                className="block text-sm font-medium text-gray-700"
-              >
+              <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
                 Full Name
               </label>
               <input
@@ -105,10 +98,7 @@ const Forms = () => {
 
             {/* Email */}
             <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
-              >
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                 Email
               </label>
               <input
@@ -123,10 +113,7 @@ const Forms = () => {
 
             {/* Contact */}
             <div>
-              <label
-                htmlFor="contact"
-                className="block text-sm font-medium text-gray-700"
-              >
+              <label htmlFor="contact" className="block text-sm font-medium text-gray-700">
                 Contact
               </label>
               <input
@@ -141,10 +128,7 @@ const Forms = () => {
 
             {/* Nationality */}
             <div>
-              <label
-                htmlFor="nationality"
-                className="block text-sm font-medium text-gray-700"
-              >
+              <label htmlFor="nationality" className="block text-sm font-medium text-gray-700">
                 Nationality
               </label>
               <input
@@ -187,16 +171,11 @@ const Forms = () => {
 
           {/* Current Location */}
           <div>
-            <h3 className="text-lg font-medium text-gray-800">
-              Current Location
-            </h3>
+            <h3 className="text-lg font-medium text-gray-800">Current Location</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2">
               {/* Country */}
               <div>
-                <label
-                  htmlFor="country"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                <label htmlFor="country" className="block text-sm font-medium text-gray-700">
                   Country
                 </label>
                 <input
@@ -211,10 +190,7 @@ const Forms = () => {
 
               {/* City */}
               <div>
-                <label
-                  htmlFor="city"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                <label htmlFor="city" className="block text-sm font-medium text-gray-700">
                   City
                 </label>
                 <input
@@ -231,22 +207,17 @@ const Forms = () => {
 
           {/* Employment Details */}
           <div>
-            <h3 className="text-lg font-medium text-gray-800">
-              Employment Details
-            </h3>
+            <h3 className="text-lg font-medium text-gray-800">Employment Details</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2">
               {/* Category */}
               <div>
-                <label
-                  htmlFor="category"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                <label htmlFor="categorydetail" className="block text-sm font-medium text-gray-700">
                   Category
                 </label>
                 <input
                   type="text"
-                  id="category"
-                  name="category"
+                  id="categorydetail"
+                  name="categorydetail"
                   placeholder="Please enter category of your job"
                   className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   required
@@ -255,10 +226,7 @@ const Forms = () => {
 
               {/* Experience in years */}
               <div>
-                <label
-                  htmlFor="experience"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                <label htmlFor="experience" className="block text-sm font-medium text-gray-700">
                   Experience in years
                 </label>
                 <input
@@ -273,10 +241,7 @@ const Forms = () => {
 
               {/* Skills */}
               <div>
-                <label
-                  htmlFor="skills"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                <label htmlFor="skills" className="block text-sm font-medium text-gray-700">
                   What are your key skills
                 </label>
                 <textarea
@@ -293,18 +258,13 @@ const Forms = () => {
 
           <div className="mt-8">
             {/* Section Heading */}
-            <h3 className="text-lg font-medium text-gray-800">
-              Education Details
-            </h3>
+            <h3 className="text-lg font-medium text-gray-800">Education Details</h3>
 
             {/* First Row: Basic Education and Masters */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
               {/* Basic Education */}
               <div>
-                <label
-                  htmlFor="basicEducation"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                <label htmlFor="basicEducation" className="block text-sm font-medium text-gray-700">
                   Basic Education
                 </label>
                 <input
@@ -319,10 +279,7 @@ const Forms = () => {
 
               {/* Masters */}
               <div>
-                <label
-                  htmlFor="masters"
-                  className="block text-sm font-medium text-gray-700"
-                >
+                <label htmlFor="masters" className="block text-sm font-medium text-gray-700">
                   Masters
                 </label>
                 <input
@@ -338,10 +295,7 @@ const Forms = () => {
 
             {/* Second Row: Choose a Category */}
             <div className="mt-6">
-              <label
-                htmlFor="category"
-                className="block text-sm font-medium text-gray-700"
-              >
+              <label htmlFor="category" className="block text-sm font-medium text-gray-700">
                 Choose a Category
               </label>
               <select
@@ -368,10 +322,7 @@ const Forms = () => {
 
             {/* Third Row: Attach CV */}
             <div className="mt-6">
-              <label
-                htmlFor="cv"
-                className="block text-sm font-medium text-gray-700"
-              >
+              <label htmlFor="cv" className="block text-sm font-medium text-gray-700">
                 Attach CV (PDF)
               </label>
               <input
@@ -382,9 +333,7 @@ const Forms = () => {
                 className="mt-1 block w-full px-4 py-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
               />
-              <p className="text-sm text-gray-500 mt-1">
-                Please upload your CV in PDF format.
-              </p>
+              <p className="text-sm text-gray-500 mt-1">Please upload your CV in PDF format.</p>
             </div>
           </div>
 

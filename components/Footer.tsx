@@ -1,7 +1,6 @@
-// components/Footer.tsx
 import Image from "next/image"; // if you're using an image for the logo
 import Link from "next/link";
-import { FaFacebookF, FaTwitter } from "react-icons/fa"; // for the social icons
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa"; // Added LinkedIn and Instagram icons
 
 const Footer = () => {
   return (
@@ -47,10 +46,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/about/ourgroups/thermoset"
+                  href="/about/ourgroups/elex"
                   className="hover:underline"
                 >
-                  Thermoset Middle East{" "}
+                  Elex Aluminium Products PVT LTD{" "}
                 </a>
               </li>
             </ul>
@@ -93,7 +92,6 @@ const Footer = () => {
                   Nashat Metal Engineering LLC{" "}
                 </Link>
               </li>
-              
             </ul>
           </div>
 
@@ -108,7 +106,7 @@ const Footer = () => {
             <p>
               <span className="font-semibold">Email:</span>{" "}
               <Link href="mailto:info@example.com" className="hover:underline">
-              info@eliteextrusion.ae
+                info@eliteextrusion.ae
               </Link>
             </p>
             <p>
@@ -153,6 +151,24 @@ const Footer = () => {
               className="hover:text-[#E8D858]"
             >
               <FaTwitter size={24} />
+            </a>
+            {/* LinkedIn Icon */}
+            <a
+              href="https://www.linkedin.com/company/elite-group-of-companies-uae/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#E8D858]"
+            >
+              <FaLinkedinIn size={24} />
+            </a>
+            {/* Instagram Icon */}
+            <a
+              href="https://www.instagram.com/elitegroupuae?igsh=b2d2eng4cXIya3Nq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#E8D858]"
+            >
+              <FaInstagram size={24} />
             </a>
           </div>
         </div>

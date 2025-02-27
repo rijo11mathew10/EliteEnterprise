@@ -91,7 +91,12 @@ const column2 = [
 
 function page() {
   return (
-    <div>
+    <motion.div
+      className="page-container"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }} // Smooth fade-in with a vertical motion
+    >
       <Header />
       {/* Banner Section */}
       <div
@@ -377,10 +382,64 @@ function page() {
       <WobbleCards heading="Systems" cards={productData2} />
 
       <WobbleCards heading="Samples" cards={productData3} />
-
+                      <motion.div
+                        className="grid grid-cols-12 max-w-7xl mx-auto p-6 items-center gap-y-8"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.2, ease: "easeOut" }}
+                      >
+                        {/* Text Column */}
+                        <div className="col-span-12 md:col-span-7 mt-12 md:mt-20">
+                          <motion.div
+                            className="flex gap-3 mb-8"
+                            initial={{ x: -50, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 2.0 }}
+                          >
+                            <hr className="w-2 h-16 md:h-16 bg-[#E8D858] border-none" />
+                            <h2 className="text-3xl md:text-5xl font-semibold text-[#023D68] leading-tight">
+                              LOCATION
+                            </h2>
+                          </motion.div>
+            
+                          <motion.p
+                            className="text-[#484848] mb-6 text-justify md:pr-7"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 2.0 }}
+                          >
+                            Address: <a href="https://maps.app.goo.gl/6fnULATWBUdEUENA8?g_st=it" target="_blank" className="text-blue-500 hover:underline">9FFC+W3 - Ajman Industrial 2 - Ajman</a><br></br>
+                            Hours: 08:00 AM - 5:00 PM <br></br>
+                          Phone: 06 743 2020
+                          </motion.p>
+                        </div>
+            
+                        {/* Logo Column */}
+                        <motion.a
+                          href="https://maps.app.goo.gl/6fnULATWBUdEUENA8?g_st=it"
+                          target="_blank"
+                          className="col-span-12 md:col-span-5 border-4 border-[#E8D858] relative h-100 md:h-96 flex justify-center items-center overflow-visible"
+                          initial={{ scale: 0.8, rotate: 15, opacity: 0 }}
+                          whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 1.2, ease: "easeOut" }}
+                          style={{
+                            backgroundImage:
+                              "url('/locationglobal.jpg')", // Replace with your image path
+                            backgroundSize: "cover", // Ensures the image completely fills the div
+                            backgroundPosition: "center", // Centers the image in the div
+                            backgroundRepeat: "no-repeat", // Prevents the image from repeating
+                          }}
+                        >
+                        </motion.a>
+                      </motion.div>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 
 export default page;
+

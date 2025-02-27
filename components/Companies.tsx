@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Companies = () => {
   // Array of image URLs
   const companyImages = [
-    "/company1.png",
+    "/elex.jpg",
     "/company2.png",
     "/company3.png",
     "/company4.png",

@@ -42,7 +42,12 @@ function AboutPage() {
   ];
 
   return (
-    <div>
+    <motion.div
+      className="page-container"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }} // Smooth fade-in with a vertical motion
+    >
       <Header />
       {/* Banner Section */}
       <div
@@ -268,11 +273,11 @@ function AboutPage() {
       {/* Logo Section */}
       <div className="relative z-20 flex justify-center items-center gap-4 flex-wrap px-4 mb-10">
         {[
-          "/company1.png",
+          "/elex.jpg",
           "/company2.png",
           "/company3.png",
           "/company4.png",
-          "/company5.png",
+          "/al-hamad-logo.jpg",
           "/company6.png",
           "/company7.png",
         ].map((logo, index) => (
@@ -316,7 +321,7 @@ function AboutPage() {
 
       {/* Footer */}
       <Footer />
-    </div>
+      </motion.div>
   );
 }
 

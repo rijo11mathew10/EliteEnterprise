@@ -18,6 +18,7 @@ function Header() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [scrolling, setScrolling] = useState(false); // State to detect scrolling
+  const [headerHeight, setHeaderHeight] = useState(60); // Default height
 
   const handleMouseEnter = (index: number) => {
     setHoveredIndex(index);
@@ -45,7 +46,10 @@ function Header() {
             { text: "OUR GLOBAL MARKETS", link: "/about/ourglobalmarkets" },
             { text: "OUR SUPPLIERS", link: "/about/oursuppliers" },
             { text: "OUR CERTIFICATIONS", link: "/about/certification" },
-            { text: "OUR POLICIES AND ASSURANCE", link: "/about/qualitypolicy" },
+            {
+              text: "OUR POLICIES AND ASSURANCE",
+              link: "/about/qualitypolicy",
+            },
           ],
         },
         {
@@ -68,9 +72,10 @@ function Header() {
               link: "/about/ourgroups/alumiltech",
             },
             {
-              text: "THERMOSET MIDDLE EAST",
-              link: "/about/ourgroups/thermoset",
+              text: "ELEX ALUMINUM PRODUCTS PVT LTD",
+              link: "/about/ourgroups/elex",
             },
+
             {
               text: "GLOBAL PIONEER ALUMINIUM INDUSTRIES",
               link: "/about/ourgroups/globalpioneer",
@@ -156,18 +161,20 @@ function Header() {
     },
     {
       topic: "Get Quote", // Add Get Quote here
-      link: "/contactus", // Link it to the contact page or a quote page
+      link: "/about/getaquote", // Link it to the contact page or a quote page
       sections: null,
     },
   ];
 
-  // Detect scroll and change header style
+  // Detect scroll and change header style and height
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 40) {
         setScrolling(true); // Set scrolling state when scrolled more than 50px
+        setHeaderHeight(80); // Increase height when scrolled down
       } else {
         setScrolling(false);
+        setHeaderHeight(60); // Reset to default height when at the top
       }
     };
 
@@ -179,17 +186,11 @@ function Header() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 pt-5 pb-2 transition-all duration-300 ${
-        scrolling
-          ? "bg-white backdrop-blur-lg shadow-lg h-[80px]"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 pt-2 pb-2 transition-all duration-300`}
       style={{
-        backgroundImage: `url('/frame.png')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        background:
-          "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%)",
+        backgroundColor: scrolling ? "rgba(0, 0, 0, 0.9)" : "transparent", // Fully black with adjustable opacity
+        backdropFilter: scrolling ? "blur(5px)" : "none", // Slight blur effect (optional)
+        height: `${headerHeight}px`, // Dynamic height based on scroll
       }}
     >
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-2">
@@ -206,7 +207,9 @@ function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:block">
+          <div className={`hidden lg:block transition-all duration-300 transform ${
+              scrolling ? "translate-x-[-300px]" : "translate-x-0"
+            }`}>
             <div className="ml-4 flex items-center space-x-4">
               {navitems.map((list, index) => (
                 <div
@@ -407,4 +410,3 @@ function Header() {
 }
 
 export default Header;
-

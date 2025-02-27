@@ -58,7 +58,12 @@ const projects = [
 
 function Page() {
   return (
-    <div>
+    <motion.div
+      className="page-container"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }} // Smooth fade-in with a vertical motion
+    >
       <Header />
       {/* Banner Section */}
       <div
@@ -106,6 +111,8 @@ function Page() {
                 className="absolute inset-0 h-full w-full object-cover rounded-lg"
                 src={project.image} // Use dynamic image path
                 alt={`Project ${index + 1}`}
+                width={500}
+                height={700}
               />
             </div>
             <div className="text-left px-2 mb-4">
@@ -122,7 +129,7 @@ function Page() {
       </div>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

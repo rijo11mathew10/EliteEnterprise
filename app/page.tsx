@@ -1,3 +1,4 @@
+import React from 'react';
 import Companies from "@/components/Companies";
 import Contents from "@/components/Contents";
 import Footer from "@/components/Footer";
@@ -7,6 +8,7 @@ import IndustrySection from "@/components/IndustrySection";
 import Testimonial from "@/components/Testimonials";
 import Video from "@/components/Video";
 import CardGrid from "@/components/CardGrid";
+
 
 export default function App() {
   const cardsGroup1 = [
@@ -88,6 +90,9 @@ export default function App() {
       <IndustrySection />
       <WorldMapDemo />
       <Footer />
+
+      {/* Include the Chatbot at the bottom of the page */}
+
     </div>
   );
 }
